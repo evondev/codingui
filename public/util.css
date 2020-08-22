@@ -1,0 +1,42 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+button,
+textarea,
+select {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("../fonts/SF-Mono-Regular.otf") format("otf");
+}
+@font-face {
+  font-family: "SF Mono Light";
+  src: url("../fonts/SF-Mono-Light.otf") format("otf");
+}
