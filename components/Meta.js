@@ -8,9 +8,13 @@ const Meta = () => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>CodingUI</title>
       <link
-        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap"
+        rel="stylesheet"
+      ></link>
       <link
         rel="stylesheet"
         href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"

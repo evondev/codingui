@@ -84,7 +84,7 @@ export const GridStyles = styled.div`
   .grid code[class*="language-"],
   .grid pre {
     white-space: nowrap;
-    font-family: var(--font-code);
+    font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     padding: 1rem !important;
