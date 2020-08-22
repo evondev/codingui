@@ -7,7 +7,7 @@ const InputWithButton = () => {
       title="Input with Button"
       desc="Giao diện có 1 input và button, thường được dùng làm form tìm kiếm đơn giản"
       html={`<div class="input-button">
-            <input type="text" />
+            <input type="text" placeholder="Tìm kiếm..." />
             <button>Send</button>
           </div>`}
       css={`
@@ -20,7 +20,7 @@ const InputWithButton = () => {
           padding: 1rem;
         }
         .input-button button {
-          background-color: #a597ec;
+          background-color: var(--gray);
           color: white;
           padding: 1rem 2rem;
         }

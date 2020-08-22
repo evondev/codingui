@@ -1,9 +1,15 @@
+:root {
+  --primary: #08aeea;
+  --secondary: #2af598;
+  --gray: #333;
+  --font: "Montserrat", sans-serif;
+}
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font);
   font-size: 1.6rem;
   overflow-x: hidden;
 }
@@ -21,7 +27,7 @@ input,
 button,
 textarea,
 select {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font);
   font-size: 1.6rem;
   outline: none;
   border: 0;

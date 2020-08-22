@@ -3,10 +3,16 @@ export const GridStyles = styled.div`
   --font-code: "SF Mono";
   --code-bg: #292e3e;
   .grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(calc(25% - 4rem), 1fr));
-    grid-gap: 2rem;
     padding: 1rem;
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+      grid-gap: 2rem;
+    }
+  }
+
+  .grid__column {
+    margin-bottom: 3rem;
   }
 
   .grid__result {
@@ -35,11 +41,23 @@ export const GridStyles = styled.div`
     margin-bottom: 2.5rem;
     line-height: 1.6;
   }
-
+  .grid__copy {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    transform: translateY(-100%);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background-color: #333;
+    color: white;
+  }
   .grid__code {
     position: relative;
     margin-top: 5rem;
   }
+
   .grid__code:before {
     content: "HTML";
     position: absolute;
