@@ -3,12 +3,13 @@ export const GridStyles = styled.div`
   --font-code: "SF Mono";
   --code-bg: #292e3e;
   .grid {
+    min-height: 80vh;
     padding: 1rem;
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
       grid-gap: 5rem;
-      padding: 5rem;
+      padding: 2rem 5rem;
     }
   }
 
@@ -19,21 +20,17 @@ export const GridStyles = styled.div`
   .grid__result {
     overflow: hidden;
     margin-bottom: 2rem;
-    background-color: #eee;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
   }
 
   .grid__name {
-    font-size: 1.6rem;
-    font-weight: 500;
-    display: inline-block;
+    background-color: #fafafa;
     padding: 1rem;
-    background-color: black;
-    color: white;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    display: inline-block;
+    color: #001940;
   }
 
   .grid__desc {
@@ -49,10 +46,9 @@ export const GridStyles = styled.div`
     right: 0;
     padding: 5px;
     transform: translateY(-100%);
-    font-size: 1.2rem;
     text-transform: uppercase;
-    background-color: var(--gray);
-    color: white;
+    background-color: #fafafa;
+    color: #999;
   }
   .grid__code {
     position: relative;
@@ -69,8 +65,8 @@ export const GridStyles = styled.div`
     padding: 5px;
     text-transform: uppercase;
     font-size: 1.4rem;
-    background-color: #a597ec;
-    color: white;
+    background-color: #fafafa;
+    color: #999;
     font-weight: 600;
     letter-spacing: 2px;
   }

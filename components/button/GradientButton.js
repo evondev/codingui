@@ -10,7 +10,6 @@ const GradientButton = () => {
       css={`
         .gradient-button {
           padding: 1.5rem 2rem;
-          border-radius: 4px;
           color: white;
           font-size: 1.6rem;
           text-transform: uppercase;
@@ -18,7 +17,7 @@ const GradientButton = () => {
           font-weight: bold;
           cursor: pointer;
           outline: none;
-          font-family: Montserrat, sans-serif;
+          font-family: "Montserrat", sans-serif;
           background-image: linear-gradient(to right, #08aeea, #2af598);
         }
       `}

@@ -13,12 +13,12 @@ const Template = ({ title, desc = "", html = "", css = "" }) => {
   return (
     <TemplateStyles className="grid__item" css={css}>
       <div className="grid__name">{title}</div>
-      <div className="grid__desc">{desc}</div>
+      {/* <div className="grid__desc">{desc}</div> */}
       {html && <div className="grid__result">{parse(html)}</div>}
       {html && (
         <div className="grid__html grid__code">
           <div className="grid__copy" onClick={() => copyToClipboard(html)}>
-            Copy
+            <i className="fa fa-copy"></i>
           </div>
           <SyntaxHighlighter language="html" style={docco}>
             {html.trim()}
@@ -28,7 +28,7 @@ const Template = ({ title, desc = "", html = "", css = "" }) => {
       {css && (
         <div className="grid__css grid__code">
           <div className="grid__copy" onClick={() => copyToClipboard(css)}>
-            Copy
+            <i className="fa fa-copy"></i>
           </div>
           <SyntaxHighlighter language="css" style={docco}>
             {css.trim()}

@@ -14,15 +14,17 @@ const InputWithButton = () => {
         .input-button {
           display: flex;
           width: 100%;
+          background-color: #eee;
         }
         .input-button input {
           flex: 1;
-          padding: 1rem;
+          padding: 1.5rem;
+          background-color: transparent;
         }
         .input-button button {
-          background-color: var(--primary);
+          background-color: #08aeea;
           color: white;
-          padding: 1rem 2rem;
+          padding: 1.5rem 2rem;
         }
       `}
     ></Template>
