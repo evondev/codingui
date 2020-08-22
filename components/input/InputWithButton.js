@@ -20,7 +20,7 @@ const InputWithButton = () => {
           padding: 1rem;
         }
         .input-button button {
-          background-color: var(--gray);
+          background-color: var(--primary);
           color: white;
           padding: 1rem 2rem;
         }

@@ -1,8 +1,16 @@
 :root {
   --primary: #08aeea;
   --secondary: #2af598;
+  --purple: #bd93f9;
+  --pink: #ff6bcb;
+  --blue: #8be9fd;
   --gray: #333;
   --font: "Montserrat", sans-serif;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 html {
   font-size: 62.5%;
