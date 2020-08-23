@@ -12,10 +12,20 @@ const TemplateStyles = styled.div`
 const Template = ({ title, desc = "", html = "", css = "" }) => {
   return (
     <TemplateStyles className="grid__item" css={css}>
-      <div className="grid__name">{title}</div>
+      <div className="grid__header">
+        <div className="grid__name">{title}</div>
+        <div className="grid__copies">
+          <div className="grid__copy" onClick={() => copyToClipboard(html)}>
+            Copy HTML
+          </div>
+          <div className="grid__copy" onClick={() => copyToClipboard(css)}>
+            Copy CSS
+          </div>
+        </div>
+      </div>
       {/* <div className="grid__desc">{desc}</div> */}
       {html && <div className="grid__result">{parse(html)}</div>}
-      {html && (
+      {/* {html && (
         <div className="grid__html grid__code">
           <div className="grid__copy" onClick={() => copyToClipboard(html)}>
             <i className="fa fa-copy"></i>
@@ -24,8 +34,8 @@ const Template = ({ title, desc = "", html = "", css = "" }) => {
             {html.trim()}
           </SyntaxHighlighter>
         </div>
-      )}
-      {css && (
+      )} */}
+      {/* {css && (
         <div className="grid__css grid__code">
           <div className="grid__copy" onClick={() => copyToClipboard(css)}>
             <i className="fa fa-copy"></i>
@@ -34,7 +44,7 @@ const Template = ({ title, desc = "", html = "", css = "" }) => {
             {css.trim()}
           </SyntaxHighlighter>
         </div>
-      )}
+      )} */}
     </TemplateStyles>
   );
 };

@@ -19,18 +19,19 @@ export const GridStyles = styled.div`
 
   .grid__result {
     overflow: hidden;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   .grid__name {
-    background-color: #fafafa;
+    background-color: var(--purple);
     padding: 1rem;
     font-size: 1.4rem;
     display: inline-block;
-    color: #001940;
+    color: white;
+    max-width: 22rem;
   }
 
   .grid__desc {
@@ -39,16 +40,30 @@ export const GridStyles = styled.div`
     margin-bottom: 2.5rem;
     line-height: 1.6;
   }
+  .grid__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
   .grid__copy {
     cursor: pointer;
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     padding: 5px;
-    transform: translateY(-100%);
+    transform: translateY(-100%); */
     text-transform: uppercase;
     background-color: #fafafa;
     color: #999;
+    font-size: 1.2rem;
+    padding: 1rem;
+    display: inline-block;
+    font-weight: normal;
+    transition: 0.2s linear;
+    &:hover {
+      background-color: var(--purple);
+      color: white;
+    }
   }
   .grid__code {
     position: relative;
