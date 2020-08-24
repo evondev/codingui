@@ -40,7 +40,6 @@ const InputWithIcon = () => {
       css={`
         .input-icon {
           position: relative;
-          margin-top: 1rem;
         }
         .input-icon input {
           width: 100%;

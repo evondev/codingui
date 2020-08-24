@@ -36,7 +36,6 @@ const Dropdown = () => {
             --secondary: #c74237;
             width: 100%;
             max-width: 47.5rem;
-            margin: 5rem auto;
             position: relative;
             color: white;
             text-transform: uppercase;

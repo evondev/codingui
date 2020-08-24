@@ -23,20 +23,11 @@ export const GridStyles = styled.div`
     margin-bottom: 3rem;
   }
 
-  /* .grid__result {
-    overflow: hidden;
-    margin-bottom: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  } */
-
   .grid__name {
-    background-color: var(--gray);
-    padding: 1rem;
+    padding: 1rem 0;
     font-size: 1.4rem;
+    color: #333;
     display: inline-block;
-    color: white;
     max-width: 22rem;
   }
 
@@ -50,14 +41,10 @@ export const GridStyles = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    margin-bottom: 1rem;
   }
   .grid__copy {
     cursor: pointer;
-    /* position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px;
-    transform: translateY(-100%); */
     text-transform: uppercase;
     background-color: #fafafa;
     color: #999;

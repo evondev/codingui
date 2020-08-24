@@ -63,7 +63,7 @@ const FloatingButton = () => {
       html={`<button class="floating-button"><i class="fa fa-bolt"></i></button>`}
       css={`
         .floating-button {
-          margin: 2.5rem 0 0 auto;
+          margin-left: auto;
           font-size: 3rem;
           color: white;
           width: 6rem;
