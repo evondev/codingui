@@ -3,30 +3,36 @@ export const GridStyles = styled.div`
   --font-code: "SF Mono";
   --code-bg: #292e3e;
   .grid {
-    min-height: 80vh;
     padding: 1rem;
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
       grid-gap: 5rem;
       padding: 2rem 5rem;
+      &--2 {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
+  }
+
+  .grid__item {
+    margin-bottom: 5rem;
   }
 
   .grid__column {
     margin-bottom: 3rem;
   }
 
-  .grid__result {
+  /* .grid__result {
     overflow: hidden;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+  } */
 
   .grid__name {
-    background-color: var(--purple);
+    background-color: var(--gray);
     padding: 1rem;
     font-size: 1.4rem;
     display: inline-block;
@@ -60,10 +66,6 @@ export const GridStyles = styled.div`
     display: inline-block;
     font-weight: normal;
     transition: 0.2s linear;
-    &:hover {
-      background-color: var(--purple);
-      color: white;
-    }
   }
   .grid__code {
     position: relative;
