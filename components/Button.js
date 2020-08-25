@@ -49,7 +49,7 @@ const GradientButton = () => {
           cursor: pointer;
           outline: none;
           font-family: "Montserrat", sans-serif;
-          background-image: linear-gradient(to right, #08aeea, #2af598);
+          background-image: var(--gradient);
         }
       `}
     ></Template>

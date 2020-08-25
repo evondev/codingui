@@ -7,7 +7,7 @@ const TemplateStyles = styled.div`
   ${(props) => props.css}
 `;
 
-const Template = ({ title, html = "", css = "" }) => {
+const Template = ({ title, html = "", css = "", source = "" }) => {
   return (
     <TemplateStyles className="grid__item" css={css}>
       <div className="grid__header">
@@ -22,6 +22,7 @@ const Template = ({ title, html = "", css = "" }) => {
         </div>
       </div>
       {html && <div className="grid__result">{parse(html)}</div>}
+      {source && <div className="grid__source">{source}</div>}
     </TemplateStyles>
   );
 };

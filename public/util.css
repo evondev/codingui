@@ -6,6 +6,7 @@
   --blue: #8be9fd;
   --gray: #333;
   --font: "Montserrat", sans-serif;
+  --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
 }
 *,
 *:before,
@@ -25,6 +26,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  filter: grayscale(10);
 }
 
 a {

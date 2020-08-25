@@ -35,7 +35,6 @@ const Dropdown = () => {
             --primary: #de4b3e;
             --secondary: #c74237;
             width: 100%;
-            max-width: 47.5rem;
             position: relative;
             color: white;
             text-transform: uppercase;
@@ -53,6 +52,7 @@ const Dropdown = () => {
             left: 0;
             right: 0;
             display: none;
+            z-index: 10;
           }
           .dropdown__list:before {
             content: "";
@@ -69,7 +69,7 @@ const Dropdown = () => {
           .dropdown__select,
           .dropdown__item {
             width: 100%;
-            padding: 3rem;
+            padding: 2rem;
             background-color: var(--primary);
             display: flex;
             align-items: center;

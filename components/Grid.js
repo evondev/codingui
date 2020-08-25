@@ -5,6 +5,8 @@ import { InputWithButton, InputWithIcon } from "./Input";
 import { CircleImage } from "./Image";
 import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
+import { ProgressBar, CircleBar } from "./Bar";
+import { SocialShare } from "./List";
 
 const Grid = () => {
   return (
@@ -13,22 +15,19 @@ const Grid = () => {
         <div className="grid__column">
           <InputWithButton></InputWithButton>
           <ButtonWithIcon></ButtonWithIcon>
-        </div>
-        <div className="grid__column">
           <GradientButton></GradientButton>
-          <CircleImage></CircleImage>
-        </div>
-        <div className="grid__column">
-          <FloatingButton></FloatingButton>
-          <InputWithIcon></InputWithIcon>
-        </div>
-      </div>
-      <div className="grid grid--2">
-        <div className="grid__column">
-          <OverlayIcon></OverlayIcon>
-        </div>
-        <div className="grid__column">
           <Dropdown></Dropdown>
+        </div>
+        <div className="grid__column">
+          <CircleImage></CircleImage>
+          <OverlayIcon></OverlayIcon>
+          <FloatingButton></FloatingButton>
+        </div>
+        <div className="grid__column">
+          <InputWithIcon></InputWithIcon>
+          <ProgressBar></ProgressBar>
+          <SocialShare></SocialShare>
+          <CircleBar></CircleBar>
         </div>
       </div>
     </GridStyles>
