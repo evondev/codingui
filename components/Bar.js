@@ -36,6 +36,7 @@ const CircleBar = () => {
       </div>`}
         css={`
           .circle-bar {
+            margin: 0 auto;
             width: 10rem;
             height: 10rem;
             border-radius: 10rem;

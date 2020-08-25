@@ -17,6 +17,10 @@ export const GridStyles = styled.div`
 
   .grid__item {
     margin-bottom: 5rem;
+    background-color: white;
+    padding: 1rem 2rem 2rem;
+    box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
   }
 
   .grid__column {
@@ -26,6 +30,7 @@ export const GridStyles = styled.div`
   .grid__name {
     padding: 1rem 0;
     font-size: 1.4rem;
+    font-weight: 600;
     color: #333;
     display: inline-block;
     max-width: 22rem;
@@ -45,8 +50,8 @@ export const GridStyles = styled.div`
   }
   .grid__copy {
     cursor: pointer;
-    text-transform: uppercase;
-    background-color: #fafafa;
+    /* text-transform: uppercase; */
+    /* background-color: #fafafa; */
     color: #999;
     font-size: 1.2rem;
     padding: 1rem;

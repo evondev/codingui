@@ -21,6 +21,7 @@ body {
   font-family: var(--font);
   font-size: 1.6rem;
   overflow-x: hidden;
+  background-color: #f5f7f9;
 }
 
 img {

@@ -64,6 +64,7 @@ const FloatingButton = () => {
       css={`
         .floating-button {
           margin-left: auto;
+          margin-right: auto;
           font-size: 3rem;
           color: white;
           width: 6rem;
