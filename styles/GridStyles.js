@@ -19,8 +19,8 @@ export const GridStyles = styled.div`
     margin-bottom: 5rem;
     background-color: white;
     padding: 1rem 2rem 2rem;
-    box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+    /* box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.15); */
+    border-radius: 2px;
   }
 
   .grid__column {
@@ -96,6 +96,36 @@ export const GridStyles = styled.div`
     &::-webkit-scrollbar {
       display: none;
       width: 0;
+    }
+  }
+
+  .tag {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    &-item {
+      display: inline-block;
+      padding: 5px 1rem;
+      font-size: 1rem;
+      border-radius: 2rem;
+      color: white;
+      margin-left: 5px;
+      text-transform: uppercase;
+    }
+    &-html {
+      background-color: #00aefd;
+    }
+    &-css {
+      background-color: #e74c3c;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .grid__column {
+      margin-bottom: 0;
+    }
+    .grid__item {
+      margin-bottom: 2rem;
     }
   }
 `;

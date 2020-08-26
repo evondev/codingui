@@ -5,6 +5,7 @@ export const FooterStyles = styled.footer`
   color: #999;
   font-size: 1.3rem;
   margin-top: 2.5rem;
+  background-color: white;
   .heart {
     color: #ff7870;
   }

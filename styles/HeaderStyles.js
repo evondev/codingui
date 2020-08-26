@@ -3,9 +3,12 @@ export const HeaderStyles = styled.header`
   padding: 2.5rem 0;
   margin-bottom: 2.5rem;
   text-align: center;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+
   .logo {
-    font-weight: 900;
-    font-size: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
     color: #001940;
   }
   .slogan {
