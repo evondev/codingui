@@ -7,6 +7,7 @@ import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare } from "./List";
+import { CustomCheckbox } from "./Checkbox";
 
 const Grid = () => {
   return (
@@ -17,6 +18,7 @@ const Grid = () => {
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
           <Dropdown></Dropdown>
+          <CustomCheckbox></CustomCheckbox>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
