@@ -6,7 +6,7 @@ const InputWithButton = () => {
     <Template
       title="Input with Button"
       html={`<div class="input-button">
-            <input type="text" placeholder="Tìm kiếm..." />
+            <input type="text" placeholder="Searching..." />
             <button>Send</button>
           </div>`}
       css={`

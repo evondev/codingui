@@ -6,8 +6,9 @@ import { CircleImage } from "./Image";
 import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
-import { SocialShare } from "./List";
+import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckbox } from "./Checkbox";
+import { CardMessage } from "./Card";
 
 const Grid = () => {
   return (
@@ -19,17 +20,20 @@ const Grid = () => {
           <GradientButton></GradientButton>
           <Dropdown></Dropdown>
           <CustomCheckbox></CustomCheckbox>
+          <Pagination></Pagination>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
           <OverlayIcon></OverlayIcon>
           <FloatingButton></FloatingButton>
+          <CardMessage></CardMessage>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>
+          <Countdown></Countdown>
         </div>
       </div>
     </GridStyles>

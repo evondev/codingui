@@ -6,7 +6,7 @@ const CustomCheckbox = () => {
     <>
       <Template
         title="On-Off Switch"
-        html={`<label htmlFor="switch" class="switch">
+        html={`<label for="switch" class="switch">
         <input type="checkbox" id="switch" class="switch-input"/>
         <div class="switch-box">
           <div class="switch-overlay switch-overlay1"></div>
@@ -22,15 +22,17 @@ const CustomCheckbox = () => {
             height: 5rem;
             display: block;
             margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+            border-radius: 100rem;
           }
           .switch-box {
+            border-radius: 100rem;
             width: 100%;
             height: 100%;
             background-color: white;
-            border-radius: 100rem;
             padding: 5px;
             display: flex;
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             overflow: hidden;
             position: relative;
           }
