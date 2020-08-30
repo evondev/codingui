@@ -27,7 +27,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  filter: grayscale(10);
 }
 
 a {
