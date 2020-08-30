@@ -16,6 +16,8 @@ const ResponsiveMedia = () => {
             height: 0;
             /* padding-bottom: calc(100% / (var(--ratio))); */
             padding-bottom: 56.25%;
+            width: 100%;
+            overflow: hidden;
           }
           .responsive-media > * {
             position: absolute;

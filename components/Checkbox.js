@@ -19,7 +19,7 @@ const CustomCheckboxToggle = () => {
             overflow: hidden;
             box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
             border-radius: 100rem;
-            transition: 0.25s linear;
+            transition: background-color 0.25s linear;
           }
           .switch:after {
             content: "";
@@ -30,7 +30,7 @@ const CustomCheckboxToggle = () => {
             background-color: #333;
             top: 5px;
             left: 5px;
-            transition: 0.25s linear;
+            transition: background-color 0.25s linear, transform 0.25s linear;
           }
           .switch-input {
             display: none;
@@ -63,8 +63,8 @@ const CustomRadio = () => {
             display: none;
           }
           .radio-label {
-            width: 1rem;
-            height: 1rem;
+            width: 2rem;
+            height: 2rem;
             border-radius: 2rem;
             background-color: #eee;
             display: inline-block;
@@ -74,7 +74,7 @@ const CustomRadio = () => {
             transition: all 0.25s linear;
           }
           .radio-input:checked + .radio-label {
-            box-shadow: 0 0 0 4px #eee, 0 0 0 8px #2979ff;
+            box-shadow: 0 0 0 4px #fff, 0 0 0 8px #2979ff;
             background-color: #2979ff;
           }
         `}
