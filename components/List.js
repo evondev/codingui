@@ -120,6 +120,7 @@ const Countdown = () => {
             justify-content: center;
             text-align: center;
             padding: 0px 2rem;
+            width: 25%;
           }
           .countdown-number {
             font-weight: 600;
@@ -129,6 +130,11 @@ const Countdown = () => {
           .countdown-text {
             font-weight: 300;
             font-size: 1.2rem;
+          }
+          @media screen and (max-width: 767px) {
+            .countdown-number {
+              font-size: 3.5rem;
+            }
           }
         `}
       ></Template>

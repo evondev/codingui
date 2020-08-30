@@ -36,6 +36,9 @@ const CustomCheckbox = () => {
             overflow: hidden;
             position: relative;
           }
+          .switch-box * {
+            user-select: none;
+          }
           .switch-circle,
           .switch-overlay {
             width: 4rem;

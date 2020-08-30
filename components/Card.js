@@ -14,7 +14,7 @@ const CardMessage = () => {
       </div>`}
         css={`
           .flash-message {
-            max-width: 50%;
+            max-width: 25rem;
             margin: 0 auto;
             padding: 2rem;
             background-color: #00e06d;

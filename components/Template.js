@@ -62,12 +62,24 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
     cursor: pointer;
   }
   ${css}`;
+
+  let newHTML = `
+  <head>
+  <link
+  rel="stylesheet"
+  href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+  crossOrigin="anonymous"
+/>
+</head>
+  ${html}
+  `;
   return (
     <TemplateStyles className="grid__item" css={css}>
       <div className="grid__header">
         <div className="grid__name">{title}</div>
         <div className="grid__copies">
-          <div className="grid__copy" onClick={() => copyToClipboard(html)}>
+          <div className="grid__copy" onClick={() => copyToClipboard(newHTML)}>
             Copy HTML
           </div>
           <div className="grid__copy" onClick={() => copyToClipboard(newCss)}>
