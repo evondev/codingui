@@ -2,6 +2,8 @@ import styled from "styled-components";
 export const GridStyles = styled.div`
   --font-code: "SF Mono";
   --code-bg: #292e3e;
+  max-width: 1440px;
+  margin: 0 auto;
   .grid {
     padding: 1rem;
     @media screen and (min-width: 768px) {

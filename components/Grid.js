@@ -20,6 +20,7 @@ import { AvatarInfo } from "./Layout";
 import { Labels } from "./Tags";
 import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
+import { SingleLine, MultiLine, TextGradient } from "./Text";
 
 const Grid = () => {
   return (
@@ -36,6 +37,7 @@ const Grid = () => {
           <Pagination></Pagination>
           <ResponsiveMedia></ResponsiveMedia>
           <Triangle></Triangle>
+          <SingleLine></SingleLine>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
@@ -46,6 +48,7 @@ const Grid = () => {
           <Labels></Labels>
           <RoundedImage></RoundedImage>
           <Calculation></Calculation>
+          <MultiLine></MultiLine>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -58,12 +61,9 @@ const Grid = () => {
           <SearchForm></SearchForm>
           <CaptainShield></CaptainShield>
           <Notification></Notification>
+          <TextGradient></TextGradient>
         </div>
       </div>
-      {/* <div className="grid">
-        <div className="grid__column"></div>
-        <div className="grid__column"></div>
-      </div> */}
     </GridStyles>
   );
 };

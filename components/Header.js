@@ -65,6 +65,9 @@ const Header = () => {
         <span className="filter-item" data-source="singlediv">
           1 Div
         </span>
+        <span className="filter-item" data-source="text">
+          Text
+        </span>
       </FilterStyles>
     </>
   );
