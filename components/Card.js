@@ -6,6 +6,7 @@ const CardMessage = () => {
     <>
       <Template
         title="Flash Messages"
+        source="noti"
         html={`<div class="flash-message">
         <i class="fal fa-check-circle icon"></i>
         <h3 class="title">Done</h3>
@@ -54,6 +55,7 @@ const Notification = () => {
     <>
       <Template
         title="Notification"
+        source="noti"
         html={`<div class="noti noti--success">
         <i class="fal fa-bell icon"></i>
         <p class="desc"><strong>Well done</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>

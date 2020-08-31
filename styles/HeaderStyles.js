@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const HeaderStyles = styled.header`
   padding: 2.5rem 0;
-  margin-bottom: 2.5rem;
   text-align: center;
   background-color: white;
 
@@ -13,7 +12,7 @@ export const HeaderStyles = styled.header`
   .slogan {
     font-size: 1.4rem;
     line-height: 1.6;
-    max-width: 30rem;
+    max-width: 40rem;
     margin: 1rem auto 0;
     color: #999;
   }

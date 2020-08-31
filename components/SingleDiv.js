@@ -6,6 +6,7 @@ const CaptainShield = () => {
     <>
       <Template
         title="Captain America Shield"
+        source="singlediv"
         html={`<div class="captain-shield">★</div>`}
         css={`
           .captain-shield {

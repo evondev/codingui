@@ -75,7 +75,7 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
   ${html}
   `;
   return (
-    <TemplateStyles className="grid__item" css={css}>
+    <TemplateStyles className="grid__item" data-source={source} css={css}>
       <div className="grid__header">
         <div className="grid__name">{title}</div>
         <div className="grid__copies">
@@ -88,11 +88,6 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
         </div>
       </div>
       {html && <div className="grid__result">{parse(html)}</div>}
-      {/* {source && <div className="grid__source">{source}</div>} */}
-      {/* <div className="tag">
-        <span className="tag-item tag-html">html</span>
-        <span className="tag-item tag-css">css</span>
-      </div> */}
     </TemplateStyles>
   );
 };

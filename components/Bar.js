@@ -6,6 +6,7 @@ const ProgressBar = () => {
     <>
       <Template
         title="ProgressBar"
+        source="progress"
         html={`<div class="bar">
         <div class="bar-percent" style="width: 25%;"></div>
       </div>
@@ -44,6 +45,7 @@ const CircleBar = () => {
     <>
       <Template
         title="CircleBar"
+        source="progress"
         html={`<div class="circle-bar">
         <div class="circle-bar-percent"></div>
       </div>`}

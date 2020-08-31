@@ -19,6 +19,7 @@ import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels } from "./Tags";
 import { SearchForm } from "./Form";
+import { CaptainShield } from "./SingleDiv";
 
 const Grid = () => {
   return (
@@ -44,6 +45,7 @@ const Grid = () => {
           <CustomRadio></CustomRadio>
           <Labels></Labels>
           <RoundedImage></RoundedImage>
+          <Calculation></Calculation>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -54,16 +56,14 @@ const Grid = () => {
           <AvatarInfo></AvatarInfo>
           <ResponsiveImage></ResponsiveImage>
           <SearchForm></SearchForm>
-        </div>
-      </div>
-      <div className="grid grid--2">
-        <div className="grid__column">
+          <CaptainShield></CaptainShield>
           <Notification></Notification>
         </div>
-        <div className="grid__column">
-          <Calculation></Calculation>
-        </div>
       </div>
+      {/* <div className="grid">
+        <div className="grid__column"></div>
+        <div className="grid__column"></div>
+      </div> */}
     </GridStyles>
   );
 };

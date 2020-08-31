@@ -5,6 +5,7 @@ const CircleImage = () => {
   return (
     <Template
       title="Circle Image"
+      source="image"
       html={`<img class="circle-image lazyload" data-src="/images/code.jpeg"/>`}
       css={`
         .circle-image {
@@ -22,6 +23,7 @@ const RoundedImage = () => {
   return (
     <Template
       title="Rounded Image"
+      source="image"
       html={`<img class="rounded-image lazyload" data-src="/images/code.jpeg"/>`}
       css={`
         .rounded-image {
@@ -39,6 +41,7 @@ const Triangle = () => {
   return (
     <Template
       title="Triangle"
+      source="image"
       html={`<div class="triangle"></div>`}
       css={`
         .triangle {

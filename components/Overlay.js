@@ -3,9 +3,9 @@ import Template from "./Template";
 
 const OverlayIcon = () => {
   return (
-    // <div class="overlay"><img src="" alt="" class="overlay-image"/><i class="fa fa-play-circle"></i></div>
     <Template
       title="Overlay Icon"
+      source="overlay"
       html={`<div class="overlay-icon"><img data-src="/images/code.jpeg" class="lazyload"/><i class="fa fa-play-circle"></i></div>`}
       css={`
         .overlay-icon {

@@ -6,6 +6,7 @@ const Dropdown = () => {
     <>
       <Template
         title="Dropdown"
+        source="list"
         html={`<div class="dropdown">
       <div class="dropdown__select">
         <span class="dropdown__selected">Call to action</span>

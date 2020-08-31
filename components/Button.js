@@ -5,6 +5,7 @@ const ButtonWithIcon = () => {
   return (
     <Template
       title="Button with icon"
+      source="form"
       html={`<button class="button-icon"><i class="fab fa-youtube icon"></i><span class="text">Youtube</span></button>`}
       css={`
         .button-icon {
@@ -37,6 +38,7 @@ const GradientButton = () => {
   return (
     <Template
       title="Gradient Button"
+      source="form"
       html={`<button class="gradient-button">Gradient Button</button>`}
       css={`
         .gradient-button {
@@ -59,6 +61,7 @@ const RoundedButton = () => {
   return (
     <Template
       title="Rounded Button"
+      source="form"
       html={`<button class="rounded-button">Rounded button</button>`}
       css={`
         .rounded-button {
@@ -82,6 +85,7 @@ const OutlineButton = () => {
   return (
     <Template
       title="Outline Button"
+      source="form"
       html={`<button class="outline-button">Outline button</button>`}
       css={`
         .outline-button {
@@ -107,6 +111,7 @@ const FloatingButton = () => {
   return (
     <Template
       title="Floating Button"
+      source="form"
       html={`<button class="floating-button"><i class="fa fa-bolt"></i></button>`}
       css={`
         .floating-button {

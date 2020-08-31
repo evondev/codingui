@@ -5,6 +5,7 @@ const InputWithButton = () => {
   return (
     <Template
       title="Input with Button"
+      source="form"
       html={`<div class="input-button">
             <input type="text" placeholder="Your email address..." />
             <button>Subscribe</button>
@@ -34,6 +35,7 @@ const InputWithIcon = () => {
   return (
     <Template
       title="Input with Icon"
+      source="form"
       html={`<div class="input-icon">
             <input type="email" placeholder="Email address" />
             <i class="fa fa-check"></i>

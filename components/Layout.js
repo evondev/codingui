@@ -6,6 +6,7 @@ const AvatarInfo = () => {
     <>
       <Template
         title="Avatar with Info"
+        source="layout"
         html={`<div class="avatar-info">
         <img
           src="https://images.unsplash.com/photo-1598134493202-9a02529d86bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"

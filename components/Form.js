@@ -6,6 +6,7 @@ const SearchForm = () => {
     <>
       <Template
         title="Search Input"
+        source="form"
         html={`<div class="search-form"><i class="fal fa-search search-form__icon"></i><input type="text" placeholder="Search" class="search-form__input"/></div>`}
         css={`
           .search-form {

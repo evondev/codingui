@@ -6,6 +6,7 @@ const Labels = () => {
     <>
       <Template
         title="Labels"
+        source="list"
         html={`<div class="label">
         <span class="label-item">Default</span>
         <span class="label-item success">Success</span>

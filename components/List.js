@@ -6,6 +6,7 @@ const SocialShare = () => {
     <>
       <Template
         title="Social Share"
+        source="list"
         html={`<ul class="social-share">
         <li class="social-item social-item--facebook">
           <i class="fab fa-facebook-square"></i>
@@ -57,6 +58,7 @@ const Pagination = () => {
     <>
       <Template
         title="Pagination"
+        source="list"
         html={`<ul class="pagi">
         <li class="pagi-item pagi-action pagi-prev is-disabled">
           <i class="fal fa-angle-left"></i>
@@ -103,6 +105,7 @@ const Countdown = () => {
     <>
       <Template
         title="Countdown Timer"
+        source="list"
         html={`<ul class="countdown"><li class="countdown-item"><span class="countdown-number days">28</span><span class="countdown-text">days</span></li><li class="countdown-item"><span class="countdown-number hours">10</span><span class="countdown-text">hours</span></li><li class="countdown-item"><span class="countdown-number minutes">40</span><span class="countdown-text">minutes</span></li><li class="countdown-item"><span class="countdown-number seconds">53</span><span class="countdown-text">seconds</span></li></ul>`}
         css={`
           .countdown {
@@ -146,6 +149,7 @@ const Calculation = () => {
     <>
       <Template
         title="Calculation"
+        source="list"
         html={`
 <div class="calc" id="calc">
   <div class="calc__header"><span class="calc__header-result" id="calc__header-result">0</span></div>
