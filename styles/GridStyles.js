@@ -34,6 +34,9 @@ export const GridStyles = styled.div`
     color: #333;
     display: inline-block;
     max-width: 22rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .grid__desc {
@@ -47,6 +50,9 @@ export const GridStyles = styled.div`
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 1rem;
+  }
+  .grid__copies {
+    white-space: nowrap;
   }
   .grid__copy {
     cursor: pointer;
