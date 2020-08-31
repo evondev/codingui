@@ -8,7 +8,7 @@ export const GridStyles = styled.div`
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
       grid-gap: 5rem;
-      padding: 2rem 5rem;
+      padding: 2rem 5rem 0;
       &--2 {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -21,10 +21,6 @@ export const GridStyles = styled.div`
     padding: 1rem 2rem 2rem;
     /* box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.15); */
     border-radius: 2px;
-  }
-
-  .grid__column {
-    margin-bottom: 3rem;
   }
 
   .grid__name {

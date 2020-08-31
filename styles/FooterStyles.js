@@ -9,4 +9,7 @@ export const FooterStyles = styled.footer`
   .heart {
     color: #ff7870;
   }
+  a {
+    color: #ff7870;
+  }
 `;

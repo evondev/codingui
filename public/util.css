@@ -25,6 +25,10 @@ body {
   background-color: #f5f6f7;
 }
 
+strong {
+  font-weight: bold;
+}
+
 img {
   display: block;
   max-width: 100%;

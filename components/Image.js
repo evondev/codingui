@@ -18,5 +18,40 @@ const CircleImage = () => {
     ></Template>
   );
 };
+const RoundedImage = () => {
+  return (
+    <Template
+      title="Rounded Image"
+      html={`<img class="rounded-image lazyload" data-src="/images/code.jpeg"/>`}
+      css={`
+        .rounded-image {
+          margin: 0 auto;
+          width: 20rem;
+          height: 20rem;
+          border-radius: 8px;
+          object-fit: cover;
+        }
+      `}
+    ></Template>
+  );
+};
+const Triangle = () => {
+  return (
+    <Template
+      title="Triangle"
+      html={`<div class="triangle"></div>`}
+      css={`
+        .triangle {
+          margin: 1rem;
+          width: 0;
+          height: 0;
+          border-left: 5rem solid transparent;
+          border-right: 5rem solid transparent;
+          border-bottom: 5rem solid #ff7870;
+        }
+      `}
+    ></Template>
+  );
+};
 
-export { CircleImage };
+export { CircleImage, RoundedImage, Triangle };

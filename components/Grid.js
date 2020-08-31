@@ -1,18 +1,24 @@
 import React from "react";
 import { GridStyles } from "../styles/GridStyles";
-import { ButtonWithIcon, GradientButton, FloatingButton } from "./Button";
+import {
+  ButtonWithIcon,
+  GradientButton,
+  FloatingButton,
+  RoundedButton,
+  OutlineButton,
+} from "./Button";
 import { InputWithButton, InputWithIcon } from "./Input";
-import { CircleImage } from "./Image";
+import { CircleImage, RoundedImage, Triangle } from "./Image";
 import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown, Calculation } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { CardMessage } from "./Card";
+import { CardMessage, Notification } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
-import { CaptainShield } from "./SingleDiv";
-import { DatingForm } from "./Form";
+import { Labels } from "./Tags";
+import { SearchForm } from "./Form";
 
 const Grid = () => {
   return (
@@ -22,11 +28,13 @@ const Grid = () => {
           <InputWithButton></InputWithButton>
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
+          <RoundedButton></RoundedButton>
+          <OutlineButton></OutlineButton>
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
           <ResponsiveMedia></ResponsiveMedia>
-          <Calculation></Calculation>
+          <Triangle></Triangle>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
@@ -34,7 +42,8 @@ const Grid = () => {
           <FloatingButton></FloatingButton>
           <CardMessage></CardMessage>
           <CustomRadio></CustomRadio>
-          <DatingForm></DatingForm>
+          <Labels></Labels>
+          <RoundedImage></RoundedImage>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -44,7 +53,15 @@ const Grid = () => {
           <Countdown></Countdown>
           <AvatarInfo></AvatarInfo>
           <ResponsiveImage></ResponsiveImage>
-          <CaptainShield></CaptainShield>
+          <SearchForm></SearchForm>
+        </div>
+      </div>
+      <div className="grid grid--2">
+        <div className="grid__column">
+          <Notification></Notification>
+        </div>
+        <div className="grid__column">
+          <Calculation></Calculation>
         </div>
       </div>
     </GridStyles>

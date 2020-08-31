@@ -14,7 +14,7 @@ const CardMessage = () => {
       </div>`}
         css={`
           .flash-message {
-            max-width: 25rem;
+            max-width: 30rem;
             margin: 0 auto;
             padding: 2rem;
             background-color: #00e06d;
@@ -23,7 +23,7 @@ const CardMessage = () => {
             border-radius: 4px;
           }
           .flash-message .icon {
-            font-size: 10rem;
+            font-size: 6rem;
             margin-bottom: 3rem;
           }
           .flash-message .title {
@@ -33,7 +33,7 @@ const CardMessage = () => {
           }
           .flash-message .desc {
             font-size: 1.4rem;
-            line-height: 1.8;
+            line-height: 1.4;
             margin-bottom: 2rem;
           }
           .flash-message .cont {
@@ -49,5 +49,63 @@ const CardMessage = () => {
     </>
   );
 };
+const Notification = () => {
+  return (
+    <>
+      <Template
+        title="Notification"
+        html={`<div class="noti noti--success">
+        <i class="fal fa-bell icon"></i>
+        <p class="desc"><strong>Well done</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <i class="fal fa-times close"></i>
+      </div>
+      <div class="noti noti--warning">
+        <i class="fal fa-exclamation-triangle icon"></i>
+        <p class="desc"><strong>Warning</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <i class="fal fa-times close"></i>
+      </div>
+      <div class="noti noti--danger">
+        <i class="fal fa-radiation icon"></i>
+        <p class="desc"><strong>Danger</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        <i class="fal fa-times close"></i>
+      </div>
+      `}
+        css={`
+          .noti {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            border-radius: 6px;
+            color: white;
+            margin-bottom: 1rem;
+          }
+          .noti--success {
+            background-color: #00bf9a;
+          }
+          .noti--warning {
+            background-color: #ffa400;
+          }
+          .noti--danger {
+            background-color: #ff7870;
+          }
+          .noti .icon {
+            font-size: 2rem;
+            margin-right: 2rem;
+          }
+          .noti .desc {
+            font-weight: 300;
+            font-size: 1.4rem;
+            padding-right: 2rem;
+            line-height: 1.6;
+          }
+          .noti .close {
+            margin-left: auto;
+            cursor: pointer;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
 
-export { CardMessage };
+export { CardMessage, Notification };

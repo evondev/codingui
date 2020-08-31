@@ -7,18 +7,31 @@ const ProgressBar = () => {
       <Template
         title="ProgressBar"
         html={`<div class="bar">
+        <div class="bar-percent" style="width: 25%;"></div>
+      </div>
+      <div class="bar bar--warning">
+        <div class="bar-percent" style="width: 55%;"></div>
+      </div>
+      <div class="bar bar--danger">
         <div class="bar-percent" style="width: 75%;"></div>
       </div>`}
         css={`
           .bar {
             width: 100%;
-            height: 4rem;
-            border-radius: 2px;
+            height: 1rem;
+            border-radius: 5rem;
             border: 1px solid #eee;
+            margin-bottom: 1rem;
+          }
+          .bar--danger .bar-percent {
+            background-color: #ff7870;
+          }
+          .bar--warning .bar-percent {
+            background-color: #ffa400;
           }
           .bar-percent {
             height: 100%;
-            background-image: var(--gradient);
+            background-color: #07a787;
             border-radius: inherit;
           }
         `}

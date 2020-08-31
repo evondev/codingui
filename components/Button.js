@@ -37,7 +37,7 @@ const GradientButton = () => {
   return (
     <Template
       title="Gradient Button"
-      html={`<button class="gradient-button">Love me</button>`}
+      html={`<button class="gradient-button">Gradient Button</button>`}
       css={`
         .gradient-button {
           padding: 1.5rem 2rem;
@@ -50,6 +50,53 @@ const GradientButton = () => {
           outline: none;
           font-family: "Montserrat", sans-serif;
           background-image: var(--gradient);
+        }
+      `}
+    ></Template>
+  );
+};
+const RoundedButton = () => {
+  return (
+    <Template
+      title="Rounded Button"
+      html={`<button class="rounded-button">Rounded button</button>`}
+      css={`
+        .rounded-button {
+          border-radius: 100rem;
+          padding: 1.5rem 2rem;
+          color: white;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          width: 100%;
+          font-weight: bold;
+          cursor: pointer;
+          outline: none;
+          font-family: "Montserrat", sans-serif;
+          background-color: #e14eca;
+        }
+      `}
+    ></Template>
+  );
+};
+const OutlineButton = () => {
+  return (
+    <Template
+      title="Outline Button"
+      html={`<button class="outline-button">Outline button</button>`}
+      css={`
+        .outline-button {
+          border-radius: 100rem;
+          padding: 1.5rem 2rem;
+          color: white;
+          font-size: 1.6rem;
+          text-transform: uppercase;
+          width: 100%;
+          cursor: pointer;
+          outline: none;
+          font-family: "Montserrat", sans-serif;
+          background-color: transparent;
+          color: #e14eca;
+          border: 1px solid currentColor;
         }
       `}
     ></Template>
@@ -80,4 +127,10 @@ const FloatingButton = () => {
   );
 };
 
-export { ButtonWithIcon, GradientButton, FloatingButton };
+export {
+  ButtonWithIcon,
+  GradientButton,
+  FloatingButton,
+  RoundedButton,
+  OutlineButton,
+};

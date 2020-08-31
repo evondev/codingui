@@ -6,8 +6,8 @@ const InputWithButton = () => {
     <Template
       title="Input with Button"
       html={`<div class="input-button">
-            <input type="text" placeholder="Searching..." />
-            <button>Send</button>
+            <input type="text" placeholder="Your email address..." />
+            <button>Subscribe</button>
           </div>`}
       css={`
         .input-button {

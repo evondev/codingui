@@ -3,7 +3,6 @@ export const HeaderStyles = styled.header`
   padding: 2.5rem 0;
   margin-bottom: 2.5rem;
   text-align: center;
-  border-bottom: 1px solid #eee;
   background-color: white;
 
   .logo {
@@ -16,7 +15,7 @@ export const HeaderStyles = styled.header`
     line-height: 1.6;
     max-width: 30rem;
     margin: 1rem auto 0;
-    color: #333;
+    color: #999;
   }
   .contact-me {
     display: inline-block;
