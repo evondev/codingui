@@ -62,8 +62,8 @@ const Header = () => {
         <span className="filter-item" data-source="progress">
           Progress
         </span>
-        <span className="filter-item" data-source="singlediv">
-          1 Div
+        <span className="filter-item" data-source="loading">
+          Loading
         </span>
         <span className="filter-item" data-source="text">
           Text

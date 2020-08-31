@@ -6,21 +6,23 @@ import {
   FloatingButton,
   RoundedButton,
   OutlineButton,
+  LoadingButton,
 } from "./Button";
-import { InputWithButton, InputWithIcon } from "./Input";
+import { InputWithButton, InputWithIcon, InputFile } from "./Input";
 import { CircleImage, RoundedImage, Triangle } from "./Image";
 import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown, Calculation } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { CardMessage, Notification } from "./Card";
+import { Notification } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels } from "./Tags";
 import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
+import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
 
 const Grid = () => {
   return (
@@ -38,17 +40,21 @@ const Grid = () => {
           <ResponsiveMedia></ResponsiveMedia>
           <Triangle></Triangle>
           <SingleLine></SingleLine>
+          <CircleLoading></CircleLoading>
+          <LoadingButton></LoadingButton>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
           <OverlayIcon></OverlayIcon>
           <FloatingButton></FloatingButton>
-          <CardMessage></CardMessage>
+          {/* <CardMessage></CardMessage> */}
           <CustomRadio></CustomRadio>
           <Labels></Labels>
           <RoundedImage></RoundedImage>
           <Calculation></Calculation>
           <MultiLine></MultiLine>
+          <LineLoading></LineLoading>
+          <InputFile></InputFile>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -62,6 +68,7 @@ const Grid = () => {
           <CaptainShield></CaptainShield>
           <Notification></Notification>
           <TextGradient></TextGradient>
+          <DotsLoading></DotsLoading>
         </div>
       </div>
     </GridStyles>

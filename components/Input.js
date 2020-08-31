@@ -67,4 +67,51 @@ const InputWithIcon = () => {
   );
 };
 
-export { InputWithIcon, InputWithButton };
+const InputFile = () => {
+  return (
+    <>
+      <Template
+        title="Custom input file"
+        source="input"
+        html={`<div class="input-file">
+        <input type="file" name="file" id="file"/>
+        <label for="file" class="input-label">
+          <i class="fad fa-cloud-upload-alt icon-upload"></i>
+        </label>
+      </div>`}
+        css={`
+          .input-file {
+            margin: 0 auto;
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+          }
+          .input-label {
+            border-radius: 8px;
+            border: 2px solid var(--purple);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            cursor: pointer;
+          }
+          .input-file input[type="file"] {
+            display: none;
+          }
+          .input-file .icon-upload {
+            color: var(--purple);
+            font-size: 5rem;
+            pointer-events: none;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { InputWithIcon, InputWithButton, InputFile };

@@ -61,16 +61,6 @@ const Notification = () => {
         <p class="desc"><strong>Well done</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         <i class="fal fa-times close"></i>
       </div>
-      <div class="noti noti--warning">
-        <i class="fal fa-exclamation-triangle icon"></i>
-        <p class="desc"><strong>Warning</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <i class="fal fa-times close"></i>
-      </div>
-      <div class="noti noti--danger">
-        <i class="fal fa-radiation icon"></i>
-        <p class="desc"><strong>Danger</strong> - Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <i class="fal fa-times close"></i>
-      </div>
       `}
         css={`
           .noti {
@@ -83,12 +73,6 @@ const Notification = () => {
           }
           .noti--success {
             background-color: #00bf9a;
-          }
-          .noti--warning {
-            background-color: #ffa400;
-          }
-          .noti--danger {
-            background-color: #ff7870;
           }
           .noti .icon {
             font-size: 2rem;

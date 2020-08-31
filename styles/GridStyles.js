@@ -4,6 +4,7 @@ export const GridStyles = styled.div`
   --code-bg: #292e3e;
   max-width: 1440px;
   margin: 0 auto;
+  min-height: calc(100vh - 30rem);
   .grid {
     padding: 1rem;
     @media screen and (min-width: 768px) {

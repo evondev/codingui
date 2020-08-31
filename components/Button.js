@@ -131,6 +131,30 @@ const FloatingButton = () => {
     ></Template>
   );
 };
+const LoadingButton = () => {
+  return (
+    <Template
+      title="Loading Button"
+      source="form"
+      html={`<button class="loading-button"><i class="fa fa-spinner fa-spin"></i></button>`}
+      css={`
+        .loading-button {
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 3rem;
+          color: white;
+          width: 100%;
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      `}
+    ></Template>
+  );
+};
 
 export {
   ButtonWithIcon,
@@ -138,4 +162,5 @@ export {
   FloatingButton,
   RoundedButton,
   OutlineButton,
+  LoadingButton,
 };

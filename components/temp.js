@@ -6,6 +6,7 @@ const GradientButton = () => {
     <>
       <Template
         title="Gradient Button"
+        source=""
         html={`<button class="gradient-button">Love me</button>`}
         css={`
           .gradient-button {
