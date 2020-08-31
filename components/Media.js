@@ -10,6 +10,10 @@ const ResponsiveMedia = () => {
       <iframe width="805" height="503" src="https://www.youtube.com/embed/Zpu-Ple4HP8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>`}
         css={`
+          .responsive-media > * {
+            max-width: 100%;
+            height: auto;
+          }
           @media screen and (min-width: 768px) {
             .responsive-media {
               position: relative;
