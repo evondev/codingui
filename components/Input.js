@@ -16,6 +16,7 @@ const InputWithButton = () => {
           background-color: #eee;
         }
         .input-button input {
+          width: 100%;
           flex: 1;
           padding: 1.5rem;
           background-color: transparent;
