@@ -22,7 +22,6 @@ export const GridStyles = styled.div`
     margin-bottom: 5rem;
     background-color: white;
     padding: 1rem 2rem 2rem;
-    /* box-shadow: 0 5px 30px -15px rgba(0, 0, 0, 0.15); */
     border-radius: 2px;
   }
 
@@ -55,8 +54,6 @@ export const GridStyles = styled.div`
   }
   .grid__copy {
     cursor: pointer;
-    /* text-transform: uppercase; */
-    /* background-color: #fafafa; */
     color: #999;
     font-size: 1.2rem;
     padding: 1rem;
@@ -64,28 +61,40 @@ export const GridStyles = styled.div`
     font-weight: normal;
     transition: 0.2s linear;
   }
-  .grid__code {
-    position: relative;
-    margin-top: 5rem;
-  }
-
-  .grid__code:before {
-    content: "HTML";
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    display: inline-block;
-    padding: 5px;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    background-color: #fafafa;
+  .grid__show {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    justify-content: flex-end;
+    margin-left: auto;
+    width: max-content;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: #eee;
     color: #999;
-    font-weight: 600;
-    letter-spacing: 2px;
+    &.active {
+      color: white;
+      background-color: #ccc;
+    }
   }
-  .grid__code.grid__css:before {
-    content: "CSS";
+  .grid__code {
+    margin-top: 2rem;
+    max-height: 20rem;
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    &::-webkit-scrollbar-track {
+      border-radius: 5rem;
+      background-color: #eee;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 5rem;
+    }
   }
 
   .grid pre[class*="language-"] {
@@ -93,11 +102,11 @@ export const GridStyles = styled.div`
   }
   .grid code[class*="language-"],
   .grid pre {
-    white-space: nowrap;
     font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
-    padding: 1rem !important;
+    line-height: 1.6;
+    max-width: 100%;
     &::-webkit-scrollbar {
       display: none;
       width: 0;

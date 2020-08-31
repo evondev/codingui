@@ -2,6 +2,11 @@ import React from "react";
 import parse from "react-html-parser";
 import copyToClipboard from "../lib/copyToClipboard";
 import styled from "styled-components";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import cssbeautify from "cssbeautify";
+import pretty from "pretty";
+import { useState } from "react";
+import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 
 const TemplateStyles = styled.div`
   ${(props) => props.css}
@@ -74,6 +79,9 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
 </head>
   ${html}
   `;
+
+  const [showCode, setShowCode] = useState(false);
+
   return (
     <TemplateStyles className="grid__item" data-source={source} css={css}>
       <div className="grid__header">
@@ -88,6 +96,29 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
         </div>
       </div>
       {html && <div className="grid__result">{parse(html)}</div>}
+      <div
+        className={`grid__show ${showCode ? "active" : ""}`}
+        onClick={() => setShowCode(!showCode)}
+      >
+        Show code
+      </div>
+      {showCode && (
+        <>
+          <div className="grid__code">
+            <SyntaxHighlighter language="html" style={docco} wrapLines={true}>
+              {pretty(html, { ocd: true })}
+            </SyntaxHighlighter>
+          </div>
+          <div className="grid__code">
+            <SyntaxHighlighter language="css" style={docco} wrapLines={true}>
+              {cssbeautify(css, {
+                indent: `   `,
+                autosemicolon: true,
+              })}
+            </SyntaxHighlighter>
+          </div>
+        </>
+      )}
     </TemplateStyles>
   );
 };
