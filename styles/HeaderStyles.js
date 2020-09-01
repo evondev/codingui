@@ -3,11 +3,16 @@ export const HeaderStyles = styled.header`
   padding: 2.5rem 0;
   text-align: center;
   background-color: white;
-
   .logo {
+    max-width: 7.5rem;
+    margin: 0 auto 2rem;
+  }
+  .heading {
+    text-transform: uppercase;
     font-weight: bold;
-    font-size: 3rem;
-    color: #001940;
+    font-size: 4rem;
+    color: #5e6b79;
+    letter-spacing: 5px;
   }
   .slogan {
     font-size: 1.4rem;
