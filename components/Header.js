@@ -3,7 +3,7 @@ import { HeaderStyles } from "../styles/HeaderStyles";
 import { FilterStyles } from "../styles/FilterStyles";
 import { useEffect } from "react";
 import { useState } from "react";
-import fire, { firebaseApp } from "../vendors/fire";
+import { firebaseApp } from "../vendors/fire";
 
 const Header = () => {
   const [loveCount, setLoveCount] = useState(1);
@@ -71,13 +71,15 @@ const Header = () => {
             Just a simple place to share a lot of free UIs
           </p>
         </div>
-        <div className="love">
-          <span className="love-count">{loveCount}</span>
-          <div className="love-icon" onClick={handleLove}>
-            <i className="fa fa-heart"></i>
-            <i className="fa fa-heart love-heart"></i>
+        {loveCount > 1 && (
+          <div className="love">
+            <span className="love-count">{loveCount}</span>
+            <div className="love-icon" onClick={handleLove}>
+              <i className="fa fa-heart"></i>
+              <i className="fa fa-heart love-heart"></i>
+            </div>
           </div>
-        </div>
+        )}
       </HeaderStyles>
       <FilterStyles>
         <span className="filter-item active" data-source="all">

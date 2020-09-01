@@ -76,19 +76,19 @@ const InputFile = () => {
         html={`<div class="input-file">
         <input type="file" name="file" id="file"/>
         <label for="file" class="input-label">
-          <i class="fad fa-cloud-upload-alt icon-upload"></i>
+          <i class="fas fa-cloud-upload-alt icon-upload"></i>
         </label>
       </div>`}
         css={`
           .input-file {
             margin: 0 auto;
-            width: 15rem;
+            width: 100%;
             height: 15rem;
             position: relative;
           }
           .input-label {
             border-radius: 8px;
-            border: 2px solid var(--purple);
+            border: 1px dotted #eee;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -104,8 +104,8 @@ const InputFile = () => {
             display: none;
           }
           .input-file .icon-upload {
-            color: var(--purple);
-            font-size: 5rem;
+            color: #ccc;
+            font-size: 3rem;
             pointer-events: none;
           }
         `}

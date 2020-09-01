@@ -13,7 +13,7 @@ const SingleLine = () => {
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            color: #999;
+            color: #333;
             font-size: 1.4rem;
             line-height: 1.4;
           }
@@ -31,7 +31,7 @@ const MultiLine = () => {
         html={`<p class="multi-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptas incidunt! Nulla tenetur consequatur nostrum dignissimos temporibus iure assumenda iste quia, quam voluptates totam. Libero laboriosam ipsa voluptates voluptatem ad!</p>`}
         css={`
           .multi-line {
-            color: #999;
+            color: #333;
             font-size: 1.4rem;
             line-height: 1.4;
             display: -webkit-box;

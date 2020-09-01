@@ -64,7 +64,6 @@ export const GridStyles = styled.div`
   .grid__show {
     display: flex;
     margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
     font-size: 1.2rem;
     justify-content: flex-end;
     margin-left: auto;

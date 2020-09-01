@@ -14,7 +14,8 @@ export const HeaderStyles = styled.header`
     &-count {
       color: #999;
       display: inline-block;
-      margin-bottom: 1rem;
+      margin-bottom: 5px;
+      font-size: 1.4rem;
     }
     &-icon {
       position: relative;
@@ -27,8 +28,7 @@ export const HeaderStyles = styled.header`
       cursor: pointer;
       color: rgb(226, 45, 72);
       background-color: white;
-      box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
-        -9px -9px 16px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 20px -10px rgba(0, 0, 0, 0.2);
       i {
         pointer-events: none;
       }
