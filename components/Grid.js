@@ -40,8 +40,8 @@ const Grid = () => {
           <ResponsiveMedia></ResponsiveMedia>
           <Triangle></Triangle>
           <SingleLine></SingleLine>
-          <CircleLoading></CircleLoading>
-          <LoadingButton></LoadingButton>
+          {/* <CircleLoading></CircleLoading> */}
+          {/* <LoadingButton></LoadingButton> */}
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
@@ -53,7 +53,7 @@ const Grid = () => {
           <RoundedImage></RoundedImage>
           <Calculation></Calculation>
           <MultiLine></MultiLine>
-          <LineLoading></LineLoading>
+          {/* <LineLoading></LineLoading> */}
           <InputFile></InputFile>
         </div>
         <div className="grid__column">
@@ -68,7 +68,7 @@ const Grid = () => {
           <CaptainShield></CaptainShield>
           <Notification></Notification>
           <TextGradient></TextGradient>
-          <DotsLoading></DotsLoading>
+          {/* <DotsLoading></DotsLoading> */}
         </div>
       </div>
     </GridStyles>

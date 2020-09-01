@@ -2,8 +2,12 @@ import React from "react";
 import { HeaderStyles } from "../styles/HeaderStyles";
 import { FilterStyles } from "../styles/FilterStyles";
 import { useEffect } from "react";
+import { useState } from "react";
+import fire, { firebaseApp } from "../vendors/fire";
 
 const Header = () => {
+  const [loveCount, setLoveCount] = useState(1);
+
   useEffect(() => {
     const gridItems = document.querySelectorAll(".grid__item");
     const filterItems = document.querySelectorAll(".filter-item");
@@ -30,6 +34,33 @@ const Header = () => {
         item.addEventListener("click", handleFilterItems)
       );
   }, []);
+
+  useEffect(() => {
+    firebaseApp
+      ?.database()
+      ?.ref("love")
+      .on("value", function (snapshot) {
+        setLoveCount(snapshot.val().value + 1);
+      });
+  }, [loveCount]);
+
+  const handleLove = () => {
+    setLoveCount(loveCount + 1);
+    firebaseApp?.database()?.ref("love").set({ value: loveCount });
+    const loveIcon = document.querySelector(".love-icon");
+    const loveHeart = document.querySelector(".love-heart");
+    if (loveIcon && loveHeart) {
+      loveIcon.classList.add("active");
+      loveHeart.classList.add("active");
+      setTimeout(() => {
+        loveIcon.classList.remove("active");
+      }, 50);
+      setTimeout(() => {
+        loveHeart.classList.remove("active");
+      }, 250);
+    }
+  };
+
   return (
     <>
       <HeaderStyles>
@@ -39,6 +70,13 @@ const Header = () => {
           <p className="slogan">
             Just a simple place to share a lot of free UIs
           </p>
+        </div>
+        <div className="love">
+          <span className="love-count">{loveCount}</span>
+          <div className="love-icon" onClick={handleLove}>
+            <i className="fa fa-heart"></i>
+            <i className="fa fa-heart love-heart"></i>
+          </div>
         </div>
       </HeaderStyles>
       <FilterStyles>

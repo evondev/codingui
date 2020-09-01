@@ -3,6 +3,63 @@ export const HeaderStyles = styled.header`
   padding: 2.5rem 0;
   text-align: center;
   background-color: white;
+  .love {
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    z-index: 99;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    &-count {
+      color: #999;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    &-icon {
+      position: relative;
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5rem;
+      cursor: pointer;
+      color: rgb(226, 45, 72);
+      background-color: white;
+      box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+        -9px -9px 16px rgba(255, 255, 255, 0.5);
+      i {
+        pointer-events: none;
+      }
+      &.active {
+        animation: clicked 0.05s forwards alternate 1 linear;
+      }
+    }
+    &-heart {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      &.active {
+        animation: loveFly 0.25s forwards 1 linear;
+      }
+    }
+  }
+  @keyframes loveFly {
+    to {
+      transform: translate(-50%, -10rem);
+      opacity: 0;
+    }
+  }
+  @keyframes clicked {
+    from {
+      transform: scale(1) translateY(0);
+    }
+    to {
+      transform: scale(0.9) translateY(5px);
+    }
+  }
   .logo {
     max-width: 7.5rem;
     margin: 0 auto 2rem;
