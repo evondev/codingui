@@ -1,11 +1,11 @@
 :root {
   --primary: #08aeea;
-  --secondary: #2af598;
+  --secondary: #13d2b8;
   --purple: #bd93f9;
   --pink: #ff6bcb;
   --blue: #8be9fd;
   --gray: #333;
-  --font: "Montserrat", sans-serif;
+  --font: "Poppins", sans-serif;
   --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
 }
 *,
@@ -21,9 +21,10 @@ html {
 
 body {
   font-family: var(--font);
-  font-size: 16px;
   overflow-x: hidden;
   background-color: #f5f6f7;
+  font-weight: 300;
+  font-size: 1.4rem;
 }
 
 strong {
@@ -44,7 +45,8 @@ button,
 textarea,
 select {
   font-family: var(--font);
-  font-size: 16px;
+  font-size: 1.4rem;
+  font-weight: 300;
   outline: none;
   border: 0;
   margin: 0;

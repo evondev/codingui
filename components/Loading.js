@@ -25,8 +25,8 @@ const CircleLoading = () => {
             height: 100%;
             border-radius: inherit;
             border: 1rem solid white;
-            border-right-color: #2af598;
-            border-bottom-color: #2af598;
+            border-right-color: var(--secondary);
+            border-bottom-color: var(--secondary);
             animation: circleLoading 1s forwards infinite linear;
           }
           @keyframes circleLoading {

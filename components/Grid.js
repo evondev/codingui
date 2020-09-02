@@ -23,6 +23,8 @@ import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
 import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
+import { IconOpacity, RatingStar } from "./Icon";
+import { MusicPlayer } from "./Player";
 
 const Grid = () => {
   return (
@@ -42,12 +44,12 @@ const Grid = () => {
           <SingleLine></SingleLine>
           <CircleLoading></CircleLoading>
           <LoadingButton></LoadingButton>
+          <IconOpacity></IconOpacity>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
           <OverlayIcon></OverlayIcon>
           <FloatingButton></FloatingButton>
-          {/* <CardMessage></CardMessage> */}
           <CustomRadio></CustomRadio>
           <Labels></Labels>
           <RoundedImage></RoundedImage>
@@ -55,6 +57,7 @@ const Grid = () => {
           <MultiLine></MultiLine>
           <LineLoading></LineLoading>
           <InputFile></InputFile>
+          <RatingStar></RatingStar>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -69,13 +72,8 @@ const Grid = () => {
           <Notification></Notification>
           <TextGradient></TextGradient>
           <DotsLoading></DotsLoading>
+          <MusicPlayer></MusicPlayer>
         </div>
-      </div>
-      <div className="grid">
-        {/* <div className="grid__column"> */}
-        <Flexbox3></Flexbox3>
-        {/* </div> */}
-        {/* <div className="grid__column"></div> */}
       </div>
     </GridStyles>
   );

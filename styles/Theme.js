@@ -1,5 +1,5 @@
 export const theme = {
   primary: "#08aeea",
-  secondary: "#2af598",
+  secondary: "#13D2B8",
   font: "Montserrat",
 };

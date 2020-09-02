@@ -36,7 +36,15 @@ export const GridStyles = styled.div`
     overflow: hidden;
     text-overflow: ellipsis;
   }
-
+  .grid__author {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    color: #999;
+    font-weight: 300;
+    strong {
+      font-weight: 600;
+    }
+  }
   .grid__desc {
     font-size: 1.6rem;
     color: #333;

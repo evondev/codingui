@@ -12,17 +12,24 @@ const TemplateStyles = styled.div`
   ${(props) => props.css}
 `;
 
-const Template = ({ title, html = "", css = "", source = "" }) => {
+const Template = ({
+  title,
+  html = "",
+  css = "",
+  source = "",
+  author = "",
+  authorFrom = "",
+}) => {
   let newCss = `
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
   :root {
     --primary: #08aeea;
-    --secondary: #2af598;
+    --secondary: #13D2B8;
     --purple: #bd93f9;
     --pink: #ff6bcb;
     --blue: #8be9fd;
     --gray: #333;
-    --font: "Montserrat", sans-serif;
+    --font: "Poppins", sans-serif;
     --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
   }
   *,
@@ -35,9 +42,10 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
   }
 
   body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.6rem;
+    font-family: var(--font);
+    font-size: 1.4rem;
     overflow-x: hidden;
+    font-weight: 300;
   }
 
   img {
@@ -53,8 +61,9 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
   button,
   textarea,
   select {
-    font-family: inherit;
-    font-size: 1.6rem;
+    font-family: var(--font);
+    font-size: 1.4rem;
+    font-weight: 300;
     outline: none;
     border: 0;
     margin: 0;
@@ -96,6 +105,16 @@ const Template = ({ title, html = "", css = "", source = "" }) => {
         </div>
       </div>
       {html && <div className="grid__result">{parse(html)}</div>}
+      {author && (
+        <div className="grid__author">
+          Idea from <strong>{author}</strong>{" "}
+          {authorFrom && (
+            <>
+              on <strong>{authorFrom}</strong>
+            </>
+          )}
+        </div>
+      )}
       <div
         className={`grid__show ${showCode ? "active" : ""}`}
         onClick={() => setShowCode(!showCode)}
