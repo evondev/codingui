@@ -17,7 +17,7 @@ import { SocialShare, Pagination, Countdown, Calculation } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
 import { Notification } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
-import { AvatarInfo } from "./Layout";
+import { AvatarInfo, Flexbox3 } from "./Layout";
 import { Labels } from "./Tags";
 import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
@@ -40,8 +40,8 @@ const Grid = () => {
           <ResponsiveMedia></ResponsiveMedia>
           <Triangle></Triangle>
           <SingleLine></SingleLine>
-          {/* <CircleLoading></CircleLoading> */}
-          {/* <LoadingButton></LoadingButton> */}
+          <CircleLoading></CircleLoading>
+          <LoadingButton></LoadingButton>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>
@@ -53,7 +53,7 @@ const Grid = () => {
           <RoundedImage></RoundedImage>
           <Calculation></Calculation>
           <MultiLine></MultiLine>
-          {/* <LineLoading></LineLoading> */}
+          <LineLoading></LineLoading>
           <InputFile></InputFile>
         </div>
         <div className="grid__column">
@@ -70,6 +70,12 @@ const Grid = () => {
           <TextGradient></TextGradient>
           {/* <DotsLoading></DotsLoading> */}
         </div>
+      </div>
+      <div className="grid">
+        {/* <div className="grid__column"> */}
+        <Flexbox3></Flexbox3>
+        {/* </div> */}
+        {/* <div className="grid__column"></div> */}
       </div>
     </GridStyles>
   );

@@ -49,5 +49,86 @@ const AvatarInfo = () => {
     </>
   );
 };
+const Flexbox3 = () => {
+  return (
+    <>
+      <Template
+        title="Equal height column"
+        source="layout"
+        html={`
+        <div class="equal-height">
+        <div class="item">
+          <div class="image"></div>
+          <div class="content">
+            <h3 class="title">This is title</h3>
+            <span class="author">Evondev</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="content">
+            <h3 class="title">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+            <span class="author">Evondev</span>
+          </div>
+        </div>
+        <div class="item">
+          <div class="image"></div>
+          <div class="content">
+            <h3 class="title">This is title</h3>
+            <span class="author">Evondev</span>
+          </div>
+        </div>
+      </div>
+        `}
+        css={`
+          .equal-height {
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: -2rem;
+          }
+          .equal-height .item {
+            width: calc((100% / 3) - 2rem);
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #eee;
+          }
+          .equal-height .image {
+            height: 20rem;
+            width: 100%;
+            object-fit: cover;
+            background-color: #eee;
+          }
+          .equal-height .content {
+            padding: 1.5rem;
+            height: calc(100% - 20rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .equal-height .title {
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+            line-height: 1.4;
+          }
+          .equal-height .author {
+            font-size: 1.2rem;
+            color: #999;
+          }
+          @media screen and (max-width: 1023px) {
+            .equal-height .item {
+              width: calc((100% / 2) - 2rem);
+            }
+          }
+          @media screen and (max-width: 767px) {
+            .equal-height .item {
+              width: calc(100% - 2rem);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
 
-export { AvatarInfo };
+export { AvatarInfo, Flexbox3 };
