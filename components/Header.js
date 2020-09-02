@@ -7,6 +7,12 @@ import { firebaseApp } from "../vendors/fire";
 
 const Header = () => {
   const [loveCount, setLoveCount] = useState(1);
+  const [counter, setCounter] = useState(1);
+
+  useEffect(() => {
+    const counterLove = parseInt(localStorage.getItem("counter")) || 1;
+    setCounter(parseInt(counterLove));
+  }, []);
 
   useEffect(() => {
     const gridItems = document.querySelectorAll(".grid__item");
@@ -45,6 +51,9 @@ const Header = () => {
   }, [loveCount]);
 
   const handleLove = () => {
+    localStorage.setItem("counter", counter);
+    if (counter >= 50) return;
+    setCounter(counter + 1);
     setLoveCount(loveCount + 1);
     firebaseApp?.database()?.ref("love").set({ value: loveCount });
     const loveIcon = document.querySelector(".love-icon");
@@ -72,7 +81,7 @@ const Header = () => {
           </p>
         </div>
         {loveCount > 1 && (
-          <div className="love">
+          <div className={`love ${counter >= 50 ? "point-none" : ""}`}>
             <span className="love-count">{loveCount}</span>
             <div className="love-icon" onClick={handleLove}>
               <i className="fa fa-heart"></i>

@@ -68,7 +68,7 @@ const Grid = () => {
           <CaptainShield></CaptainShield>
           <Notification></Notification>
           <TextGradient></TextGradient>
-          {/* <DotsLoading></DotsLoading> */}
+          <DotsLoading></DotsLoading>
         </div>
       </div>
       <div className="grid">
