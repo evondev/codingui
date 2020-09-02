@@ -6,7 +6,7 @@ const MusicPlayer = () => {
     <>
       <Template
         title="Music playing"
-        source="player"
+        source="progress"
         author="Dragon Lee"
         authorFrom="Dribbble"
         html={`

@@ -6,7 +6,7 @@ const IconOpacity = () => {
     <>
       <Template
         title="Icon opacity"
-        source="list"
+        source="icon"
         author=""
         html={`
         <div class="icon-opacity"><i class="fa fa-star"></i></div>

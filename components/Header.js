@@ -107,7 +107,7 @@ const Header = () => {
           Overlay
         </span>
         <span className="filter-item" data-source="image">
-          Image
+          Media
         </span>
         <span className="filter-item" data-source="progress">
           Progress
@@ -117,6 +117,9 @@ const Header = () => {
         </span>
         <span className="filter-item" data-source="text">
           Text
+        </span>
+        <span className="filter-item" data-source="icon">
+          Icon
         </span>
       </FilterStyles>
     </>

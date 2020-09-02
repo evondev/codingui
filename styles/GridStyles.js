@@ -25,6 +25,12 @@ export const GridStyles = styled.div`
     border-radius: 2px;
   }
 
+  .grid__column {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+
   .grid__name {
     padding: 1rem 0;
     font-size: 1.4rem;
