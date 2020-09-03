@@ -6,7 +6,7 @@ const CircleImage = () => {
     <Template
       title="Circle Image"
       source="image"
-      html={`<img class="circle-image lazyload" data-src="/images/code.jpeg"/>`}
+      html={`<img class="circle-image" src="/images/torii.png"/>`}
       css={`
         .circle-image {
           margin: 0 auto;
@@ -24,7 +24,9 @@ const RoundedImage = () => {
     <Template
       title="Rounded Image"
       source="image"
-      html={`<img class="rounded-image lazyload" data-src="/images/code.jpeg"/>`}
+      author="Rachelizmarvel"
+      authorFrom="Dribbble"
+      html={`<img class="rounded-image" src="/images/unicorn.png"/>`}
       css={`
         .rounded-image {
           margin: 0 auto;

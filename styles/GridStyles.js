@@ -53,6 +53,7 @@ export const GridStyles = styled.div`
     margin-top: 1.5rem;
     color: #999;
     font-weight: 300;
+    text-align: center;
     strong {
       font-weight: 600;
     }

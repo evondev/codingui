@@ -113,7 +113,7 @@ const Template = ({
       {html && <div className="grid__result">{parse(html)}</div>}
       {/* {author && (
         <div className="grid__author">
-          Idea from <strong>{author}</strong>{" "}
+          Image from <strong>{author}</strong>{" "}
           {authorFrom && (
             <>
               on <strong>{authorFrom}</strong>

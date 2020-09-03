@@ -89,17 +89,18 @@ const OutlineButton = () => {
       html={`<button class="outline-button">Outline button</button>`}
       css={`
         .outline-button {
+          display: block;
+          margin: 0 auto;
+          font-weight: normal;
           border-radius: 100rem;
-          padding: 1.5rem 2rem;
+          padding: 1rem;
           color: white;
-          font-size: 1.6rem;
           text-transform: uppercase;
-          width: 100%;
           cursor: pointer;
           outline: none;
           font-family: "Montserrat", sans-serif;
           background-color: transparent;
-          color: #e14eca;
+          color: var(--primary);
           border: 1px solid currentColor;
         }
       `}

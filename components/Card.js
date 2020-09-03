@@ -1,55 +1,6 @@
 import React from "react";
 import Template from "./Template";
 
-const CardMessage = () => {
-  return (
-    <>
-      <Template
-        title="Flash Messages"
-        source="noti"
-        html={`<div class="flash-message">
-        <i class="fal fa-check-circle icon"></i>
-        <h3 class="title">Done</h3>
-        <p class="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-        <a href="#" class="cont">Continue</a>
-      </div>`}
-        css={`
-          .flash-message {
-            max-width: 30rem;
-            margin: 0 auto;
-            padding: 2rem;
-            background-color: #00e06d;
-            color: white;
-            text-align: center;
-            border-radius: 4px;
-          }
-          .flash-message .icon {
-            font-size: 6rem;
-            margin-bottom: 3rem;
-          }
-          .flash-message .title {
-            font-weight: bold;
-            font-size: 2rem;
-            margin-bottom: 1rem;
-          }
-          .flash-message .desc {
-            font-size: 1.4rem;
-            line-height: 1.4;
-            margin-bottom: 2rem;
-          }
-          .flash-message .cont {
-            display: block;
-            width: 100%;
-            padding: 1.5rem;
-            background-color: white;
-            color: #00e06d;
-            border-radius: 5rem;
-          }
-        `}
-      ></Template>
-    </>
-  );
-};
 const Notification = () => {
   return (
     <>
@@ -94,4 +45,66 @@ const Notification = () => {
   );
 };
 
-export { CardMessage, Notification };
+const FlipCard = () => {
+  return (
+    <>
+      <Template
+        title="Flip card"
+        source="card"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="front">
+            <img src="/images/poker-building.png" alt="" />
+          </div>
+          <div class="back">
+            <img src="/images/rachelizmarvel.png" alt="" />
+          </div>
+        </div>
+      </div>
+        `}
+        css={`
+          .flip-card {
+            max-width: 30rem;
+            height: 40rem;
+            margin: 0 auto;
+          }
+          .flip-card-inner {
+            width: 100%;
+            height: 100%;
+            perspective: 1000px;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            position: relative;
+          }
+          .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+          }
+          .flip-card .front,
+          .flip-card .back {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+          }
+          .flip-card .back {
+            transform: rotateY(180deg);
+          }
+
+          .flip-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { Notification, FlipCard };

@@ -44,7 +44,7 @@ const ResponsiveImage = () => {
         title="Responsive Image"
         source="image"
         html={`<div class="responsive-image">
-      <img src="https://images.unsplash.com/photo-1475724017904-b712052c192a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"/>
+      <img src="/images/outer-space.png"/>
       </div>`}
         css={`
           .responsive-image {

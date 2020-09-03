@@ -12,12 +12,12 @@ import { CircleImage, RoundedImage, Triangle } from "./Image";
 import { OverlayIcon } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
-import { SocialShare, Pagination, Countdown, Calculation } from "./List";
+import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification } from "./Card";
+import { Notification, FlipCard } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
-import { Labels } from "./Tags";
+import { Labels, Tags } from "./Tags";
 import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
@@ -25,6 +25,7 @@ import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
 import { IconOpacity, RatingStar } from "./Icon";
 import { MusicPlayer } from "./Player";
 import { UpComingUI } from "./UpComing";
+import { Calendar } from "./Calendar";
 
 const Grid = () => {
   return (
@@ -34,7 +35,7 @@ const Grid = () => {
           <InputWithButton></InputWithButton>
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
-          <OutlineButton></OutlineButton>
+          {/* <OutlineButton></OutlineButton> */}
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
@@ -44,6 +45,7 @@ const Grid = () => {
           <CircleLoading></CircleLoading>
           <LoadingButton></LoadingButton>
           <IconOpacity></IconOpacity>
+          <Calendar></Calendar>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
@@ -53,11 +55,11 @@ const Grid = () => {
           <CustomRadio></CustomRadio>
           <Labels></Labels>
           <RoundedImage></RoundedImage>
-          <Calculation></Calculation>
           <MultiLine></MultiLine>
           <LineLoading></LineLoading>
           <InputFile></InputFile>
           <RatingStar></RatingStar>
+          <Tags></Tags>
         </div>
         <div className="grid__column">
           <InputWithIcon></InputWithIcon>
@@ -73,6 +75,7 @@ const Grid = () => {
           <TextGradient></TextGradient>
           <DotsLoading></DotsLoading>
           <MusicPlayer></MusicPlayer>
+          <FlipCard></FlipCard>
         </div>
       </div>
     </GridStyles>

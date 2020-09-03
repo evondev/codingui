@@ -5,18 +5,25 @@ const UpComingUI = () => {
   return (
     <>
       <Template
-        title="Upcoming UIs"
+        title="Notice"
         hideCode={true}
         source="upcoming"
         html={`
         <div class="upcoming">
-          Calendar, Flip card, Table, Tags
+          <p>Upcoming UIs: <span>Tooltip, Table</span></p>
+          <p>Images I'm using from <span>Rachelizmarvel</span> on <span>Dribbble</span></p>
         </div>
         `}
         css={`
           .upcoming {
-            color: #999;
+            color: white;
             font-weight: 500;
+            span {
+              font-weight: 600;
+            }
+            p {
+              margin-bottom: 1rem;
+            }
           }
         `}
       ></Template>

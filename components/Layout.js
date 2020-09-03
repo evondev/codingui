@@ -9,13 +9,13 @@ const AvatarInfo = () => {
         source="layout"
         html={`<div class="avatar-info">
         <img
-          src="https://images.unsplash.com/photo-1598134493202-9a02529d86bb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80"
+          src="/images/torii.png"
           alt=""
         />
         <div class="avatar-info-content">
-          <h3>Super cool BullDog</h3>
+          <h3>Super cool title</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            This is something that you can call it is super cool descriptions
           </p>
         </div>
       </div>`}

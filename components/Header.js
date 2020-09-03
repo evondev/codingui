@@ -103,9 +103,6 @@ const Header = () => {
         <span className="filter-item" data-source="noti">
           Noti
         </span>
-        <span className="filter-item" data-source="overlay">
-          Overlay
-        </span>
         <span className="filter-item" data-source="image">
           Media
         </span>

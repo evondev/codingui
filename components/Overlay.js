@@ -5,8 +5,10 @@ const OverlayIcon = () => {
   return (
     <Template
       title="Overlay Icon"
-      source="overlay"
-      html={`<div class="overlay-icon"><img data-src="/images/code.jpeg" class="lazyload"/><i class="fa fa-play-circle"></i></div>`}
+      source="image"
+      author="Rachelizmarvel"
+      authorFrom="Dribbble"
+      html={`<div class="overlay-icon"><img src="/images/rachelizmarvel.png"/><i class="fa fa-play-circle"></i></div>`}
       css={`
         .overlay-icon {
           position: relative;

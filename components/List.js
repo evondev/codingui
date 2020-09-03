@@ -80,7 +80,6 @@ const Pagination = () => {
           .pagi-item {
             margin: 0 1.5rem;
             font-size: 2rem;
-            font-weight: 500;
             color: #999;
             cursor: pointer;
             transition: all 0.2s linear;
@@ -92,7 +91,6 @@ const Pagination = () => {
           .pagi-item:hover,
           .pagi-item.is-active {
             color: var(--primary);
-            font-weight: bold;
           }
         `}
       ></Template>
