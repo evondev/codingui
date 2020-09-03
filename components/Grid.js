@@ -49,6 +49,8 @@ const Grid = () => {
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
+          <InputWithIcon></InputWithIcon>
+          <ProgressBar></ProgressBar>
           <CircleImage></CircleImage>
           <OverlayIcon></OverlayIcon>
           <FloatingButton></FloatingButton>
@@ -62,8 +64,6 @@ const Grid = () => {
           <Tags></Tags>
         </div>
         <div className="grid__column">
-          <InputWithIcon></InputWithIcon>
-          <ProgressBar></ProgressBar>
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>
           <Countdown></Countdown>
