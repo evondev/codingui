@@ -23,6 +23,12 @@ export const GridStyles = styled.div`
     background-color: white;
     padding: 1rem 2rem 2rem;
     border-radius: 2px;
+    &[data-source="upcoming"] {
+      background-color: var(--purple);
+      * {
+        color: white !important;
+      }
+    }
   }
 
   .grid__column {

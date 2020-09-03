@@ -4,7 +4,6 @@ import {
   ButtonWithIcon,
   GradientButton,
   FloatingButton,
-  RoundedButton,
   OutlineButton,
   LoadingButton,
 } from "./Button";
@@ -17,7 +16,7 @@ import { SocialShare, Pagination, Countdown, Calculation } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
 import { Notification } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
-import { AvatarInfo, Flexbox3 } from "./Layout";
+import { AvatarInfo } from "./Layout";
 import { Labels } from "./Tags";
 import { SearchForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
@@ -25,6 +24,7 @@ import { SingleLine, MultiLine, TextGradient } from "./Text";
 import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
 import { IconOpacity, RatingStar } from "./Icon";
 import { MusicPlayer } from "./Player";
+import { UpComingUI } from "./UpComing";
 
 const Grid = () => {
   return (
@@ -34,7 +34,6 @@ const Grid = () => {
           <InputWithButton></InputWithButton>
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
-          <RoundedButton></RoundedButton>
           <OutlineButton></OutlineButton>
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
@@ -45,6 +44,7 @@ const Grid = () => {
           <CircleLoading></CircleLoading>
           <LoadingButton></LoadingButton>
           <IconOpacity></IconOpacity>
+          <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
           <CircleImage></CircleImage>

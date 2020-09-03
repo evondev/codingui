@@ -19,6 +19,7 @@ const Template = ({
   source = "",
   author = "",
   authorFrom = "",
+  hideCode = false,
 }) => {
   let newCss = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -95,17 +96,22 @@ const Template = ({
     <TemplateStyles className="grid__item" data-source={source} css={css}>
       <div className="grid__header">
         <div className="grid__name">{title}</div>
-        <div className="grid__copies">
-          <div className="grid__copy" onClick={() => copyToClipboard(newHTML)}>
-            Copy HTML
+        {!hideCode && (
+          <div className="grid__copies">
+            <div
+              className="grid__copy"
+              onClick={() => copyToClipboard(newHTML)}
+            >
+              Copy HTML
+            </div>
+            <div className="grid__copy" onClick={() => copyToClipboard(newCss)}>
+              Copy CSS
+            </div>
           </div>
-          <div className="grid__copy" onClick={() => copyToClipboard(newCss)}>
-            Copy CSS
-          </div>
-        </div>
+        )}
       </div>
       {html && <div className="grid__result">{parse(html)}</div>}
-      {author && (
+      {/* {author && (
         <div className="grid__author">
           Idea from <strong>{author}</strong>{" "}
           {authorFrom && (
@@ -114,13 +120,15 @@ const Template = ({
             </>
           )}
         </div>
+      )} */}
+      {!hideCode && (
+        <div
+          className={`grid__show ${showCode ? "active" : ""}`}
+          onClick={() => setShowCode(!showCode)}
+        >
+          Show code
+        </div>
       )}
-      <div
-        className={`grid__show ${showCode ? "active" : ""}`}
-        onClick={() => setShowCode(!showCode)}
-      >
-        Show code
-      </div>
       {showCode && (
         <>
           <div className="grid__code">
