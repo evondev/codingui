@@ -18,7 +18,7 @@ import { Notification, FlipCard } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels, Tags } from "./Tags";
-import { SearchForm } from "./Form";
+import { SearchForm, LoginForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
 import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
@@ -48,6 +48,7 @@ const Grid = () => {
           <IconOpacity></IconOpacity>
           <Calendar></Calendar>
           <Tooltip></Tooltip>
+          <LoginForm></LoginForm>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">

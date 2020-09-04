@@ -20,6 +20,7 @@ const Template = ({
   author = "",
   authorFrom = "",
   hideCode = false,
+  js = "",
 }) => {
   let newCss = `
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
@@ -107,6 +108,11 @@ const Template = ({
             <div className="grid__copy" onClick={() => copyToClipboard(newCss)}>
               Copy CSS
             </div>
+            {js.length > 0 && (
+              <div className="grid__copy" onClick={() => copyToClipboard(js)}>
+                Copy JS
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -132,16 +138,21 @@ const Template = ({
       {showCode && (
         <>
           <div className="grid__code">
-            <SyntaxHighlighter language="html" style={docco} wrapLines={true}>
+            <SyntaxHighlighter language="html" style={docco}>
               {pretty(html, { ocd: true })}
             </SyntaxHighlighter>
           </div>
           <div className="grid__code">
-            <SyntaxHighlighter language="css" style={docco} wrapLines={true}>
+            <SyntaxHighlighter language="css" style={docco}>
               {cssbeautify(css, {
                 indent: `   `,
                 autosemicolon: true,
               })}
+            </SyntaxHighlighter>
+          </div>
+          <div className="grid__code">
+            <SyntaxHighlighter language="javascript" style={docco}>
+              {pretty(js, { ocd: true })}
             </SyntaxHighlighter>
           </div>
         </>

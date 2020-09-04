@@ -132,34 +132,23 @@ export const GridStyles = styled.div`
       width: 0;
     }
   }
-
-  /* .tag {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: flex-end;
-    &-item {
-      display: inline-block;
-      padding: 5px 1rem;
-      font-size: 1rem;
-      border-radius: 2rem;
-      color: white;
-      margin-left: 5px;
-      text-transform: uppercase;
-    }
-    &-html {
-      background-color: #00aefd;
-    }
-    &-css {
-      background-color: #e74c3c;
-    }
-  } */
-
   @media screen and (max-width: 767px) {
     .grid__column {
       margin-bottom: 0;
     }
     .grid__item {
       margin-bottom: 2rem;
+    }
+    .grid__header {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+    .grid__name {
+      max-width: 100%;
+      width: 100%;
+    }
+    .grid__copies {
+      margin-left: -1rem;
     }
   }
 `;

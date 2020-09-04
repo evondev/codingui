@@ -44,15 +44,33 @@ const Triangle = () => {
     <Template
       title="Triangle"
       source="image"
-      html={`<div class="triangle"></div>`}
+      html={`<div class="triangle triangle--top"></div><div class="triangle triangle--bottom"></div><div class="triangle triangle--left"></div><div class="triangle triangle--right"></div>`}
       css={`
         .triangle {
-          margin: 1rem;
+          margin: 5px;
+          display: inline-block;
           width: 0;
           height: 0;
-          border-left: 5rem solid transparent;
-          border-right: 5rem solid transparent;
-          border-bottom: 5rem solid #ff7870;
+        }
+        .triangle--top {
+          border-left: 1rem solid transparent;
+          border-right: 1rem solid transparent;
+          border-bottom: 1rem solid var(--primary);
+        }
+        .triangle--bottom {
+          border-left: 1rem solid transparent;
+          border-right: 1rem solid transparent;
+          border-top: 1rem solid var(--primary);
+        }
+        .triangle--right {
+          border-top: 1rem solid transparent;
+          border-bottom: 1rem solid transparent;
+          border-left: 1rem solid var(--primary);
+        }
+        .triangle--left {
+          border-top: 1rem solid transparent;
+          border-bottom: 1rem solid transparent;
+          border-right: 1rem solid var(--primary);
         }
       `}
     ></Template>

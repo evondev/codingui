@@ -47,7 +47,9 @@ const Tooltip = () => {
           .tooltip {
             position: relative;
             text-align: center;
-            display: inline-block;
+            display: block;
+            width: max-content;
+            margin: 0 auto;
           }
           .tooltip-content {
             position: absolute;
