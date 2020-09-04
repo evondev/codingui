@@ -10,7 +10,7 @@ const UpComingUI = () => {
         source="upcoming"
         html={`
         <div class="upcoming">
-          <p>Upcoming UIs: <span>Pricing, Form</span></p>
+          <p>Upcoming UIs: <span>a lot of UIs</span></p>
           <p>Images I'm using from <span>Rachelizmarvel</span> on <span>Dribbble</span></p>
         </div>
         `}

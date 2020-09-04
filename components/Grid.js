@@ -27,6 +27,7 @@ import { MusicPlayer } from "./Player";
 import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
+import { Pricing } from "./Pricing";
 
 const Grid = () => {
   return (
@@ -65,6 +66,7 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
+          <Pricing></Pricing>
         </div>
         <div className="grid__column">
           <SocialShare></SocialShare>
