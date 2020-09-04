@@ -70,6 +70,7 @@ const FlipCard = () => {
             max-width: 30rem;
             height: 40rem;
             margin: 0 auto;
+            perspective: 150rem;
           }
           .flip-card-inner {
             width: 100%;

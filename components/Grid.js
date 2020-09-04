@@ -9,7 +9,7 @@ import {
 } from "./Button";
 import { InputWithButton, InputWithIcon, InputFile } from "./Input";
 import { CircleImage, RoundedImage, Triangle } from "./Image";
-import { OverlayIcon } from "./Overlay";
+import { OverlayIcon, Tooltip } from "./Overlay";
 import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
@@ -26,6 +26,7 @@ import { IconOpacity, RatingStar } from "./Icon";
 import { MusicPlayer } from "./Player";
 import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
+import { Table } from "./Table";
 
 const Grid = () => {
   return (
@@ -46,6 +47,7 @@ const Grid = () => {
           <LoadingButton></LoadingButton>
           <IconOpacity></IconOpacity>
           <Calendar></Calendar>
+          <Tooltip></Tooltip>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
@@ -77,6 +79,9 @@ const Grid = () => {
           <MusicPlayer></MusicPlayer>
           <FlipCard></FlipCard>
         </div>
+      </div>
+      <div className="grid">
+        <Table></Table>
       </div>
     </GridStyles>
   );

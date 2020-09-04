@@ -133,7 +133,7 @@ export const GridStyles = styled.div`
     }
   }
 
-  .tag {
+  /* .tag {
     margin-top: 2rem;
     display: flex;
     justify-content: flex-end;
@@ -152,7 +152,7 @@ export const GridStyles = styled.div`
     &-css {
       background-color: #e74c3c;
     }
-  }
+  } */
 
   @media screen and (max-width: 767px) {
     .grid__column {
