@@ -53,6 +53,7 @@ const Grid = () => {
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
+          <Pricing></Pricing>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CircleImage></CircleImage>
@@ -66,7 +67,6 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
-          <Pricing></Pricing>
         </div>
         <div className="grid__column">
           <SocialShare></SocialShare>

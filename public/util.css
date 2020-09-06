@@ -25,6 +25,8 @@ body {
   background-color: #f5f6f7;
   font-weight: 300;
   font-size: 1.4rem;
+  overflow-anchor: none;
+  scroll-behavior: smooth;
 }
 
 strong {
@@ -75,4 +77,13 @@ button {
 .point-none {
   pointer-events: none;
   user-select: none;
+}
+.flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.justify-between {
+  justify-content: space-between;
 }

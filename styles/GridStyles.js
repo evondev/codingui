@@ -49,8 +49,7 @@ export const GridStyles = styled.div`
     text-overflow: ellipsis;
   }
   .grid__author {
-    font-size: 1.2rem;
-    margin-top: 1.5rem;
+    font-size: 1.1rem;
     color: #999;
     font-weight: 300;
     text-align: center;
@@ -82,28 +81,50 @@ export const GridStyles = styled.div`
     font-weight: normal;
     transition: 0.2s linear;
   }
-  .grid__show {
-    display: flex;
+  .grid__bottom {
     margin-top: 1.5rem;
+  }
+  .grid__show {
+    margin-left: auto;
+  }
+  .grid__show,
+  .grid__edit {
+    display: flex;
     font-size: 1.2rem;
     justify-content: flex-end;
     margin-left: auto;
     width: max-content;
     padding: 1rem;
     cursor: pointer;
+    border-radius: 4px;
     background-color: #eee;
     color: #999;
     &.active {
+      background-color: var(--purple);
       color: white;
-      background-color: #ccc;
+    }
+  }
+  .grid__edit {
+    margin-left: 1rem;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    &.active {
+      background-color: var(--purple);
+      color: white;
     }
   }
   .grid__code {
     margin-top: 2rem;
     max-height: 20rem;
-    overflow-y: auto;
+    overflow: auto;
+    &.edit {
+      overflow: hidden;
+    }
+
     &::-webkit-scrollbar {
       width: 5px;
+      height: 5px;
     }
 
     &::-webkit-scrollbar-track {
@@ -114,6 +135,33 @@ export const GridStyles = styled.div`
     &::-webkit-scrollbar-thumb {
       background-color: #ccc;
       border-radius: 5rem;
+    }
+    textarea {
+      font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif;
+      font-weight: 400;
+      font-size: 1.4rem;
+      line-height: 1.6;
+      resize: none;
+      width: 100%;
+      height: 20rem;
+      padding: 0.5em;
+      background: rgb(248, 248, 255);
+      color: #333;
+      white-space: pre;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        border-radius: 5rem;
+        background-color: #eee;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 5rem;
+      }
     }
   }
 
