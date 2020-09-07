@@ -4,9 +4,11 @@
   --purple: #bd93f9;
   --pink: #ff6bcb;
   --blue: #8be9fd;
+  --danger: #e74c3c;
   --gray: #333;
   --font: "Poppins", sans-serif;
   --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+  --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
 }
 *,
 *:before,

@@ -97,8 +97,9 @@ export const GridStyles = styled.div`
     padding: 1rem;
     cursor: pointer;
     border-radius: 4px;
-    background-color: #eee;
-    color: #999;
+    border: 1px solid #eee;
+    /* background-color: #eee; */
+    color: #ccc;
     &.active {
       background-color: var(--purple);
       color: white;

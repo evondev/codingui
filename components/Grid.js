@@ -14,7 +14,7 @@ import { Dropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification, FlipCard } from "./Card";
+import { Notification, FlipCard, SimpleCard } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels, Tags } from "./Tags";
@@ -28,6 +28,7 @@ import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { Pricing } from "./Pricing";
+import { RecentActivity } from "./List2";
 
 const Grid = () => {
   return (
@@ -67,6 +68,7 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
+          <SimpleCard></SimpleCard>
         </div>
         <div className="grid__column">
           <SocialShare></SocialShare>
@@ -81,6 +83,7 @@ const Grid = () => {
           <DotsLoading></DotsLoading>
           <MusicPlayer></MusicPlayer>
           <FlipCard></FlipCard>
+          <RecentActivity></RecentActivity>
         </div>
       </div>
       <div className="grid">

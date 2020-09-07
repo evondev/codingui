@@ -108,4 +108,73 @@ const FlipCard = () => {
   );
 };
 
-export { Notification, FlipCard };
+const SimpleCard = () => {
+  return (
+    <>
+      <Template
+        title="Simple card"
+        author="Ariuka"
+        source="card"
+        html={`
+        <div class="simple-card">
+        <div class="simple-card-image">
+        <img src="/images/dell.jpeg" alt=""/>
+        </div>
+        <div class="simple-card-content">
+          <h3 class="simple-card-title">Applying for a Design Job</h3>
+          <p class="simple-card-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio cupiditate, eius illo sapiente repellat recusandae quo tempora totam corrupti.</p>
+          <div class="simple-card-line"></div>
+        </div>
+      </div>
+        `}
+        css={`
+          .simple-card {
+            background-color: white;
+            border-radius: 2rem;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+          }
+          .simple-card-image {
+            position: relative;
+            height: 0;
+            padding-bottom: 56.25%;
+          }
+          .simple-card-image > img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1rem;
+          }
+          .simple-card-content {
+            padding: 3rem 1rem;
+          }
+          .simple-card-title {
+            font-weight: 500;
+            font-size: 2rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #2b2b2b;
+          }
+          .simple-card-desc {
+            color: #c7cbdc;
+            font-weight: 300;
+            line-height: 1.6;
+            font-size: 1.4rem;
+            margin-bottom: 3rem;
+          }
+          .simple-card-line {
+            width: 30%;
+            height: 2px;
+            margin-left: auto;
+            background-color: var(--primary);
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { Notification, FlipCard, SimpleCard };

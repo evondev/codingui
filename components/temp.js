@@ -8,7 +8,6 @@ const ComponentName = () => {
         title="Gradient Button"
         source=""
         author=""
-        authorFrom=""
         html={``}
         css={``}
       ></Template>

@@ -7,6 +7,7 @@ import cssbeautify from "cssbeautify";
 import pretty from "pretty";
 import { useState } from "react";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
+import { useEffect } from "react";
 
 const TemplateStyles = styled.div`
   ${(props) => props.css}
@@ -37,6 +38,7 @@ const Template = ({
     --gray: #333;
     --font: "Poppins", sans-serif;
     --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
   }
   *,
   *:before,
@@ -95,6 +97,11 @@ const Template = ({
   ${htmlCode}
   `;
 
+  useEffect(() => {
+    setHtmlCode(html);
+    setCssCode(css);
+  }, [css, html, js]);
+
   return (
     <TemplateStyles className="grid__item" data-source={source} css={cssCode}>
       <div className="grid__header">
@@ -124,7 +131,7 @@ const Template = ({
         <div className="flex align-center justify-between grid__bottom">
           {author && (
             <div className="grid__author">
-              Design from <strong>{author}</strong>
+              UI idea from <strong>{author}</strong>
             </div>
           )}
           <div
