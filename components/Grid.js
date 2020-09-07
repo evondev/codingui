@@ -29,16 +29,15 @@ import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { Pricing } from "./Pricing";
 import { RecentActivity } from "./List2";
+import { LineText } from "./Line";
 
 const Grid = () => {
   return (
     <GridStyles>
       <div className="grid">
         <div className="grid__column">
-          <InputWithButton></InputWithButton>
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
-          {/* <OutlineButton></OutlineButton> */}
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
@@ -51,10 +50,12 @@ const Grid = () => {
           <Calendar></Calendar>
           <Tooltip></Tooltip>
           <LoginForm></LoginForm>
+          <LineText></LineText>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
-          <Pricing></Pricing>
+          <AvatarInfo></AvatarInfo>
+          <ResponsiveImage></ResponsiveImage>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CircleImage></CircleImage>
@@ -62,7 +63,6 @@ const Grid = () => {
           <FloatingButton></FloatingButton>
           <CustomRadio></CustomRadio>
           <Labels></Labels>
-          <RoundedImage></RoundedImage>
           <MultiLine></MultiLine>
           <LineLoading></LineLoading>
           <InputFile></InputFile>
@@ -71,11 +71,11 @@ const Grid = () => {
           <SimpleCard></SimpleCard>
         </div>
         <div className="grid__column">
+          <InputWithButton></InputWithButton>
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>
           <Countdown></Countdown>
-          <AvatarInfo></AvatarInfo>
-          <ResponsiveImage></ResponsiveImage>
+          <Pricing></Pricing>
           <SearchForm></SearchForm>
           <CaptainShield></CaptainShield>
           <Notification></Notification>

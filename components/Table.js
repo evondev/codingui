@@ -7,6 +7,8 @@ const Table = () => {
       <Template
         title="Table"
         source="table"
+        author="Anton Yefimenko"
+        authorFrom="https://dribbble.com/antonyefimenko"
         html={`
         <div class="table">
             <table>

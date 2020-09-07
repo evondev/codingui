@@ -4,36 +4,25 @@ import Template from "./Template";
 const CircleImage = () => {
   return (
     <Template
-      title="Circle Image"
+      title="Image variant"
       source="image"
-      html={`<img class="circle-image" src="/images/torii.png"/>`}
+      html={`<img class="image" src="/images/unicorn.png"/><img class="image image--rounded" src="/images/outer-space.png"/><img class="image image--circle" src="/images/rachelizmarvel.png"/><img class="image image--special" src="/images/rachelizmarvel.png"/>`}
       css={`
-        .circle-image {
-          margin: 0 auto;
-          width: 20rem;
-          height: 20rem;
-          border-radius: 100rem;
+        .image {
+          display: inline-block;
+          margin: 5px;
+          width: 5rem;
+          height: 5rem;
           object-fit: cover;
         }
-      `}
-    ></Template>
-  );
-};
-const RoundedImage = () => {
-  return (
-    <Template
-      title="Rounded Image"
-      source="image"
-      author="Rachelizmarvel"
-      authorFrom="Dribbble"
-      html={`<img class="rounded-image" src="/images/unicorn.png"/>`}
-      css={`
-        .rounded-image {
-          margin: 0 auto;
-          width: 20rem;
-          height: 20rem;
-          border-radius: 8px;
-          object-fit: cover;
+        .image--circle {
+          border-radius: 100rem;
+        }
+        .image--rounded {
+          border-radius: 4px;
+        }
+        .image--special {
+          border-radius: 18px 0 18px 0;
         }
       `}
     ></Template>
@@ -77,4 +66,4 @@ const Triangle = () => {
   );
 };
 
-export { CircleImage, RoundedImage, Triangle };
+export { CircleImage, Triangle };

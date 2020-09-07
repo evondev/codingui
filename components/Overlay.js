@@ -7,7 +7,7 @@ const OverlayIcon = () => {
       title="Overlay Icon"
       source="image"
       author="Rachelizmarvel"
-      authorFrom="Dribbble"
+      authorFrom="https://dribbble.com/rachel48"
       html={`<div class="overlay-icon"><img src="/images/rachelizmarvel.png"/><i class="fa fa-play-circle"></i></div>`}
       css={`
         .overlay-icon {

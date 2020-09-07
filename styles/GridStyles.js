@@ -53,8 +53,9 @@ export const GridStyles = styled.div`
     color: #999;
     font-weight: 300;
     text-align: center;
-    strong {
+    a {
       font-weight: 600;
+      color: inherit;
     }
   }
   .grid__desc {

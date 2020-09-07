@@ -8,6 +8,7 @@ import pretty from "pretty";
 import { useState } from "react";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useEffect } from "react";
+import LazyLoad from "react-lazyload";
 
 const TemplateStyles = styled.div`
   ${(props) => props.css}
@@ -103,93 +104,101 @@ const Template = ({
   }, [css, html, js]);
 
   return (
-    <TemplateStyles className="grid__item" data-source={source} css={cssCode}>
-      <div className="grid__header">
-        <div className="grid__name">{title}</div>
+    <LazyLoad once>
+      <TemplateStyles className="grid__item" data-source={source} css={cssCode}>
+        <div className="grid__header">
+          <div className="grid__name">{title}</div>
+          {!hideCode && (
+            <div className="grid__copies">
+              <div
+                className="grid__copy"
+                onClick={() => copyToClipboard(newHTML)}
+              >
+                Copy HTML
+              </div>
+              <div
+                className="grid__copy"
+                onClick={() => copyToClipboard(newCss)}
+              >
+                Copy CSS
+              </div>
+              {js.length > 0 && (
+                <div className="grid__copy" onClick={() => copyToClipboard(js)}>
+                  Copy JS
+                </div>
+              )}
+            </div>
+          )}
+        </div>
+        {html && <div className="grid__result">{parse(htmlCode)}</div>}
+
         {!hideCode && (
-          <div className="grid__copies">
-            <div
-              className="grid__copy"
-              onClick={() => copyToClipboard(newHTML)}
-            >
-              Copy HTML
-            </div>
-            <div className="grid__copy" onClick={() => copyToClipboard(newCss)}>
-              Copy CSS
-            </div>
-            {js.length > 0 && (
-              <div className="grid__copy" onClick={() => copyToClipboard(js)}>
-                Copy JS
+          <div className="flex align-center justify-between grid__bottom">
+            {author && (
+              <div className="grid__author">
+                UI idea from{" "}
+                <a href={authorFrom} target="_blank" rel="noopener norefferer">
+                  {author}
+                </a>
               </div>
             )}
+            <div
+              className={`grid__show ${showCode ? "active" : ""}`}
+              onClick={() => setShowCode(!showCode)}
+            >
+              <i className="fa fa-eye"></i>
+            </div>
+            <div
+              className={`grid__edit ${editCode ? "active" : ""}`}
+              onClick={() => {
+                setShowCode(true);
+                setEditCode(!editCode);
+              }}
+            >
+              <i className="fa fa-edit"></i>
+            </div>
           </div>
         )}
-      </div>
-      {html && <div className="grid__result">{parse(htmlCode)}</div>}
-
-      {!hideCode && (
-        <div className="flex align-center justify-between grid__bottom">
-          {author && (
-            <div className="grid__author">
-              UI idea from <strong>{author}</strong>
+        {showCode && (
+          <>
+            <div className={`grid__code ${editCode ? "edit" : ""}`}>
+              {!editCode ? (
+                <SyntaxHighlighter language="html" style={docco}>
+                  {pretty(html, { ocd: true })}
+                </SyntaxHighlighter>
+              ) : (
+                <textarea
+                  value={htmlCode.trim().replace(/  +/g, " ")}
+                  onChange={(e) => setHtmlCode(e.target.value)}
+                ></textarea>
+              )}
             </div>
-          )}
-          <div
-            className={`grid__show ${showCode ? "active" : ""}`}
-            onClick={() => setShowCode(!showCode)}
-          >
-            <i className="fa fa-eye"></i>
-          </div>
-          <div
-            className={`grid__edit ${editCode ? "active" : ""}`}
-            onClick={() => {
-              setShowCode(true);
-              setEditCode(!editCode);
-            }}
-          >
-            <i className="fa fa-edit"></i>
-          </div>
-        </div>
-      )}
-      {showCode && (
-        <>
-          <div className={`grid__code ${editCode ? "edit" : ""}`}>
-            {!editCode ? (
-              <SyntaxHighlighter language="html" style={docco}>
-                {pretty(html, { ocd: true })}
-              </SyntaxHighlighter>
-            ) : (
-              <textarea
-                value={htmlCode.trim().replace(/  +/g, " ")}
-                onChange={(e) => setHtmlCode(e.target.value)}
-              ></textarea>
-            )}
-          </div>
-          <div className={`grid__code ${editCode ? "edit" : ""}`}>
-            {!editCode ? (
-              <SyntaxHighlighter language="css" style={docco}>
-                {cssbeautify(css, {
-                  indent: `   `,
-                  autosemicolon: true,
-                })}
-              </SyntaxHighlighter>
-            ) : (
-              <textarea
-                value={cssCode.trim().replace(/  +/g, " ")}
-                onChange={(e) => setCssCode(e.target.value)}
-              ></textarea>
-            )}
-          </div>
-          {js.length > 0 && (
-            <div className="grid__code">
-              <SyntaxHighlighter language="javascript" style={docco}>
-                {pretty(js, { ocd: true })}
-              </SyntaxHighlighter>
+            <div className={`grid__code ${editCode ? "edit" : ""}`}>
+              {!editCode ? (
+                <SyntaxHighlighter language="css" style={docco}>
+                  {cssbeautify(css, {
+                    indent: `   `,
+                    autosemicolon: true,
+                  })}
+                </SyntaxHighlighter>
+              ) : (
+                <textarea
+                  value={cssCode.trim().replace(/  +/g, " ")}
+                  onChange={(e) => setCssCode(e.target.value)}
+                ></textarea>
+              )}
             </div>
-          )}
-        </>
-      )}
-    </TemplateStyles>
+            {js.length > 0 && (
+              <div className="grid__code">
+                <SyntaxHighlighter language="javascript" style={docco}>
+                  {pretty(js, { ocd: true })}
+                </SyntaxHighlighter>
+              </div>
+            )}
+          </>
+        )}
+      </TemplateStyles>
+    </LazyLoad>
   );
 };
 

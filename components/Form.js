@@ -33,18 +33,20 @@ const SearchForm = () => {
 
 const LoginForm = () => {
   useEffect(() => {
-    const loginForm = document.querySelector(".login-form");
-    const showPasswordIcon =
-      loginForm && loginForm.querySelector(".show-password");
-    const inputPassword =
-      loginForm && loginForm.querySelector(`input[type="password"`);
-    showPasswordIcon.addEventListener("click", function () {
-      const inputPasswordType = inputPassword.getAttribute("type");
-      inputPasswordType === "password"
-        ? inputPassword.setAttribute("type", "text")
-        : inputPassword.setAttribute("type", "password");
+    window.addEventListener("load", function () {
+      const loginForm = document.querySelector(".login-form");
+      const showPasswordIcon =
+        loginForm && loginForm.querySelector(".show-password");
+      const inputPassword =
+        loginForm && loginForm.querySelector(`input[type="password"`);
+      showPasswordIcon?.addEventListener("click", function () {
+        const inputPasswordType = inputPassword.getAttribute("type");
+        inputPasswordType === "password"
+          ? inputPassword.setAttribute("type", "text")
+          : inputPassword.setAttribute("type", "password");
+      });
     });
-  });
+  }, []);
   return (
     <>
       <Template
@@ -63,7 +65,7 @@ const LoginForm = () => {
         `}
         css={`
           .login-form {
-            max-width: 30rem;
+            max-width: 35rem;
             margin: 0 auto;
             padding: 1.5rem;
           }
@@ -113,16 +115,18 @@ const LoginForm = () => {
           }
         `}
         js={`
-        const loginForm = document.querySelector(".login-form");
-        const showPasswordIcon =
-          loginForm && loginForm.querySelector(".show-password");
-        const inputPassword =
-          loginForm && loginForm.querySelector('input[type="password"');
-        showPasswordIcon.addEventListener("click", function () {
-          const inputPasswordType = inputPassword.getAttribute("type");
-          inputPasswordType === "password"
-            ? inputPassword.setAttribute("type", "text")
-            : inputPassword.setAttribute("type", "password");
+        window.addEventListener("load", function () {
+          const loginForm = document.querySelector(".login-form");
+          const showPasswordIcon =
+            loginForm && loginForm.querySelector(".show-password");
+          const inputPassword =
+            loginForm && loginForm.querySelector('input[type="password"');
+          showPasswordIcon.addEventListener("click", function () {
+            const inputPasswordType = inputPassword.getAttribute("type");
+            inputPasswordType === "password"
+              ? inputPassword.setAttribute("type", "text")
+              : inputPassword.setAttribute("type", "password");
+          });
         });
         `}
       ></Template>

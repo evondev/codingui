@@ -114,6 +114,7 @@ const SimpleCard = () => {
       <Template
         title="Simple card"
         author="Ariuka"
+        authorFrom="https://dribbble.com/Ariuka_dsgn"
         source="card"
         html={`
         <div class="simple-card">

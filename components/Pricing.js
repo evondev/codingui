@@ -7,6 +7,8 @@ const Pricing = () => {
       <Template
         title="Pricing"
         source="list"
+        author="Erşad Başbağ"
+        authorFrom="https://dribbble.com/ersadwork"
         html={`
       <div class="pricing">
         <input type="radio" name="pricing" id="intro"/>

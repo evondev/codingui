@@ -8,6 +8,7 @@ const RecentActivity = () => {
         title="Recent activity"
         source="list"
         author="Dwinawan"
+        authorFrom="https://dribbble.com/dwinawan"
         html={`
         <div class="recent-item">
           <img src="/images/girl1.jpeg" alt="" class="recent-image" />
