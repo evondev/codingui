@@ -168,7 +168,7 @@ const Template = ({
                 </SyntaxHighlighter>
               ) : (
                 <textarea
-                  value={htmlCode.trim().replace(/  +/g, " ")}
+                  value={htmlCode.replace(/  +/g, " ")}
                   onChange={(e) => setHtmlCode(e.target.value)}
                 ></textarea>
               )}
@@ -183,7 +183,7 @@ const Template = ({
                 </SyntaxHighlighter>
               ) : (
                 <textarea
-                  value={cssCode.trim().replace(/  +/g, " ")}
+                  value={cssCode.replace(/  +/g, " ")}
                   onChange={(e) => setCssCode(e.target.value)}
                 ></textarea>
               )}
@@ -202,4 +202,4 @@ const Template = ({
   );
 };
 
-export default Template;
+export default React.memo(Template);

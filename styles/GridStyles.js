@@ -139,17 +139,23 @@ export const GridStyles = styled.div`
       border-radius: 5rem;
     }
     textarea {
-      font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif;
-      font-weight: 400;
-      font-size: 1.4rem;
-      line-height: 1.6;
-      resize: none;
-      width: 100%;
-      height: 20rem;
-      padding: 0.5em;
-      background: rgb(248, 248, 255);
-      color: #333;
-      white-space: pre;
+      font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif !important;
+      font-weight: 400 !important;
+      font-size: 1.4rem !important;
+      line-height: 1.6 !important;
+      resize: none !important;
+      width: 100% !important;
+      height: 20rem !important;
+      padding: 0.5em !important;
+      background: rgb(248, 248, 255) !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      display: block !important;
+      opacity: 1 !important;
+      visibility: visible !important;
+      position: unset !important;
+      color: #333 !important;
+      white-space: pre !important;
       &::-webkit-scrollbar {
         width: 5px;
         height: 5px;
