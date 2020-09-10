@@ -10,7 +10,7 @@ const UpComingUI = () => {
         source="upcoming"
         html={`
         <div class="upcoming">
-          <p>Upcoming UIs: <span>a lot of UIs</span></p>
+          <p>Upcoming UIs: <span>Navigation, Autocomplete search</span></p>
         </div>
         `}
         css={`

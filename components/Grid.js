@@ -30,6 +30,7 @@ import { Table } from "./Table";
 import { Pricing } from "./Pricing";
 import { RecentActivity } from "./List2";
 import { LineText } from "./Line";
+import { SimpleTab } from "./Tab";
 
 const Grid = () => {
   return (
@@ -51,6 +52,7 @@ const Grid = () => {
           <Tooltip></Tooltip>
           <LoginForm></LoginForm>
           <LineText></LineText>
+          <SimpleTab></SimpleTab>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
