@@ -49,7 +49,7 @@ const SimpleTab = () => {
             </div>
             <div class="tab-content" data-tab="2">
               <div class="post">
-                <img src="/images/unicorn.png" alt="outer space" class="post-image"/>
+                <img src="/images/unicorn.png" alt="unicorn" class="post-image"/>
                 <div class="post-info">
                   <span class="post-category">Unicorn</span>
                   <h3 class="post-title">Cabo San Lucas, Mexico</h3>
@@ -58,7 +58,7 @@ const SimpleTab = () => {
             </div>
             <div class="tab-content" data-tab="3">
               <div class="post">
-                <img src="/images/rachelizmarvel.png" alt="outer space" class="post-image"/>
+                <img src="/images/rachelizmarvel.png" alt="rachelizmarvel" class="post-image"/>
                 <div class="post-info">
                   <span class="post-category">Hawaii</span>
                   <h3 class="post-title">Cabo San Lucas, Mexico</h3>
@@ -135,6 +135,26 @@ const SimpleTab = () => {
             font-size: 1.8rem;
             line-height: 1.4;
           }
+        `}
+        js={`
+        window.addEventListener("load", function () {
+          const tabs = document.querySelectorAll(".tab-item");
+          const tabsContent = document.querySelectorAll(".tab-content");
+
+          function handleChangeTab(e) {
+            const tabId = e.target.dataset.tab;
+            tabs.forEach((el) => el.classList.remove("active"));
+            e.target.classList.add("active");
+            tabsContent.forEach((el) => {
+              el.classList.remove("active");
+              if (el.getAttribute("data-tab") === tabId) {
+                el.classList.add("active");
+              }
+            });
+          }
+
+          tabs.forEach((el) => el.addEventListener("click", handleChangeTab));
+        });
         `}
       ></Template>
     </>
