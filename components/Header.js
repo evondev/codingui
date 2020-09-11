@@ -39,7 +39,7 @@ const Header = () => {
       filterItems.forEach((item) =>
         item.addEventListener("click", handleFilterItems)
       );
-  }, []);
+  });
 
   useEffect(() => {
     firebaseApp
@@ -100,8 +100,8 @@ const Header = () => {
         <span className="filter-item" data-source="list">
           List
         </span>
-        <span className="filter-item" data-source="noti">
-          Noti
+        <span className="filter-item" data-source="card">
+          Card
         </span>
         <span className="filter-item" data-source="image">
           Media
@@ -115,8 +115,14 @@ const Header = () => {
         <span className="filter-item" data-source="text">
           Text
         </span>
-        <span className="filter-item" data-source="icon">
-          Icon
+        <span className="filter-item" data-source="tab">
+          Tab
+        </span>
+        <span className="filter-item" data-source="table">
+          Table
+        </span>
+        <span className="filter-item" data-source="navigation">
+          Menu
         </span>
       </FilterStyles>
     </>

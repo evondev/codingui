@@ -6,7 +6,7 @@ const LineText = () => {
     <>
       <Template
         title="Text center with line"
-        source="line"
+        source="text"
         html={`<div class="line-text"><span>CodingUI</span></div>`}
         css={`
           .line-text {
