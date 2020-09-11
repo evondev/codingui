@@ -31,6 +31,7 @@ import { Pricing } from "./Pricing";
 import { RecentActivity } from "./List2";
 import { LineText } from "./Line";
 import { SimpleTab } from "./Tab";
+import { DropdownMenu } from "./Navigation";
 
 const Grid = () => {
   return (
@@ -87,6 +88,12 @@ const Grid = () => {
           <FlipCard></FlipCard>
           <RecentActivity></RecentActivity>
         </div>
+      </div>
+      <div className="grid grid--2">
+        <div className="grid__column">
+          <DropdownMenu></DropdownMenu>
+        </div>
+        <div className="grid__column"></div>
       </div>
       <div className="grid">
         <Table></Table>

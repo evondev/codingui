@@ -13,7 +13,7 @@ export const GridStyles = styled.div`
       grid-gap: 5rem;
       padding: 2rem 5rem 0;
       &--2 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 50%);
       }
     }
   }
