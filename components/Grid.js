@@ -10,7 +10,7 @@ import {
 import { InputWithButton, InputWithIcon, InputFile } from "./Input";
 import { CircleImage, RoundedImage, Triangle } from "./Image";
 import { OverlayIcon, Tooltip } from "./Overlay";
-import { Dropdown } from "./Dropdown";
+import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
@@ -18,7 +18,7 @@ import { Notification, FlipCard, SimpleCard } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels, Tags } from "./Tags";
-import { SearchForm, LoginForm } from "./Form";
+import { SearchForm, LoginForm, ContactForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
 import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
@@ -54,6 +54,7 @@ const Grid = () => {
           <LoginForm></LoginForm>
           <LineText></LineText>
           <SimpleTab></SimpleTab>
+          <LightDropdown></LightDropdown>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
@@ -72,6 +73,7 @@ const Grid = () => {
           <RatingStar></RatingStar>
           <Tags></Tags>
           <SimpleCard></SimpleCard>
+          <ContactForm></ContactForm>
         </div>
         <div className="grid__column">
           <InputWithButton></InputWithButton>

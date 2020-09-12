@@ -118,6 +118,9 @@ const Header = () => {
         <span className="filter-item" data-source="tab">
           Tab
         </span>
+        <span className="filter-item" data-source="dropdown">
+          Dropdown
+        </span>
         <span className="filter-item" data-source="table">
           Table
         </span>
