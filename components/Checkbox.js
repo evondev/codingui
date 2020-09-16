@@ -71,13 +71,13 @@ const CustomRadio = () => {
             background-color: #eee;
             display: inline-block;
             cursor: pointer;
-            margin: 0 2rem;
+            margin: 0 1rem;
             box-shadow: 0 0 0 4px #eee;
             transition: all 0.25s linear;
           }
           .radio-input:checked + .radio-label {
-            box-shadow: 0 0 0 4px #fff, 0 0 0 8px #2979ff;
-            background-color: #2979ff;
+            box-shadow: 0 0 0 4px #fff, 0 0 0 6px #fd656b;
+            background-color: #fd656b;
           }
         `}
       ></Template>

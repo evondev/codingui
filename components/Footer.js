@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="container">
         Development by{" "}
         <a
-          href="https://fb.com/tuan.trananh.0509"
+          href="https://www.youtube.com/channel/UC8vjHOEYlnVTqAgE6CFDm_Q"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -7,7 +7,7 @@ import {
   OutlineButton,
   LoadingButton,
 } from "./Button";
-import { InputWithButton, InputWithIcon, InputFile } from "./Input";
+import { InputWithButton, InputWithIcon, InputFile, InputFocus } from "./Input";
 import { CircleImage, RoundedImage, Triangle } from "./Image";
 import { OverlayIcon, Tooltip } from "./Overlay";
 import { Dropdown, LightDropdown } from "./Dropdown";
@@ -55,6 +55,7 @@ const Grid = () => {
           <LineText></LineText>
           <SimpleTab></SimpleTab>
           <LightDropdown></LightDropdown>
+          <InputFocus></InputFocus>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">

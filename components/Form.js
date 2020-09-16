@@ -144,8 +144,6 @@ const ContactForm = () => {
         authorFrom="https://dribbble.com/Art_John"
         html={`
         <div class="contact">
-          <h2 class="contact-heading">Let's talk</h2>
-          <p class="contact-notice">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum quo voluptas, id consequatur perferendis quibusdam a dolorem sit iste accusamus provident laborum cupiditate accusantium ab consectetur ipsam sapiente fugit repudiandae!</p>
           <form action="javascript:void(0)" class="contact-form" autocomplete="off">
             <div class="contact-form-group">
               <label for="name" class="contact-form-label">Your Name</label>

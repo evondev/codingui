@@ -37,8 +37,8 @@ const InputWithIcon = () => {
       title="Input with Icon"
       source="form"
       html={`<div class="input-icon">
-            <input type="email" placeholder="Email address" />
-            <i class="fa fa-check"></i>
+            <input type="text" placeholder="Enter your name" />
+            <i class="fa fa-check-circle"></i>
           </div>`}
       css={`
         .input-icon {
@@ -51,9 +51,6 @@ const InputWithIcon = () => {
           border: 1px solid #eee;
           padding: 1.5rem 3.5rem 1.5rem 1.5rem;
           transition: border 0.2s ease-in;
-        }
-        .input-icon input:focus {
-          border-color: #2979ff;
         }
         .input-icon i {
           color: #07a787;
@@ -114,4 +111,50 @@ const InputFile = () => {
   );
 };
 
-export { InputWithIcon, InputWithButton, InputFile };
+const InputFocus = () => {
+  return (
+    <>
+      <Template
+        title="Input focus effect"
+        source="form"
+        author="whitespace"
+        authorFrom="https://dribbble.com/white_space"
+        html={`
+        <input type="text" class="input-focus" placeholder="Name" value="Name"/>
+        <input type="text" class="input-focus input-focus--secondary" placeholder="Name"/>
+        `}
+        css={`
+          .input-focus {
+            padding: 1.5rem;
+            width: 100%;
+            display: block;
+            border: 1px solid #b5bfc9;
+            border-radius: 6px;
+            color: #0d1f36;
+            font-size: 1.6rem;
+            outline: none;
+            background-color: white;
+            transition: all 0.2s ease;
+            margin-bottom: 10px;
+          }
+          .input-focus::-webkit-input-placeholder {
+            color: #8d97a9;
+          }
+          .input-focus::-moz-input-placeholder {
+            color: #8d97a9;
+          }
+          .input-focus:focus {
+            border-color: #ff695b;
+            box-shadow: 0 0 0 2px #ffe2df;
+          }
+          .input-focus--secondary:focus {
+            border-color: #0177ff;
+            box-shadow: 0 0 0 2px #d3e5ff;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { InputWithIcon, InputWithButton, InputFile, InputFocus };
