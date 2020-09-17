@@ -30,9 +30,13 @@ body {
   overflow-anchor: none;
   scroll-behavior: smooth;
 }
+body::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
 
 strong {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 img {

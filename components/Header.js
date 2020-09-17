@@ -127,14 +127,6 @@ const Header = () => {
         <span className="filter-item" data-source="navigation">
           Menu
         </span>
-        <a
-          href="https://evondev.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="filter-item"
-        >
-          Evondev
-        </a>
       </FilterStyles>
     </>
   );

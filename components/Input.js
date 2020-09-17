@@ -121,7 +121,6 @@ const InputFocus = () => {
         authorFrom="https://dribbble.com/white_space"
         html={`
         <input type="text" class="input-focus" placeholder="Name" value="Name"/>
-        <input type="text" class="input-focus input-focus--secondary" placeholder="Name"/>
         `}
         css={`
           .input-focus {
@@ -145,11 +144,7 @@ const InputFocus = () => {
           }
           .input-focus:focus {
             border-color: #ff695b;
-            box-shadow: 0 0 0 2px #ffe2df;
-          }
-          .input-focus--secondary:focus {
-            border-color: #0177ff;
-            box-shadow: 0 0 0 2px #d3e5ff;
+            box-shadow: 0 0 0 4px #ffe2df;
           }
         `}
       ></Template>
