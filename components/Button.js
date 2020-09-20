@@ -81,27 +81,38 @@ const RoundedButton = () => {
     ></Template>
   );
 };
-const OutlineButton = () => {
+const EffectButton = () => {
   return (
     <Template
-      title="Outline Button"
+      title="Button hover effect"
       source="form"
-      html={`<button class="outline-button">Outline button</button>`}
+      html={`<button class="button-effect">Hover me <i class="fal fa-long-arrow-right"></i></button>`}
       css={`
-        .outline-button {
-          display: block;
-          margin: 0 auto;
-          font-weight: normal;
-          border-radius: 100rem;
-          padding: 1rem;
+        .button-effect {
+          padding: 1rem 2rem;
+          border: 0;
           color: white;
+          background-color: white;
+          background-color: var(--primary);
           text-transform: uppercase;
-          cursor: pointer;
-          outline: none;
-          font-family: "Montserrat", sans-serif;
-          background-color: transparent;
-          color: var(--primary);
-          border: 1px solid currentColor;
+          transition: padding 0.25s linear;
+          text-align: center;
+          position: relative;
+        }
+        .button-effect:hover {
+          padding-right: 5rem;
+        }
+        .button-effect i {
+          transition: 0.25s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          right: 2rem;
+          transform: translateY(-50%);
+        }
+        .button-effect:hover i {
+          transform: translateY(-50%);
+          opacity: 1;
         }
       `}
     ></Template>
@@ -162,6 +173,6 @@ export {
   GradientButton,
   FloatingButton,
   RoundedButton,
-  OutlineButton,
+  EffectButton,
   LoadingButton,
 };

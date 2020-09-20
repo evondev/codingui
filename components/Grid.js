@@ -4,11 +4,11 @@ import {
   ButtonWithIcon,
   GradientButton,
   FloatingButton,
-  OutlineButton,
   LoadingButton,
+  EffectButton,
 } from "./Button";
 import { InputWithButton, InputWithIcon, InputFile, InputFocus } from "./Input";
-import { CircleImage, RoundedImage, Triangle } from "./Image";
+import { CircleImage, Triangle } from "./Image";
 import { OverlayIcon, Tooltip } from "./Overlay";
 import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
@@ -21,17 +21,24 @@ import { Labels, Tags } from "./Tags";
 import { SearchForm, LoginForm, ContactForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
-import { CircleLoading, LineLoading, DotsLoading } from "./Loading";
+import {
+  CircleLoading,
+  LineLoading,
+  DotsLoading,
+  FadeLoading,
+} from "./Loading";
 import { IconOpacity, RatingStar } from "./Icon";
 import { MusicPlayer } from "./Player";
 import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { Pricing } from "./Pricing";
-import { RecentActivity } from "./List2";
+import { AvatarList, RecentActivity } from "./List2";
 import { LineText } from "./Line";
 import { SimpleTab } from "./Tab";
 import { DropdownMenu } from "./Navigation";
+import { AutocompleteSearch } from "./Search";
+import { NotiBell } from "./Notification";
 
 const Grid = () => {
   return (
@@ -75,6 +82,7 @@ const Grid = () => {
           <Tags></Tags>
           <SimpleCard></SimpleCard>
           <ContactForm></ContactForm>
+          <AutocompleteSearch></AutocompleteSearch>
         </div>
         <div className="grid__column">
           <InputWithButton></InputWithButton>
@@ -90,6 +98,10 @@ const Grid = () => {
           <MusicPlayer></MusicPlayer>
           <FlipCard></FlipCard>
           <RecentActivity></RecentActivity>
+          <AvatarList></AvatarList>
+          <NotiBell></NotiBell>
+          <FadeLoading></FadeLoading>
+          <EffectButton></EffectButton>
         </div>
       </div>
       <div className="grid grid--2">

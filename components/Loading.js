@@ -128,4 +128,45 @@ const DotsLoading = () => {
   );
 };
 
-export { CircleLoading, LineLoading, DotsLoading };
+const FadeLoading = () => {
+  return (
+    <>
+      <Template
+        title="Fade loading"
+        source="loading"
+        html={`
+        <div class="fade-loading"></div>
+        `}
+        css={`
+          .fade-loading {
+            width: 4rem;
+            height: 4rem;
+            background-color: var(--secondary);
+            border-radius: 5rem;
+            margin: 2rem auto;
+            position: relative;
+          }
+          .fade-loading:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: inherit;
+            background-color: inherit;
+            animation: fade 1s forwards infinite linear;
+          }
+          @keyframes fade {
+            to {
+              transform: scale(2);
+              opacity: 0;
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { CircleLoading, LineLoading, DotsLoading, FadeLoading };
