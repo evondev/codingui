@@ -152,4 +152,61 @@ const InputFocus = () => {
   );
 };
 
-export { InputWithIcon, InputWithButton, InputFile, InputFocus };
+const InputFocusEffect = () => {
+  return (
+    <>
+      <Template
+        title="Input focus effect"
+        source="form"
+        html={`
+        <div class="input-focus-effect">
+          <input type="text"/>
+          <label>Name</label>
+        </div>
+        `}
+        css={`
+          .input-focus-effect {
+            position: relative;
+            display: flex;
+            flex-direction: column-reverse;
+          }
+          .input-focus-effect input {
+            padding: 2.5rem 1rem 1rem;
+            border: 1px solid transparent;
+            display: block;
+            width: 100%;
+            border-radius: 8px;
+            transition: border 0.25s linear;
+            background-color: transparent;
+            outline: none;
+          }
+          .input-focus-effect input:focus {
+            border-color: var(--primary);
+          }
+          .input-focus-effect input:focus + label {
+            transform: translateY(0);
+            top: 1rem;
+          }
+          .input-focus-effect label {
+            position: absolute;
+            top: 50%;
+            left: 1rem;
+            transform: translateY(-50%);
+            pointer-events: none;
+            color: #999;
+            transition: 0.25s linear;
+            font-size: 1.2rem;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export {
+  InputWithIcon,
+  InputWithButton,
+  InputFile,
+  InputFocus,
+  InputFocusEffect,
+};

@@ -7,7 +7,13 @@ import {
   LoadingButton,
   EffectButton,
 } from "./Button";
-import { InputWithButton, InputWithIcon, InputFile, InputFocus } from "./Input";
+import {
+  InputWithButton,
+  InputWithIcon,
+  InputFile,
+  InputFocus,
+  InputFocusEffect,
+} from "./Input";
 import { CircleImage, Triangle } from "./Image";
 import { OverlayIcon, Tooltip } from "./Overlay";
 import { Dropdown, LightDropdown } from "./Dropdown";
@@ -83,6 +89,7 @@ const Grid = () => {
           <SimpleCard></SimpleCard>
           <ContactForm></ContactForm>
           <AutocompleteSearch></AutocompleteSearch>
+          <InputFocusEffect></InputFocusEffect>
         </div>
         <div className="grid__column">
           <InputWithButton></InputWithButton>

@@ -130,7 +130,7 @@ const LightDropdown = () => {
         "#lightdropdown .dropdown-caret"
       );
 
-      dropdownSelect.addEventListener("click", function () {
+      dropdownSelect?.addEventListener("click", function () {
         dropdownList.classList.toggle("show");
         dropdownCaret.classList.toggle("fa-angle-up");
       });
