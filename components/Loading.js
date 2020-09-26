@@ -59,7 +59,7 @@ const LineLoading = () => {
             right: auto;
             left: 0;
             height: 100%;
-            background-color: var(--secondary);
+            background-color: var(--primary);
             animation: lineLoading 1s forwards infinite linear;
           }
 
@@ -141,7 +141,7 @@ const FadeLoading = () => {
           .fade-loading {
             width: 4rem;
             height: 4rem;
-            background-color: var(--secondary);
+            background-color: var(--pink);
             border-radius: 5rem;
             margin: 2rem auto;
             position: relative;
@@ -169,4 +169,104 @@ const FadeLoading = () => {
   );
 };
 
-export { CircleLoading, LineLoading, DotsLoading, FadeLoading };
+const DashedLoading = () => {
+  return (
+    <>
+      <Template
+        title="Circle dashed loading"
+        source="loading"
+        author="richwebdeveloper"
+        authorFrom="https://www.instagram.com/richwebdeveloper/"
+        html={`
+        <div class="dashed-loading"></div>
+        `}
+        css={`
+          .dashed-loading {
+            position: relative;
+            height: 50px;
+          }
+          .dashed-loading:after,
+          .dashed-loading:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+          }
+          .dashed-loading:before {
+            z-index: 5;
+            border: 3px dashed var(--blue);
+            border-left: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            -webkit-animation: dashed 1s linear infinite;
+            animation: dashed 1s linear infinite;
+          }
+          .dashed-loading:after {
+            z-index: 10;
+            border: 3px solid var(--blue);
+            border-left: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+            -webkit-animation: dashed 1s ease infinite;
+            animation: dashed 1s ease infinite;
+          }
+          @keyframes dashed {
+            to {
+              transform: rotate(360deg);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+const CircleLoading2 = () => {
+  return (
+    <>
+      <Template
+        title="Circle loading2"
+        source="loading"
+        html={`
+        <div class="circle-loading2">
+          <div></div>
+          <div></div>
+        </div>`}
+        css={`
+          .circle-loading2 {
+            display: inline-flex;
+            animation: loading2 1s infinite;
+            div {
+              width: 30px;
+              height: 30px;
+              border: 2px solid var(--purple);
+              border-radius: 50%;
+              margin: 0 5px;
+            }
+          }
+          @keyframes loading2 {
+            50% {
+              transform: rotate(200deg);
+            }
+            75% {
+              transform: rotate(160deg);
+            }
+            100% {
+              transform: rotate(180deg);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export {
+  CircleLoading,
+  LineLoading,
+  DotsLoading,
+  FadeLoading,
+  DashedLoading,
+  CircleLoading2,
+};

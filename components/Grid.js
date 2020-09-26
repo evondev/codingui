@@ -32,6 +32,8 @@ import {
   LineLoading,
   DotsLoading,
   FadeLoading,
+  DashedLoading,
+  CircleLoading2,
 } from "./Loading";
 import { IconOpacity, RatingStar } from "./Icon";
 import { MusicPlayer } from "./Player";
@@ -68,7 +70,7 @@ const Grid = () => {
           <LineText></LineText>
           <SimpleTab></SimpleTab>
           <LightDropdown></LightDropdown>
-          <InputFocus></InputFocus>
+          <DashedLoading></DashedLoading>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
@@ -90,8 +92,10 @@ const Grid = () => {
           <ContactForm></ContactForm>
           <AutocompleteSearch></AutocompleteSearch>
           <InputFocusEffect></InputFocusEffect>
+          <CircleLoading2></CircleLoading2>
         </div>
         <div className="grid__column">
+          <InputFocus></InputFocus>
           <InputWithButton></InputWithButton>
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>

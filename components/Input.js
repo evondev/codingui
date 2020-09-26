@@ -120,7 +120,7 @@ const InputFocus = () => {
         author="whitespace"
         authorFrom="https://dribbble.com/white_space"
         html={`
-        <input type="text" class="input-focus" placeholder="Name" value="Name"/>
+        <input type="text" class="input-focus" placeholder="Name"/>
         `}
         css={`
           .input-focus {
