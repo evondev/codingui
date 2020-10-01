@@ -26,7 +26,7 @@ body {
   overflow-x: hidden;
   background-color: #f5f6f7;
   font-weight: 300;
-  font-size: 1.4rem;
+  font-size: 14px;
   overflow-anchor: none;
   scroll-behavior: smooth;
 }

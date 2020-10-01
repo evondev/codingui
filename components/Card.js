@@ -178,4 +178,78 @@ const SimpleCard = () => {
   );
 };
 
-export { Notification, FlipCard, SimpleCard };
+const CardHover = () => {
+  return (
+    <>
+      <Template
+        title="Card hover effect"
+        source="card"
+        author="Tiến Đức"
+        authorFrom="#"
+        html={`
+        <div class="card">
+          <div class="card__inner">
+            <h5>01</h5>
+            <h3>Sweet</h3>
+            <p>With all my heart, I love you baby
+        Stay with me, and you will see my arms will hold you, baby
+        Never leave, 'cause I believe I'm in love.</p>
+          </div>
+        </div>
+        `}
+        css={`
+          .card {
+            cursor: pointer;
+            max-width: 285px;
+            border-radius: 4px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            transform: scale(1);
+            transition: transform 250ms cubic-bezier(0.07, 0.79, 0.18, 0.92);
+            position: relative;
+          }
+          .card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            border-radius: 4px 4px 0 0;
+            background-color: #ff414d;
+            transform: scaleX(0);
+            transition: transform 1s cubic-bezier(0.06, 1.05, 0.24, 0.97);
+            transform-origin: 0;
+          }
+          .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.08);
+          }
+          .card:hover::before {
+            transform: scaleX(1);
+          }
+          .card .card__inner h5 {
+            margin-top: 20px;
+            margin-right: 15px;
+            color: #ff414d;
+            font-size: 32px;
+            text-align: right;
+            font-weight: 600;
+          }
+          .card .card__inner h3 {
+            font-size: 40px;
+            margin-bottom: 25px;
+            font-weight: 600;
+          }
+          .card .card__inner p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.8;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { Notification, FlipCard, SimpleCard, CardHover };

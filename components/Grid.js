@@ -20,7 +20,7 @@ import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification, FlipCard, SimpleCard } from "./Card";
+import { Notification, FlipCard, SimpleCard, CardHover } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels, Tags } from "./Tags";
@@ -47,6 +47,7 @@ import { SimpleTab } from "./Tab";
 import { DropdownMenu } from "./Navigation";
 import { AutocompleteSearch } from "./Search";
 import { NotiBell } from "./Notification";
+import { SocialShareButon } from "./Social";
 
 const Grid = () => {
   return (
@@ -93,6 +94,7 @@ const Grid = () => {
           <AutocompleteSearch></AutocompleteSearch>
           <InputFocusEffect></InputFocusEffect>
           <CircleLoading2></CircleLoading2>
+          <SocialShareButon></SocialShareButon>
         </div>
         <div className="grid__column">
           <InputFocus></InputFocus>
@@ -113,6 +115,7 @@ const Grid = () => {
           <NotiBell></NotiBell>
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
+          <CardHover></CardHover>
         </div>
       </div>
       <div className="grid grid--2">

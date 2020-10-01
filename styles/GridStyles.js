@@ -4,14 +4,14 @@ export const GridStyles = styled.div`
   --code-bg: #292e3e;
   max-width: 1440px;
   margin: 0 auto;
-  min-height: calc(100vh - 30rem);
+  min-height: calc(100vh - 300px);
   .grid {
     padding: 1rem;
     @media screen and (min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-      grid-gap: 5rem;
-      padding: 2rem 5rem 0;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 50px;
+      padding: 20px 50px 0;
       &--2 {
         grid-template-columns: repeat(2, 50%);
       }
@@ -19,9 +19,9 @@ export const GridStyles = styled.div`
   }
 
   .grid__item {
-    margin-bottom: 5rem;
+    margin-bottom: 50px;
     background-color: white;
-    padding: 1rem 2rem 2rem;
+    padding: 10px 20px 20px;
     border-radius: 2px;
     &[data-source="upcoming"] {
       background-color: var(--purple);
@@ -39,7 +39,7 @@ export const GridStyles = styled.div`
 
   .grid__name {
     padding: 1rem 0;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 600;
     color: #333;
     display: inline-block;
@@ -49,7 +49,7 @@ export const GridStyles = styled.div`
     text-overflow: ellipsis;
   }
   .grid__author {
-    font-size: 1.1rem;
+    font-size: 11px;
     color: #999;
     font-weight: 300;
     text-align: center;
@@ -76,7 +76,7 @@ export const GridStyles = styled.div`
   .grid__copy {
     cursor: pointer;
     color: #999;
-    font-size: 1.2rem;
+    font-size: 12px;
     padding: 1rem;
     display: inline-block;
     font-weight: normal;
@@ -91,7 +91,7 @@ export const GridStyles = styled.div`
   .grid__show,
   .grid__edit {
     display: flex;
-    font-size: 1.2rem;
+    font-size: 12px;
     justify-content: flex-end;
     margin-left: auto;
     width: max-content;
@@ -141,7 +141,7 @@ export const GridStyles = styled.div`
     textarea {
       font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif !important;
       font-weight: 400 !important;
-      font-size: 1.4rem !important;
+      font-size: 14px !important;
       line-height: 1.6 !important;
       resize: none !important;
       width: 100% !important;
@@ -180,7 +180,7 @@ export const GridStyles = styled.div`
   .grid pre {
     font-family: "SF Mono", "Roboto Mono", Arial, Helvetica, sans-serif;
     font-weight: 400;
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 1.6;
     max-width: 100%;
     &::-webkit-scrollbar {

@@ -2,9 +2,9 @@ import styled from "styled-components";
 export const FilterStyles = styled.div`
   background-color: white;
   overflow-x: auto;
-  margin-bottom: 2.5rem;
+  margin-bottom: 25px;
   border-top: 1px solid #eee;
-  padding: 2.5rem 2rem;
+  padding: 25px 20px;
   display: flex;
   justify-content: center;
   &::-webkit-scrollbar {
@@ -16,12 +16,12 @@ export const FilterStyles = styled.div`
   }
   .filter-item {
     display: inline-block;
-    padding: 1.5rem;
+    padding: 15px;
     border-radius: 6px;
     color: #999;
     transition: 0.25s linear;
     cursor: pointer;
-    font-size: 1.4rem;
+    font-size: 14px;
     font-weight: 500;
     white-space: nowrap;
     &.active {

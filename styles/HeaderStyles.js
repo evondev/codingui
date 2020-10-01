@@ -15,16 +15,16 @@ export const HeaderStyles = styled.header`
       color: #999;
       display: inline-block;
       margin-bottom: 5px;
-      font-size: 1.4rem;
+      font-size: 14px;
     }
     &-icon {
       position: relative;
-      width: 5rem;
-      height: 5rem;
+      width: 50px;
+      height: 50px;
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 5rem;
+      border-radius: 50px;
       cursor: pointer;
       color: rgb(226, 45, 72);
       background-color: white;
@@ -61,18 +61,18 @@ export const HeaderStyles = styled.header`
     }
   }
   .logo {
-    max-width: 7.5rem;
-    margin: 0 auto 2rem;
+    max-width: 75px;
+    margin: 0 auto 20px;
   }
   .heading {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 40px;
     color: #5e6b79;
     letter-spacing: 5px;
   }
   .slogan {
-    font-size: 1.4rem;
+    font-size: 14px;
     line-height: 1.6;
     max-width: 40rem;
     margin: 1rem auto 0;
@@ -84,7 +84,7 @@ export const HeaderStyles = styled.header`
     border-radius: 4px;
     color: white;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    font-size: 14px;
     background-color: #001940;
     margin-top: 3rem;
     font-weight: 600;
