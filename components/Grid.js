@@ -24,7 +24,7 @@ import { Notification, FlipCard, SimpleCard, CardHover } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
 import { AvatarInfo } from "./Layout";
 import { Labels, Tags } from "./Tags";
-import { SearchForm, LoginForm, ContactForm } from "./Form";
+import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
 import {
@@ -35,7 +35,7 @@ import {
   DashedLoading,
   CircleLoading2,
 } from "./Loading";
-import { IconOpacity, RatingStar } from "./Icon";
+import { IconOpacity, RatingStar, LikeUnlike } from "./Icon";
 import { MusicPlayer } from "./Player";
 import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
@@ -48,6 +48,7 @@ import { DropdownMenu } from "./Navigation";
 import { AutocompleteSearch } from "./Search";
 import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
+import { ComplexShadow } from "./Shadow";
 
 const Grid = () => {
   return (
@@ -72,6 +73,8 @@ const Grid = () => {
           <SimpleTab></SimpleTab>
           <LightDropdown></LightDropdown>
           <DashedLoading></DashedLoading>
+          <ComplexShadow></ComplexShadow>
+          <LikeUnlike></LikeUnlike>
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
@@ -95,6 +98,7 @@ const Grid = () => {
           <InputFocusEffect></InputFocusEffect>
           <CircleLoading2></CircleLoading2>
           <SocialShareButon></SocialShareButon>
+          <SubscribeForm></SubscribeForm>
         </div>
         <div className="grid__column">
           <InputFocus></InputFocus>

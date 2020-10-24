@@ -24,9 +24,10 @@ export const GridStyles = styled.div`
     padding: 10px 20px 20px;
     border-radius: 2px;
     &[data-source="upcoming"] {
-      background-color: var(--purple);
-      * {
-        color: white !important;
+      background-color: transparent;
+      padding: 0;
+      .grid__header {
+        display: none;
       }
     }
   }

@@ -9,19 +9,13 @@ export const AboutHeaderStyles = styled.header`
       }
     }
     &-content {
-      padding: 2rem 5rem;
+      padding-right: 4rem;
     }
-    &-inner {
-      max-width: 50rem;
-      margin: 0 auto;
-    }
-    &-hello {
-      color: var(--primary-color);
-    }
+
     &-caption {
       text-transform: uppercase;
       font-size: 2rem;
-      font-weight: 600;
+      font-weight: 400;
       margin-bottom: 2rem;
     }
     &-position {
@@ -36,23 +30,8 @@ export const AboutHeaderStyles = styled.header`
       line-height: 1.6;
       margin-bottom: 4rem;
     }
-    &-social {
-      display: inline-flex;
-      &-item {
-        padding: 1.5rem 2rem;
-        color: var(--primary-color);
-        text-align: center;
-        display: block;
-        border: 1px solid currentColor;
-        border-radius: 5rem;
-        width: 15rem;
-        font-size: 1.6rem;
-        &:first-child {
-          color: white;
-          background-image: var(--gradient);
-          margin-right: 2rem;
-        }
-      }
+    &-me {
+      background-image: var(--gradient);
     }
   }
 `;

@@ -244,4 +244,62 @@ const ContactForm = () => {
   );
 };
 
-export { SearchForm, LoginForm, ContactForm };
+const SubscribeForm = () => {
+  return (
+    <>
+      <Template
+        title="SubscribeForm"
+        source="form"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="subscribe-form">
+          <input type="email" class="subscribe-form-input" placeholder="Enter your email"/>
+          <button class="subscribe-form-button">Subscribe</button>
+        </div>
+        `}
+        css={`
+          .subscribe-form {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+          }
+          .subscribe-form-input {
+            flex: 1;
+            width: 100%;
+            outline: none;
+            padding: 15px 10px;
+            border: 1px solid #eee;
+            border-radius: 4px;
+            transition: all 0.2s linear;
+          }
+          .subscribe-form-input:focus {
+            border-color: var(--purple);
+          }
+          .subscribe-form-input:focus + .subscribe-form-button {
+            background-color: var(--purple);
+          }
+          .subscribe-form-button {
+            padding: 5px 15px;
+            background-color: #999;
+            color: white;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: 4px;
+            flex-shrink: 0;
+            transition: all 0.2s linear;
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { SearchForm, LoginForm, ContactForm, SubscribeForm };

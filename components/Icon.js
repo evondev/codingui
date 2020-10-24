@@ -124,4 +124,49 @@ const RatingStar = () => {
   );
 };
 
-export { IconOpacity, RatingStar };
+const LikeUnlike = () => {
+  return (
+    <>
+      <Template
+        title="Like unlike"
+        source="form"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="action">
+          <i class="fa fa-times action-item action-dislike"></i>
+          <i class="fa fa-heart action-item action-like"></i>
+        </div>
+        `}
+        css={`
+          .action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .action-item {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            margin: 0 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            cursor: pointer;
+          }
+          .action-dislike {
+            color: #999;
+            background-color: #eee;
+          }
+          .action-like {
+            color: #fff;
+            background-color: #ff7870;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { IconOpacity, RatingStar, LikeUnlike };

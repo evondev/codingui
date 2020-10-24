@@ -6,36 +6,21 @@ const AboutHeader = () => {
     <AboutHeaderStyles>
       <div className="header-container">
         <div className="header-content">
-          <div className="header-inner">
-            <h3 className="header-caption">
-              <span className="header-hello">Hello, </span>
-              <span className="header-name">I'm Evondev</span>
-            </h3>
-            <h1 className="header-position">Frontend Developer</h1>
-            <p className="header-desc">
-              Thanks for visiting my online CV. My name is Tuan as nick name
-              Evondev. I am currently a{" "}
-              <strong className="text-primary">
-                Junior Frontend Developer
-              </strong>
-              , a <strong className="text-primary">Blogger</strong> and{" "}
-              <strong className="text-primary">Youtuber </strong>
-              with all brands Evondev. I'm working almost about coding user
-              interface with HTML CSS & JS. You can visit my project below.
-            </p>
-            <div className="header-social">
-              <a href="#" className="header-social-item">
-                Hire me
-              </a>
-            </div>
-          </div>
+          <h3 className="header-caption">
+            <span className="header-hello">Hello, </span>
+            <span className="header-name text-primary">I'm Evondev</span>
+          </h3>
+          <h1 className="header-position">Frontend Developer</h1>
+          <p className="header-desc">
+            My name is Tuan as nick name Evondev. I am currently a{" "}
+            <strong>Frontend Developer</strong>, a <strong>Blogger</strong> and{" "}
+            <strong>Youtuber </strong>
+            with all brands <strong>Evondev</strong>. I'm working almost about
+            coding user interface with HTML CSS & JS.
+          </p>
         </div>
         <div className="header-me">
-          <img
-            src="/images/me.jpeg"
-            alt="evondev"
-            className="header-me-image"
-          />
+          <img src="/images/me.png" alt="evondev" className="header-me-image" />
         </div>
       </div>
     </AboutHeaderStyles>

@@ -5,12 +5,13 @@ const UpComingUI = () => {
   return (
     <>
       <Template
-        title="Notice"
         hideCode={true}
         source="upcoming"
         html={`
         <div class="upcoming">
-          <p>Upcoming UIs: <span>Loading effects, focus effect, hover effects</span></p>
+          <a href="https://evondev.com/khoa-hoc-html-css" target="_blank" rel="noopener noreferrer">
+            <img src="/images/evondev-html-css-course.jpg"/>
+          </a>
         </div>
         `}
         css={`
