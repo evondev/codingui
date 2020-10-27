@@ -34,6 +34,7 @@ import {
   FadeLoading,
   DashedLoading,
   CircleLoading2,
+  PlayerLoading,
 } from "./Loading";
 import { IconOpacity, RatingStar, LikeUnlike } from "./Icon";
 import { MusicPlayer } from "./Player";
@@ -49,6 +50,7 @@ import { AutocompleteSearch } from "./Search";
 import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
 import { ComplexShadow } from "./Shadow";
+import { SidebarMenu } from "./Sidebar";
 
 const Grid = () => {
   return (
@@ -99,6 +101,7 @@ const Grid = () => {
           <CircleLoading2></CircleLoading2>
           <SocialShareButon></SocialShareButon>
           <SubscribeForm></SubscribeForm>
+          <PlayerLoading></PlayerLoading>
         </div>
         <div className="grid__column">
           <InputFocus></InputFocus>
@@ -120,6 +123,7 @@ const Grid = () => {
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
           <CardHover></CardHover>
+          <SidebarMenu></SidebarMenu>
         </div>
       </div>
       <div className="grid grid--2">

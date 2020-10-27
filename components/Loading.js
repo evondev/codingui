@@ -262,6 +262,68 @@ const CircleLoading2 = () => {
   );
 };
 
+const PlayerLoading = () => {
+  return (
+    <>
+      <Template
+        title="Play loading"
+        source="loading"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="player-loading">
+          <div class="player-play">
+            <i class="fa fa-play"></i>
+          </div>
+        </div>
+        `}
+        css={`
+          .player-loading {
+            width: 100%;
+            height: 200px;
+            background-image: var(--gradient);
+            position: relative;
+          }
+          .player-play {
+            width: 40px;
+            height: 40px;
+            border-radius: 40px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--pink);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+          }
+          .player-play:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            background-color: white;
+            border-radius: inherit;
+            animation: fade 1s infinite;
+            z-index: -1;
+          }
+          @keyframes fade {
+            to {
+              transform: scale(3);
+              opacity: 0;
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   CircleLoading,
   LineLoading,
@@ -269,4 +331,5 @@ export {
   FadeLoading,
   DashedLoading,
   CircleLoading2,
+  PlayerLoading,
 };
