@@ -71,5 +71,24 @@ export const GlobalStyle = createGlobalStyle`
 		}
 	}
 
+	.back-to-top {
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		left: 30px;
+		bottom: 30px;
+		z-index: 10;
+		background-color: #ff7870;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		font-size: 20px;
+		color: white;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+		}
+	}
+
 
 `;

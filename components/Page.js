@@ -11,6 +11,9 @@ class Page extends Component {
           <GlobalStyle />
           <Meta />
           {this.props.children}
+          <a href="#top" className="back-to-top">
+            <i className="fal fa-arrow-up"></i>
+          </a>
         </>
       </ThemeProvider>
     );
