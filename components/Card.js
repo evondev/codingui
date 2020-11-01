@@ -252,4 +252,117 @@ const CardHover = () => {
   );
 };
 
-export { Notification, FlipCard, SimpleCard, CardHover };
+const GradientCard = () => {
+  return (
+    <>
+      <Template
+        title="GradientCard"
+        source=""
+        author=""
+        authorFrom=""
+        html={`
+        <div class="card-item">
+          <div class="card-header">
+            <div class="card-header-brand">
+              <i class="fal fa-draw-polygon"></i>
+            </div>
+            <img
+              src="/images/iu-logo.png"
+              alt=""
+              class="card-header-logo"
+            />
+          </div>
+          <div class="card-number">
+            <span class="card-number-item">5468</span>
+            <span class="card-number-item">3500</span>
+            <span class="card-number-item">9208</span>
+            <span class="card-number-item">6180</span>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-money">$ 7,610.00</h3>
+            <div class="card-circle"></div>
+          </div>
+        </div>
+        `}
+        css={`
+          .card-item {
+            padding: 25px;
+            border-radius: 20px;
+            background-image: linear-gradient(
+              to right bottom,
+              rgb(104, 227, 238),
+              rgb(245, 117, 218),
+              rgb(140, 135, 255),
+              rgb(211, 176, 233)
+            );
+            color: white;
+          }
+          .card-header {
+            margin-bottom: 25px;
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+          }
+          .card-header-brand {
+            width: 50px;
+            height: 40px;
+            border-radius: 15px;
+            font-size: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            justify-content: center;
+          }
+          .card-number {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            font-weight: 600;
+            margin-bottom: 40px;
+          }
+          .card-footer {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+          }
+          .card-money {
+            font-size: 30px;
+            font-weight: 600;
+          }
+          .card-circle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50px;
+            position: relative;
+          }
+          .card-circle:before,
+          .card-circle:after {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            opacity: 0.5;
+            border-radius: inherit;
+            transform: translateX(-50%);
+          }
+          .card-circle:after {
+            transform: translateX(0%);
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { Notification, FlipCard, SimpleCard, CardHover, GradientCard };

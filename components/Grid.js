@@ -20,9 +20,15 @@ import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification, FlipCard, SimpleCard, CardHover } from "./Card";
+import {
+  Notification,
+  FlipCard,
+  SimpleCard,
+  CardHover,
+  GradientCard,
+} from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
-import { AvatarInfo } from "./Layout";
+import { AvatarInfo, GridImage, GridImage2 } from "./Layout";
 import { Labels, Tags } from "./Tags";
 import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
@@ -57,6 +63,17 @@ const Grid = () => {
     <GridStyles>
       <div className="grid">
         <div className="grid__column">
+          <GridImage2></GridImage2>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <GridImage></GridImage>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <PlayerLoading></PlayerLoading>
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
           <Dropdown></Dropdown>
@@ -77,7 +94,7 @@ const Grid = () => {
           <DashedLoading></DashedLoading>
           <ComplexShadow></ComplexShadow>
           <LikeUnlike></LikeUnlike>
-          <UpComingUI></UpComingUI>
+          <GradientCard></GradientCard>
         </div>
         <div className="grid__column">
           <AvatarInfo></AvatarInfo>
@@ -85,7 +102,6 @@ const Grid = () => {
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CircleImage></CircleImage>
-          <OverlayIcon></OverlayIcon>
           <FloatingButton></FloatingButton>
           <CustomRadio></CustomRadio>
           <Labels></Labels>
@@ -101,7 +117,6 @@ const Grid = () => {
           <CircleLoading2></CircleLoading2>
           <SocialShareButon></SocialShareButon>
           <SubscribeForm></SubscribeForm>
-          <PlayerLoading></PlayerLoading>
         </div>
         <div className="grid__column">
           <InputFocus></InputFocus>

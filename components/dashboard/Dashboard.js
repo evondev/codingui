@@ -2,6 +2,7 @@ import React from "react";
 import { DashboardStyles } from "./styles/DashboardStyles";
 
 const Dashboard = () => {
+  return null;
   return (
     <DashboardStyles>
       <div className="dashboard-wrapper">
