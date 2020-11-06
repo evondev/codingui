@@ -10,7 +10,7 @@ const Meta = () => {
         content="width=device-width,user-scalable=no, initial-scale=1.0"
       />
       <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap"
         rel="stylesheet"
       ></link>
       <link
