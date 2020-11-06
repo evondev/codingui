@@ -5,7 +5,7 @@ import Image from "./Image";
 const Brands = () => {
   return (
     <BrandsStyles>
-      <div className="container">
+      <div className="container brand">
         <div className="text-boxed">
           <h2 className="text-heading">
             Order now for an express delivery of brands products

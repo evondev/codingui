@@ -2,16 +2,17 @@ import styled from "styled-components";
 export const BrandsStyles = styled.section`
   padding: 120px 0 0;
   text-align: center;
-  .text-boxed {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .text-heading {
-    font-size: 32px;
-    line-height: 1.4;
-  }
+
   .brand {
+    .text-boxed {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text-heading {
+      font-size: 32px;
+      line-height: 1.4;
+    }
     &-list {
       display: flex;
       flex-flow: row wrap;
