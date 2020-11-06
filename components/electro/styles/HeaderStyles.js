@@ -44,6 +44,7 @@ export const HeaderStyles = styled.header`
     &-title {
       font-size: 200px;
       margin-bottom: 40px;
+      color: rgba(255, 255, 255, 0.1);
     }
     &-inner {
       display: flex;
