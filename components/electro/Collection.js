@@ -2,6 +2,7 @@ import React from "react";
 import Image from "./Image";
 import { CollectionStyles } from "./styles/CollectionStyles";
 import { ProductListStyles } from "./styles/ProductListStyles";
+import ProductItem from "./ProductItem";
 
 const Collection = () => {
   return (
@@ -18,129 +19,12 @@ const Collection = () => {
           </span>
         </div>
         <ProductListStyles className="product-list">
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-bag.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-              <span className="product-label product-label--sale">Sale</span>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-bag2.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-bag3.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-              <span className="product-label product-label--hot">Hot</span>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-glass.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-glasses.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
-          <div className="product-item">
-            <div className="product-media">
-              <Image image="img-glass1.jpg" className="product-image"></Image>
-              <div className="product-action">
-                <div className="product-action-item">
-                  <i className="fal fa-shopping-bag"></i>
-                </div>
-                <div className="product-action-item">
-                  <i className="fal fa-heart"></i>
-                </div>
-              </div>
-              <span className="product-label product-label--new">New</span>
-            </div>
-            <div className="product-content">
-              <h3 className="product-name">Mango women's bag</h3>
-              <div className="product-price">
-                <span className="product-price-sale">$199.00</span>
-                <span className="product-price-main">$230.00</span>
-              </div>
-            </div>
-          </div>
+          <ProductItem image="img-sound.jpg" salePrice="230.00"></ProductItem>
+          <ProductItem image="img-mouse.jpg" label="new"></ProductItem>
+          <ProductItem image="img-vr-glasses.jpg" label="hot"></ProductItem>
+          <ProductItem image="img-sony.jpg"></ProductItem>
+          <ProductItem image="img-headphone.jpg" label="sale"></ProductItem>
+          <ProductItem image="img-xiaomi.jpg"></ProductItem>
         </ProductListStyles>
       </div>
       <Image

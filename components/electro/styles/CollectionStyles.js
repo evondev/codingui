@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const CollectionStyles = styled.section`
   position: relative;
-  padding: 125px 0 100px;
+  padding: 120px 0 90px;
   .collection {
     &-image-headphone {
       position: absolute;
@@ -10,7 +10,7 @@ export const CollectionStyles = styled.section`
     }
     &-image-game {
       position: absolute;
-      bottom: 0;
+      bottom: 100px;
       right: 0;
     }
     &-boxed {

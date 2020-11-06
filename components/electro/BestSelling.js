@@ -55,7 +55,7 @@ const BestSelling = () => {
             className="guarantee-icon"
           />
           <h4 className="guarantee-title">Express Delivery</h4>
-          <span className="guarantee-desc">Sure moneyback</span>
+          <span className="guarantee-desc">Fast Delivery</span>
         </div>
         <div className="guarantee-item">
           <img
@@ -64,7 +64,7 @@ const BestSelling = () => {
             className="guarantee-icon"
           />
           <h4 className="guarantee-title">Exclusive Products</h4>
-          <span className="guarantee-desc">Premium Products</span>
+          <span className="guarantee-desc">Safe checkout</span>
         </div>
       </div>
     </BestSellingStyles>

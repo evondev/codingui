@@ -8,33 +8,43 @@ export const ProductListStyles = styled.div`
       grid-gap: 30px;
       &--4 {
         grid-template-columns: repeat(4, 1fr);
+        .product-media {
+          height: 320px;
+        }
       }
     }
   }
   .product {
-    &-item:hover .product-action {
+    &-media:hover .product-action {
       opacity: 1;
       visibility: visible;
+      transition: all 0.2s linear;
+    }
+    &-media:hover .product-image {
+      opacity: 0.75;
     }
     &-media {
       position: relative;
       height: 440px;
+      z-index: 2;
     }
     &-image {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.2s linear;
     }
 
     &-content {
       text-align: center;
-      padding: 30px;
+      padding: 30px 15px;
     }
     &-name {
       color: #051441;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       font-size: 20px;
       line-height: 1.5;
+      text-transform: capitalize;
     }
     &-price {
       font-size: 20px;
@@ -45,7 +55,7 @@ export const ProductListStyles = styled.div`
       text-decoration: line-through;
     }
     &-price-sale {
-      font-weight: 600;
+      font-weight: 500;
     }
   }
   .product-label {
@@ -84,7 +94,7 @@ export const ProductListStyles = styled.div`
     grid-column-gap: 20px;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.2s ease;
+    transition: all 0.2s linear;
     &-item {
       align-items: center;
       background-color: var(--gray-dark);

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 export const HeaderStyles = styled.header`
-  height: 100vh;
   min-height: 950px;
+  padding-bottom: 100px;
   background-image: var(--linear);
+  position: relative;
   .header {
     &-top {
-      padding: 30px 0;
+      padding: 35px 0;
     }
     &-top-inner {
       display: flex;
@@ -22,28 +23,26 @@ export const HeaderStyles = styled.header`
   .header-content {
     color: white;
     width: 100%;
-    padding-top: 245px;
     &-product {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      transform: translate(100px, -50%);
+      position: relative;
+      transform: translateX(-150px);
+      z-index: 2;
     }
     &-category {
       font-size: 14px;
+      letter-spacing: 1.4px;
       text-transform: uppercase;
       margin-bottom: 15px;
-      font-weight: 500;
       display: inline-block;
     }
     &-heading {
       font-weight: bold;
       font-size: 60px;
+      line-height: 1.3;
       margin-bottom: 15px;
     }
     &-title {
-      font-size: 200px;
-      margin-bottom: 40px;
+      margin-bottom: 20px;
       color: rgba(255, 255, 255, 0.1);
     }
     &-inner {
@@ -54,6 +53,11 @@ export const HeaderStyles = styled.header`
     }
     &-btn {
       color: white;
+      &:hover {
+        color: var(--gray-dark);
+        background-color: white;
+        border-color: white;
+      }
     }
   }
   .header-line {

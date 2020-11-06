@@ -1,17 +1,20 @@
 import styled from "styled-components";
 export const BestSellingStyles = styled.section`
   position: relative;
+  padding: 120px 0;
   .best {
     &-heading {
       font-size: 200px;
-      color: rgba(247, 247, 247, 0.5);
+      color: rgba(247, 247, 247, 1);
       position: absolute;
       top: 50%;
       left: 0;
       transform: translate(-50%, -50%);
+      z-index: 1;
     }
     &-container {
-      padding: 120px 0 100px;
+      padding-bottom: 100px;
+      margin-bottom: 80px;
       border-bottom: 1px solid #eee;
       display: flex;
       align-items: center;
@@ -29,6 +32,10 @@ export const BestSellingStyles = styled.section`
     &-content {
       width: 40%;
     }
+    &-media-man {
+      position: relative;
+      z-index: 2;
+    }
     &-media-vr {
       position: absolute;
       bottom: 0;
@@ -40,7 +47,6 @@ export const BestSellingStyles = styled.section`
     }
   }
   .guarantee {
-    padding: 70px 0 120px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +73,7 @@ export const BestSellingStyles = styled.section`
     }
     &-desc {
       color: #677294;
-      font-weight: 500;
+      font-weight: 300;
     }
   }
 `;

@@ -6,25 +6,30 @@ export const ElectroStyles = styled.div`
   --success-color: #00d310;
   --warning-color: #ff8a01;
   --gray-dark: #101010;
+  --gray-darker: #07112d;
   --linear: linear-gradient(
     to right bottom,
     var(--primary-color),
     var(--secondary-color)
   );
   --linear-2: linear-gradient(to right, #1cd9a6, #59acda);
+  --linear-3: linear-gradient(to right, #7852ff, #8b62ff);
   * {
     outline: none;
     box-sizing: border-box;
   }
   background-color: white;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1920px;
   min-height: 100vh;
+  overflow-x: hidden;
   & + .back-to-top {
     display: none;
   }
   .container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     max-width: 1210px;
     padding-left: 20px;
     padding-right: 20px;
@@ -39,6 +44,7 @@ export const ElectroStyles = styled.div`
     font-weight: 500;
     color: #051441;
     line-height: 1.2;
+    text-transform: capitalize;
   }
   .text-desc {
     font-size: 15px;
@@ -50,16 +56,22 @@ export const ElectroStyles = styled.div`
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1;
+    font-size: 200px;
+    white-space: nowrap;
+    &--small {
+      font-size: 100px;
+    }
   }
   .btn {
     display: inline-block;
     text-align: center;
-    padding: 20px 40px;
+    padding: 17.5px 40px;
     cursor: pointer;
     outline: none;
     border-radius: 100px;
     font-size: 15px;
     font-weight: 500;
+    transition: all 0.2s linear;
     &--transparent {
       background-color: transparent;
     }
@@ -74,6 +86,35 @@ export const ElectroStyles = styled.div`
       background-image: var(--linear);
       color: white;
     }
+    &--white {
+      background-color: white;
+    }
+  }
+
+  .countdown {
+    display: inline-grid;
+    grid-template-columns: repeat(7, auto);
+    grid-column-gap: 15px;
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-transform: uppercase;
+    }
+    &-number {
+      font-size: 44px;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    &-text {
+      letter-spacing: 0.15px;
+      font-weight: 500;
+    }
+    &-conlon {
+      font-weight: 600;
+      font-size: 44px;
+    }
   }
 
   .menu {
@@ -82,21 +123,22 @@ export const ElectroStyles = styled.div`
       align-items: center;
     }
     &-item {
-      margin-left: 50px;
+      margin-left: 40px;
     }
     &-link {
       color: white;
       font-weight: 500;
+      font-size: 15px;
     }
     &-tool {
       display: flex;
       align-items: center;
       color: white;
-      font-size: 18px;
+      font-size: 22px;
     }
     &-cart {
       position: relative;
-      margin: 0 15px;
+      margin: 0 20px;
     }
     &-cart-count {
       width: 15px;
