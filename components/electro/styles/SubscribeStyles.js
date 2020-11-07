@@ -26,10 +26,10 @@ export const SubscribeStyles = styled.section`
       width: 100%;
     }
     &-input {
+      padding: 15px 30px;
       width: 100%;
       flex: 1;
       border-radius: 100px;
-      padding: 0 30px;
       background-color: rgba(255, 255, 255, 0.1);
       border: 1px solid white;
       color: white;
@@ -50,6 +50,29 @@ export const SubscribeStyles = styled.section`
       background-image: var(--linear);
       background-clip: text;
       -webkit-background-clip: text;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .subscribe {
+      transform: none;
+      margin-bottom: -150px;
+      position: relative;
+      z-index: 5;
+    }
+    .subscribe-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+    }
+    .subscribe-info {
+      margin-bottom: 20px;
+    }
+    .subscribe-form {
+      flex-direction: column;
+    }
+    .subscribe-submit {
+      margin-left: 0;
+      margin-top: 15px;
     }
   }
 `;

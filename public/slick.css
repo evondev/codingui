@@ -1,0 +1,23 @@
+.slick-slider {
+  position: relative;
+}
+.slick-list {
+  overflow: hidden;
+}
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  transform: translate3d(0, 0, 0);
+  -webkit-overflow-scrolling: touch;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.slick-track .slick-slide > div {
+  height: 100%;
+}
+
+.slick-track .slick-slide {
+  margin: 0 1.5rem;
+}

@@ -45,4 +45,27 @@ export const DiscountStyles = styled.section`
       transform: translateY(-200px);
     }
   }
+  @media screen and (max-width: 1023px) {
+    .discount-container.container {
+      padding: 300px 40px 40px;
+      flex-direction: column;
+      .heading-opacity {
+        position: absolute;
+        left: 5%;
+        top: 25%;
+        transform: none;
+        font-size: 150px;
+      }
+    }
+    .discount-content {
+      width: 100%;
+      flex-direction: column;
+    }
+    .discount-image {
+      right: 0;
+    }
+    .discount-title {
+      margin-bottom: 35px;
+    }
+  }
 `;

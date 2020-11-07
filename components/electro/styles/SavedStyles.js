@@ -57,4 +57,24 @@ export const SavedStyles = styled.section`
       }
     }
   }
+  @media screen and (max-width: 1023px) {
+    padding: 60px 0;
+    .saved-image {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 150px;
+      z-index: 0;
+      top: unset;
+      left: unset;
+      transform: translateY(50px);
+    }
+    .saved-container {
+      flex-direction: column-reverse;
+    }
+    .saved-content {
+      margin-left: 0;
+      max-width: 100%;
+    }
+  }
 `;

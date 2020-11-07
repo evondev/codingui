@@ -4,13 +4,11 @@ export const BestSellingStyles = styled.section`
   padding: 120px 0;
   .best {
     &-heading {
-      font-size: 200px;
       color: rgba(247, 247, 247, 1);
       position: absolute;
       top: 50%;
       left: 0;
       transform: translate(-50%, -50%);
-      z-index: 1;
     }
     &-container {
       padding-bottom: 100px;
@@ -74,6 +72,49 @@ export const BestSellingStyles = styled.section`
     &-desc {
       color: #677294;
       font-weight: 300;
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding: 60px 0;
+    .best-container {
+      flex-direction: column;
+      padding-bottom: 60px;
+      margin-bottom: 60px;
+      & > * {
+        width: 100%;
+        padding: 0;
+      }
+    }
+    .best-heading {
+      font-size: 150px;
+      top: 25%;
+    }
+    .best-media-vr {
+      position: relative;
+      transform: translate(50px, -25%);
+    }
+    .guarantee {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 50px;
+      align-items: flex-start;
+      justify-content: center;
+      &-item {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        justify-items: center;
+      }
+      &-icon {
+        grid-area: 1 / 1 / 2 / -1;
+        margin-bottom: 25px;
+      }
+      &-title {
+        grid-area: 2 / 1 / 3 / -1;
+      }
+      &-desc {
+        grid-area: 3 / 1 / -1 / -1;
+      }
     }
   }
 `;

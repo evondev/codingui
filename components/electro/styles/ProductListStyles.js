@@ -15,6 +15,11 @@ export const ProductListStyles = styled.div`
     }
   }
   .product {
+    &-item {
+      position: relative;
+      z-index: 5;
+      background-color: #fff;
+    }
     &-media:hover .product-action {
       opacity: 1;
       visibility: visible;
@@ -125,6 +130,35 @@ export const ProductListStyles = styled.div`
 
     &-item:hover:before {
       transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &.product-list {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 80%;
+      grid-auto-flow: column;
+      grid-gap: 1.5rem;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+      grid-template-rows: auto;
+      &::-webkit-scrollbar {
+        display: none;
+        width: 0;
+      }
+      & > * {
+        scroll-snap-align: start;
+      }
+    }
+    .product-media {
+      height: 370px;
     }
   }
 `;

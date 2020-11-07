@@ -43,8 +43,7 @@ export const ElectroStyles = styled.div`
     margin-bottom: 15px;
     font-weight: 500;
     color: #051441;
-    line-height: 1.2;
-    text-transform: capitalize;
+    line-height: 1.4;
   }
   .text-desc {
     font-size: 15px;
@@ -58,6 +57,9 @@ export const ElectroStyles = styled.div`
     line-height: 1;
     font-size: 200px;
     white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;
     &--small {
       font-size: 100px;
     }
@@ -153,6 +155,41 @@ export const ElectroStyles = styled.div`
       top: 0;
       right: 0;
       transform: translate(50%, -50%);
+    }
+    &-toggle {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .menu-toggle {
+      font-size: 25px;
+      color: white;
+      display: block;
+    }
+    .menu-list {
+      display: none;
+    }
+    .text-heading {
+      font-size: 30px;
+      margin-bottom: 5px;
+    }
+    .text-desc {
+      font-size: 14px;
+    }
+    .text-boxed {
+      margin-bottom: 45px;
+    }
+    .countdown {
+      &-number,
+      &-conlon {
+        font-size: 34px;
+      }
+      &-number {
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-size: 12px;
+      }
     }
   }
 `;

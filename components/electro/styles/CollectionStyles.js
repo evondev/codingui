@@ -18,4 +18,15 @@ export const CollectionStyles = styled.section`
       margin-bottom: 75px;
     }
   }
+  @media screen and (max-width: 1023px) {
+    padding: 60px 0;
+    .collection-image-headphone {
+      max-width: 50%;
+      top: 0;
+    }
+    .collection-image-game {
+      max-width: 50%;
+      transform: none;
+    }
+  }
 `;

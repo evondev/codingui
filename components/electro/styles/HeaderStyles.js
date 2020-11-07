@@ -18,6 +18,7 @@ export const HeaderStyles = styled.header`
       top: 50%;
       left: 0;
       transform: translate(-50%, -50%);
+      pointer-events: none;
     }
   }
   .header-content {
@@ -82,6 +83,31 @@ export const HeaderStyles = styled.header`
     }
   }
 
-  @media screen and (max-width: 1600px) {
+  @media screen and (max-width: 1023px) {
+    min-height: unset;
+    overflow: hidden;
+    .header-dash {
+      max-width: 50%;
+    }
+    .header-content {
+      padding-top: 50px;
+    }
+    .header-top {
+      padding: 25px 0;
+    }
+    .header-content-heading {
+      font-size: 35px;
+    }
+    .header-content-title {
+      font-size: 80px;
+    }
+    .header-content-product {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      transform: none;
+      max-width: 250px;
+      transform: translateY(70px);
+    }
   }
 `;

@@ -3,6 +3,7 @@ import React from "react";
 const Navigation = () => {
   return (
     <nav className="menu">
+      <i className="fal fa-bars menu-toggle"></i>
       <ul className="menu-list">
         <li className="menu-item">
           <a href="#" className="menu-link">

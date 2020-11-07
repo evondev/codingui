@@ -3,6 +3,7 @@ import BestSelling from "./BestSelling";
 import Brands from "./Brands";
 import Collection from "./Collection";
 import Discount from "./Discount";
+import Feature from "./Feature";
 import Footer from "./Footer";
 import Header from "./Header";
 import Saved from "./Saved";
@@ -15,6 +16,7 @@ const Electro = () => {
     <ElectroStyles>
       <Header></Header>
       <BestSelling></BestSelling>
+      <Feature></Feature>
       <Collection></Collection>
       <Saved></Saved>
       <SellerProduct></SellerProduct>

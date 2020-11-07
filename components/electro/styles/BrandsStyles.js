@@ -33,4 +33,21 @@ export const BrandsStyles = styled.section`
       }
     }
   }
+  @media screen and (max-width: 1023px) {
+    padding: 60px 0;
+    .brand-list {
+      margin-left: -20px;
+    }
+    .brand-item {
+      margin: 0 0 20px 20px;
+      width: calc(33% - 20px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .brand-logo {
+      margin: 0 auto;
+    }
+  }
 `;
