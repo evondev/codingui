@@ -57,10 +57,19 @@ import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
 import { ComplexShadow } from "./Shadow";
 import { SidebarMenu } from "./Sidebar";
+import { LargeSignup, SimpleSignup } from "./SignUp";
 
 const Grid = () => {
   return (
     <GridStyles>
+      <div className="grid grid--23">
+        <div className="grid__column">
+          <SimpleSignup></SimpleSignup>
+        </div>
+        <div className="grid__column">
+          <LargeSignup></LargeSignup>
+        </div>
+      </div>
       <div className="grid">
         <div className="grid__column">
           <GridImage2></GridImage2>

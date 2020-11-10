@@ -15,6 +15,9 @@ export const GridStyles = styled.div`
       &--2 {
         grid-template-columns: repeat(2, 50%);
       }
+      &--23 {
+        grid-template-columns: 1fr 2fr;
+      }
     }
   }
 
