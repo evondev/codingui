@@ -1,8 +1,5 @@
-// function MyApp({ Component, pageProps }) {
-//   return <Component {...pageProps} />;
-// }
+import "../styles/sass/main.scss";
 
-// export default MyApp;
 import App from "next/app";
 import Page from "../components/Page";
 

@@ -1,0 +1,11 @@
+$colors: "primary", "secondary";
+$font-weight: 300 400 600 700 800;
+$font-size: 16 18 20 22 25 28 30 36;
+$text-clamp: 1 2 3 4 5;
+$breakpoints: (
+  "xs": 480,
+  "sm": 768,
+  "md": 1024,
+  "lg": 1280,
+  "xlg": 1440,
+);

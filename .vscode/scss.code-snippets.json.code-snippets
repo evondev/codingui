@@ -1,0 +1,7 @@
+{
+  "Each loop in SASS": {
+    "prefix": "scss-each",
+    "body": ["@each $1 in $2{$3}"],
+    "description": "Each loop in SASS"
+  }
+}

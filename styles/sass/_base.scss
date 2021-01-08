@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  -webkit-tap-highlight-color: rgba(white, 0);
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.4;
+}
+div,
+video,
+img,
+input,
+textarea,
+button,
+select,
+li,
+a {
+  outline: none;
+}
+em,
+i {
+  font-style: italic;
+}
+strong,
+b {
+  font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+input,
+button,
+textarea {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+}

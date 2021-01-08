@@ -62,24 +62,6 @@ import { LargeSignup, SimpleSignup } from "./SignUp";
 const Grid = () => {
   return (
     <GridStyles>
-      <div className="grid grid--23">
-        <div className="grid__column">
-          <SimpleSignup></SimpleSignup>
-        </div>
-        <div className="grid__column">
-          <LargeSignup></LargeSignup>
-        </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
-          <GridImage2></GridImage2>
-        </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
-          <GridImage></GridImage>
-        </div>
-      </div>
       <div className="grid">
         <div className="grid__column">
           <PlayerLoading></PlayerLoading>
@@ -158,6 +140,24 @@ const Grid = () => {
       </div>
       <div className="grid">
         <Table></Table>
+      </div>
+      <div className="grid grid--23">
+        <div className="grid__column">
+          <SimpleSignup></SimpleSignup>
+        </div>
+        <div className="grid__column">
+          <LargeSignup></LargeSignup>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <GridImage2></GridImage2>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <GridImage></GridImage>
+        </div>
       </div>
     </GridStyles>
   );

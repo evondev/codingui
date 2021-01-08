@@ -1,0 +1,27 @@
+.d-block {
+  display: block;
+}
+.d-iblock {
+  display: inline-block;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+.d-iflex {
+  display: inline-flex;
+}
+.d-grid {
+  display: grid;
+}
+.d-show {
+  opacity: 1;
+  visibility: visible;
+}
+.d-hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s ease;
+}
