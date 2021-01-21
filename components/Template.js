@@ -17,7 +17,9 @@ const TemplateStyles = styled.div`
 const Template = ({
   title,
   html = "",
+  htmlCopy = "",
   css = "",
+  cssCopy = "",
   source = "",
   author = "",
   authorFrom = "",
@@ -112,13 +114,13 @@ const Template = ({
             <div className="grid__copies">
               <div
                 className="grid__copy"
-                onClick={() => copyToClipboard(newHTML)}
+                onClick={() => copyToClipboard(htmlCopy || newHTML)}
               >
                 Copy HTML
               </div>
               <div
                 className="grid__copy"
-                onClick={() => copyToClipboard(newCss)}
+                onClick={() => copyToClipboard(cssCopy || newCss)}
               >
                 Copy CSS
               </div>

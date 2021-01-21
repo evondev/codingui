@@ -58,10 +58,50 @@ import { SocialShareButon } from "./Social";
 import { ComplexShadow } from "./Shadow";
 import { SidebarMenu } from "./Sidebar";
 import { LargeSignup, SimpleSignup } from "./SignUp";
+import {
+  Gradient1,
+  Gradient2,
+  Gradient3,
+  Gradient4,
+  Gradient5,
+  Gradient6,
+  Gradient7,
+  Gradient8,
+  Gradient9,
+  Gradient10,
+  Gradient11,
+  Gradient12,
+  Gradient13,
+  Gradient14,
+  Gradient15,
+} from "./Gradient";
 
 const Grid = () => {
   return (
     <GridStyles>
+      <div className="grid">
+        <div className="grid__column">
+          <Gradient5></Gradient5>
+          <Gradient4></Gradient4>
+          <Gradient3></Gradient3>
+          <Gradient2></Gradient2>
+          <Gradient1></Gradient1>
+        </div>
+        <div className="grid__column">
+          <Gradient10></Gradient10>
+          <Gradient9></Gradient9>
+          <Gradient8></Gradient8>
+          <Gradient7></Gradient7>
+          <Gradient6></Gradient6>
+        </div>
+        <div className="grid__column">
+          <Gradient15></Gradient15>
+          <Gradient14></Gradient14>
+          <Gradient13></Gradient13>
+          <Gradient12></Gradient12>
+          <Gradient11></Gradient11>
+        </div>
+      </div>
       <div className="grid">
         <div className="grid__column">
           <PlayerLoading></PlayerLoading>
