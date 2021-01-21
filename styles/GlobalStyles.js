@@ -1,7 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
-
+	.avatar-center {
+		margin: 40px auto 0;
+	}
+	.image-cover {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: inherit;
+	}
   .sweet-noti {
 		padding: 2rem;
 		background-color: white;

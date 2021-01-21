@@ -95,6 +95,9 @@ const Header = () => {
         <span className="filter-item active" data-source="all">
           All
         </span>
+        <span className="filter-item" data-source="avatar">
+          Avatar
+        </span>
         <span className="filter-item" data-source="gradient">
           Gradient
         </span>
@@ -107,26 +110,14 @@ const Header = () => {
         <span className="filter-item" data-source="card">
           Card
         </span>
-        <span className="filter-item" data-source="image">
-          Media
-        </span>
         <span className="filter-item" data-source="progress">
           Progress
         </span>
         <span className="filter-item" data-source="loading">
           Loading
         </span>
-        <span className="filter-item" data-source="text">
-          Text
-        </span>
-        <span className="filter-item" data-source="tab">
-          Tab
-        </span>
         <span className="filter-item" data-source="dropdown">
           Dropdown
-        </span>
-        <span className="filter-item" data-source="table">
-          Table
         </span>
         <span className="filter-item" data-source="navigation">
           Menu

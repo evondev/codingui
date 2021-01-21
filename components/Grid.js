@@ -3,7 +3,6 @@ import { GridStyles } from "../styles/GridStyles";
 import {
   ButtonWithIcon,
   GradientButton,
-  FloatingButton,
   LoadingButton,
   EffectButton,
 } from "./Button";
@@ -14,21 +13,15 @@ import {
   InputFocus,
   InputFocusEffect,
 } from "./Input";
-import { CircleImage, Triangle } from "./Image";
-import { OverlayIcon, Tooltip } from "./Overlay";
+import { Triangle } from "./Image";
+import { Tooltip } from "./Overlay";
 import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import {
-  Notification,
-  FlipCard,
-  SimpleCard,
-  CardHover,
-  GradientCard,
-} from "./Card";
+import { Notification, FlipCard, SimpleCard, GradientCard } from "./Card";
 import { ResponsiveMedia, ResponsiveImage } from "./Media";
-import { AvatarInfo, GridImage, GridImage2 } from "./Layout";
+import { GridImage, GridImage2 } from "./Layout";
 import { Labels, Tags } from "./Tags";
 import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
 import { CaptainShield } from "./SingleDiv";
@@ -44,7 +37,6 @@ import {
 } from "./Loading";
 import { IconOpacity, RatingStar, LikeUnlike } from "./Icon";
 import { MusicPlayer } from "./Player";
-import { UpComingUI } from "./UpComing";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { Pricing } from "./Pricing";
@@ -75,6 +67,14 @@ import {
   Gradient14,
   Gradient15,
 } from "./Gradient";
+import {
+  AvatarDefault,
+  AvatarDefault1,
+  AvatarDefault2,
+  AvatarDefault3,
+  AvatarDefault4,
+  AvatarDefault5,
+} from "./Avatar";
 
 const Grid = () => {
   return (
@@ -83,22 +83,25 @@ const Grid = () => {
         <div className="grid__column">
           <Gradient2></Gradient2>
           <Gradient1></Gradient1>
-          <UpComingUI></UpComingUI>
+          <AvatarDefault3></AvatarDefault3>
+          <AvatarDefault></AvatarDefault>
+          {/* <UpComingUI></UpComingUI> */}
         </div>
         <div className="grid__column">
           <Gradient10></Gradient10>
           <Gradient9></Gradient9>
+          <AvatarDefault4></AvatarDefault4>
+          <AvatarDefault1></AvatarDefault1>
         </div>
         <div className="grid__column">
           <Gradient15></Gradient15>
           <Gradient14></Gradient14>
+          <AvatarDefault5></AvatarDefault5>
+          <AvatarDefault2></AvatarDefault2>
         </div>
       </div>
       <div className="grid">
         <div className="grid__column">
-          <PlayerLoading></PlayerLoading>
-          <ButtonWithIcon></ButtonWithIcon>
-          <GradientButton></GradientButton>
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
@@ -117,18 +120,18 @@ const Grid = () => {
           <LineText></LineText>
           <SimpleTab></SimpleTab>
           <LightDropdown></LightDropdown>
+          <PlayerLoading></PlayerLoading>
           <DashedLoading></DashedLoading>
           <ComplexShadow></ComplexShadow>
           <LikeUnlike></LikeUnlike>
           <GradientCard></GradientCard>
         </div>
         <div className="grid__column">
-          <AvatarInfo></AvatarInfo>
+          <ButtonWithIcon></ButtonWithIcon>
+          <GradientButton></GradientButton>
           <ResponsiveImage></ResponsiveImage>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
-          <CircleImage></CircleImage>
-          <FloatingButton></FloatingButton>
           <CustomRadio></CustomRadio>
           <Labels></Labels>
           <MultiLine></MultiLine>
@@ -169,7 +172,6 @@ const Grid = () => {
           <Gradient6></Gradient6>
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
-          <CardHover></CardHover>
           <SidebarMenu></SidebarMenu>
         </div>
       </div>
