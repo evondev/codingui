@@ -6,25 +6,34 @@ const UpComingUI = () => {
     <>
       <Template
         hideCode={true}
-        source="upcoming"
+        source="fixed"
+        author="evondev"
         html={`
-        <div class="upcoming">
-          <a href="https://evondev.com/khoa-hoc-html-css" target="_blank" rel="noopener noreferrer">
-            <img src="/images/evondev-html-css-course.jpg"/>
-          </a>
+        <p class="momo-text">Donate ủng hộ tác giả nếu bạn thích</p>
+        <div class="momo">
+          <img src="https://static.mservice.io/img/logo-momo.png"/>
+          <span>0937253577</span>
         </div>
         `}
         css={`
-          .upcoming {
-            color: white;
-            font-weight: 500;
+          .momo-text {
+            margin-bottom: 25px;
+            font-weight: 600;
             line-height: 1.6;
-            span {
-              font-weight: 600;
-            }
-            p {
-              margin-bottom: 1rem;
-            }
+            text-transform: uppercase;
+          }
+          .momo {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-gap: 0 20px;
+            align-items: center;
+            font-size: 30px;
+            font-weight: bold;
+          }
+          .momo img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
           }
         `}
       ></Template>

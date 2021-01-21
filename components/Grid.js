@@ -81,25 +81,17 @@ const Grid = () => {
     <GridStyles>
       <div className="grid">
         <div className="grid__column">
-          <Gradient5></Gradient5>
-          <Gradient4></Gradient4>
-          <Gradient3></Gradient3>
           <Gradient2></Gradient2>
           <Gradient1></Gradient1>
+          <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
           <Gradient10></Gradient10>
           <Gradient9></Gradient9>
-          <Gradient8></Gradient8>
-          <Gradient7></Gradient7>
-          <Gradient6></Gradient6>
         </div>
         <div className="grid__column">
           <Gradient15></Gradient15>
           <Gradient14></Gradient14>
-          <Gradient13></Gradient13>
-          <Gradient12></Gradient12>
-          <Gradient11></Gradient11>
         </div>
       </div>
       <div className="grid">
@@ -116,6 +108,9 @@ const Grid = () => {
           <CircleLoading></CircleLoading>
           <LoadingButton></LoadingButton>
           <IconOpacity></IconOpacity>
+          <Gradient13></Gradient13>
+          <Gradient12></Gradient12>
+          <Gradient11></Gradient11>
           <Calendar></Calendar>
           <Tooltip></Tooltip>
           <LoginForm></LoginForm>
@@ -141,6 +136,9 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
+          <Gradient5></Gradient5>
+          <Gradient4></Gradient4>
+          <Gradient3></Gradient3>
           <SimpleCard></SimpleCard>
           <ContactForm></ContactForm>
           <AutocompleteSearch></AutocompleteSearch>
@@ -166,6 +164,9 @@ const Grid = () => {
           <RecentActivity></RecentActivity>
           <AvatarList></AvatarList>
           <NotiBell></NotiBell>
+          <Gradient8></Gradient8>
+          <Gradient7></Gradient7>
+          <Gradient6></Gradient6>
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
           <CardHover></CardHover>

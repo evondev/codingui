@@ -32,6 +32,7 @@ const Header = () => {
           } else {
             item.style.display = "none";
           }
+          if (itemSource === "fixed") item.style.display = "block";
         });
     }
 
@@ -46,7 +47,7 @@ const Header = () => {
       ?.database()
       ?.ref("love")
       .on("value", function (snapshot) {
-        setLoveCount(snapshot.val().value + 1);
+        setLoveCount(snapshot.val().value + 10);
       });
   }, [loveCount]);
 

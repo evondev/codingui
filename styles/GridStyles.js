@@ -26,13 +26,6 @@ export const GridStyles = styled.div`
     background-color: white;
     padding: 10px 20px 20px;
     border-radius: 2px;
-    &[data-source="upcoming"] {
-      background-color: transparent;
-      padding: 0;
-      .grid__header {
-        display: none;
-      }
-    }
   }
 
   .grid__column {
