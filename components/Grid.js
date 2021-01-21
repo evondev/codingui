@@ -84,26 +84,26 @@ const Grid = () => {
         <div className="grid__column">
           <UpComingUI></UpComingUI>
         </div>
-        <div className="grid__column">
-          <Gradient14></Gradient14>
-        </div>
-        <div className="grid__column">
-          <Gradient10></Gradient10>
-        </div>
+        <div className="grid__column"></div>
+        <div className="grid__column"></div>
       </div>
       <div className="grid">
         <div className="grid__column">
           <Gradient1></Gradient1>
+          <Gradient10></Gradient10>
+
           <AvatarDefault3></AvatarDefault3>
           <AvatarDefault></AvatarDefault>
         </div>
         <div className="grid__column">
           <Gradient9></Gradient9>
+          <Gradient14></Gradient14>
           <AvatarDefault4></AvatarDefault4>
           <AvatarDefault1></AvatarDefault1>
         </div>
         <div className="grid__column">
           <Gradient15></Gradient15>
+          <Gradient2></Gradient2>
           <AvatarDefault5></AvatarDefault5>
           <AvatarDefault2></AvatarDefault2>
         </div>
@@ -188,9 +188,7 @@ const Grid = () => {
           <DropdownMenu></DropdownMenu>
         </div>
 
-        <div className="grid__column">
-          <Gradient2></Gradient2>
-        </div>
+        <div className="grid__column"></div>
       </div>
       <div className="grid">
         <Table></Table>
