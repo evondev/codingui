@@ -69,7 +69,14 @@ export const HeaderStyles = styled.header`
     font-weight: bold;
     font-size: 40px;
     color: #5e6b79;
-    letter-spacing: 5px;
+    letter-spacing: 2.5px;
+  }
+  .heading strong {
+    font-weight: 800;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #1abcf4, #5defb8);
   }
   .slogan {
     font-size: 14px;

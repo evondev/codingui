@@ -5,26 +5,22 @@ const UpComingUI = () => {
   return (
     <>
       <Template
+        className="momo"
         hideCode={true}
         source="fixed"
         author="evondev"
         html={`
-        <p class="momo-text">Donate ủng hộ tác giả nếu bạn thích</p>
-        <div class="momo">
+        <div class="momo-layout">
+          <span className="a">Donate:</span>
           <img src="https://static.mservice.io/img/logo-momo.png"/>
           <span>0937253577</span>
         </div>
         `}
         css={`
-          .momo-text {
-            margin-bottom: 25px;
-            font-weight: 600;
-            line-height: 1.6;
-            text-transform: uppercase;
-          }
-          .momo {
+          .momo-layout {
+            color: white;
             display: grid;
-            grid-template-columns: 50px 1fr;
+            grid-template-columns: auto 50px 1fr;
             grid-gap: 0 20px;
             align-items: center;
             font-size: 30px;

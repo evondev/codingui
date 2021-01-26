@@ -76,7 +76,9 @@ const Header = () => {
       <HeaderStyles>
         <div className="container">
           <img src="/images/logo.png" alt="codingui" className="logo" />
-          <h1 className="heading">{`codingui`}</h1>
+          <h1 className="heading">
+            Coding<strong>UI</strong>
+          </h1>
           <p className="slogan">
             Just a simple place to share a lot of free UIs
           </p>

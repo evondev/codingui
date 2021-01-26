@@ -76,16 +76,18 @@ import {
   AvatarDefault5,
 } from "./Avatar";
 import { UpComingUI } from "./UpComing";
+import { DiscountUI } from "./Discount";
 
 const Grid = () => {
   return (
     <GridStyles>
-      <div className="grid">
+      <div className="grid grid--23">
         <div className="grid__column">
           <UpComingUI></UpComingUI>
         </div>
-        <div className="grid__column"></div>
-        <div className="grid__column"></div>
+        <div className="grid__column">
+          <DiscountUI></DiscountUI>
+        </div>
       </div>
       <div className="grid">
         <div className="grid__column">

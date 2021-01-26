@@ -204,4 +204,112 @@ export const GridStyles = styled.div`
       margin-left: -1rem;
     }
   }
+  .momo {
+    background-color: #ae2170;
+    padding: 20px;
+    .grid__header {
+      display: none;
+    }
+  }
+  .discount {
+    padding: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-family: "Montserrat", sans-serif;
+    box-shadow: var(--shadow);
+    &-media {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-right: 1px dashed #eee;
+      padding-right: 30px;
+    }
+    &-banner {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50rem;
+    }
+    &-title {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #404d91;
+    }
+    &-layout {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-gap: 0;
+      align-items: center;
+      padding: 30px;
+    }
+    &-number {
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 30px;
+      text-align: right;
+      color: #404d91;
+    }
+    &-promote {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      color: #cbcfdc;
+      font-size: 20px;
+    }
+    &-text {
+      color: #404d91;
+      font-size: 18px;
+      margin-right: 10px;
+      font-weight: 500;
+    }
+    &-code {
+      padding: 15px 30px;
+      color: #ff442c;
+      text-transform: uppercase;
+      font-size: 25px;
+      font-weight: 600;
+      background-color: #ffece9;
+      border-radius: 100rem;
+      margin-left: 20px;
+    }
+    &-info {
+      padding-left: 30px;
+    }
+    &-buy {
+      display: block;
+      margin-left: auto;
+      margin-top: 30px;
+      padding: 15px;
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      background-image: linear-gradient(to right, #37ccff, #7b22ff);
+      border-radius: 4px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+    }
+    .grid__header {
+      display: none;
+    }
+    @media screen and (max-width: 767px) {
+      &-layout {
+        grid-template-columns: 100%;
+      }
+      &-info {
+        margin-top: 30px;
+        padding-left: 0;
+      }
+      &-media {
+        border-right: 0;
+        padding-right: 0;
+      }
+      &-number,
+      &-promote {
+        justify-content: center;
+        text-align: center;
+      }
+    }
+  }
 `;

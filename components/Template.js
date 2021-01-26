@@ -24,6 +24,7 @@ const Template = ({
   authorFrom = "",
   hideCode = false,
   js = "",
+  className = "",
 }) => {
   const [showCode, setShowCode] = useState(false);
   const [editCode, setEditCode] = useState(false);
@@ -105,7 +106,11 @@ const Template = ({
   }, [css, html, js]);
 
   return (
-    <TemplateStyles className="grid__item" data-source={source} css={cssCode}>
+    <TemplateStyles
+      className={`${className} grid__item`}
+      data-source={source}
+      css={cssCode}
+    >
       <div className="grid__header">
         <div className="grid__name">{title}</div>
         {!hideCode && (
