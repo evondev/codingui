@@ -23,7 +23,7 @@ const UpComingUI = () => {
             grid-template-columns: auto 50px 1fr;
             grid-gap: 0 20px;
             align-items: center;
-            font-size: 30px;
+            font-size: 20px;
             font-weight: bold;
           }
           .momo img {
