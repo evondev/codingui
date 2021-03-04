@@ -5,6 +5,7 @@
   --pink: #ff6bcb;
   --blue: #8be9fd;
   --danger: #e74c3c;
+  --green: #00e7af;
   --gray: #333;
   --font: "Poppins", sans-serif;
   --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
@@ -24,11 +25,12 @@ html {
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: #f5f6f7;
+  background-color: white;
   font-weight: 300;
   font-size: 14px;
   overflow-anchor: none;
   scroll-behavior: smooth;
+  line-height: 1.4;
 }
 body::-webkit-scrollbar {
   display: none;

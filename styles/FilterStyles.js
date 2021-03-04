@@ -2,9 +2,8 @@ import styled from "styled-components";
 export const FilterStyles = styled.div`
   background-color: white;
   overflow-x: auto;
-  margin-bottom: 25px;
-  border-top: 1px solid #eee;
-  padding: 25px 20px;
+  margin-bottom: 50px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   &::-webkit-scrollbar {
@@ -16,18 +15,25 @@ export const FilterStyles = styled.div`
   }
   .filter-item {
     display: inline-block;
-    padding: 15px;
+    padding: 0 15px;
     border-radius: 6px;
     color: #999;
     transition: 0.25s linear;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
     white-space: nowrap;
     &.active {
-      background-color: #eee;
-      color: #333;
+      color: var(--green);
       pointer-events: none;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+    .filter-item {
+      font-size: 14px;
+      padding: 0 10px;
     }
   }
 `;

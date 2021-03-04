@@ -107,11 +107,43 @@ const Template = ({
 
   return (
     <TemplateStyles
-      className={`${className} grid__item`}
+      className={`${className} grid-item`}
       data-source={source}
       css={cssCode}
     >
-      <div className="grid__header">
+      <div className="grid-header">
+        <h2 className="grid-name">{title}</h2>
+        {author && (
+          <h3 className="grid-idea">
+            idead from{" "}
+            <a
+              href={authorFrom}
+              target="_blank"
+              rel="noopener norefferer"
+              className="grid-author"
+            >
+              {author}
+            </a>
+          </h3>
+        )}
+      </div>
+      {html && <div className="grid-result">{parse(htmlCode)}</div>}
+      <div className="grid-footer">
+        <button
+          className="grid-copy grid-copy--html"
+          onClick={() => copyToClipboard(htmlCopy || newHTML)}
+        >
+          Copy HTML
+        </button>
+        <button
+          className="grid-copy grid-copy--css"
+          onClick={() => copyToClipboard(cssCopy || newCss)}
+        >
+          Copy CSS
+        </button>
+        <button className="grid-copy">View code</button>
+      </div>
+      {/* <div className="grid__header">
         <div className="grid__name">{title}</div>
         {!hideCode && (
           <div className="grid__copies">
@@ -201,7 +233,7 @@ const Template = ({
             </div>
           )}
         </>
-      )}
+      )} */}
     </TemplateStyles>
   );
 };

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const HeaderStyles = styled.header`
-  padding: 2.5rem 0;
+  padding: 5rem 0 2.5rem;
   text-align: center;
   background-color: white;
   .love {
@@ -61,22 +61,19 @@ export const HeaderStyles = styled.header`
     }
   }
   .logo {
-    max-width: 75px;
+    max-width: 100px;
     margin: 0 auto 20px;
   }
   .heading {
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 40px;
-    color: #5e6b79;
-    letter-spacing: 2.5px;
+    font-size: 50px;
+    color: #757575;
+    letter-spacing: 1.5px;
   }
   .heading strong {
     font-weight: 800;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(to right, #1abcf4, #5defb8);
+    color: var(--green);
   }
   .slogan {
     font-size: 14px;
@@ -96,5 +93,16 @@ export const HeaderStyles = styled.header`
     margin-top: 3rem;
     font-weight: 600;
     background-image: linear-gradient(to right, #784ba0, #2b86c5);
+  }
+  @media screen and (max-width: 767px) {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    .logo {
+      max-width: 50px;
+      margin-bottom: 10px;
+    }
+    .heading {
+      font-size: 30px;
+    }
   }
 `;

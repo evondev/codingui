@@ -15,7 +15,7 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    const gridItems = document.querySelectorAll(".grid__item");
+    const gridItems = document.querySelectorAll(".grid-item");
     const filterItems = document.querySelectorAll(".filter-item");
 
     function handleFilterItems(e) {
@@ -79,9 +79,9 @@ const Header = () => {
           <h1 className="heading">
             Coding<strong>UI</strong>
           </h1>
-          <p className="slogan">
+          {/* <p className="slogan">
             Just a simple place to share a lot of free UIs
-          </p>
+          </p> */}
         </div>
         {loveCount > 1 && (
           <div className={`love ${counter >= 50 ? "point-none" : ""}`}>

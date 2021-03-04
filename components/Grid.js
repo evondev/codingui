@@ -19,8 +19,7 @@ import { Dropdown, LightDropdown } from "./Dropdown";
 import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification, FlipCard, SimpleCard, GradientCard } from "./Card";
-import { ResponsiveMedia, ResponsiveImage } from "./Media";
+import { Notification, FlipCard, SimpleCard } from "./Card";
 import { GridImage, GridImage2 } from "./Layout";
 import { Labels, Tags } from "./Tags";
 import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
@@ -36,10 +35,8 @@ import {
   PlayerLoading,
 } from "./Loading";
 import { IconOpacity, RatingStar, LikeUnlike } from "./Icon";
-import { MusicPlayer } from "./Player";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
-import { Pricing } from "./Pricing";
 import { AvatarList, RecentActivity } from "./List2";
 import { LineText } from "./Line";
 import { SimpleTab } from "./Tab";
@@ -47,7 +44,6 @@ import { DropdownMenu } from "./Navigation";
 import { AutocompleteSearch } from "./Search";
 import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
-import { ComplexShadow } from "./Shadow";
 import { SidebarMenu } from "./Sidebar";
 import { LargeSignup, SimpleSignup } from "./SignUp";
 import {
@@ -81,14 +77,14 @@ import { DiscountUI } from "./Discount";
 const Grid = () => {
   return (
     <GridStyles>
-      <div className="grid grid--23">
+      {/* <div className="grid grid--23">
         <div className="grid__column">
           <UpComingUI></UpComingUI>
         </div>
         <div className="grid__column">
           <DiscountUI></DiscountUI>
         </div>
-      </div>
+      </div> */}
       <div className="grid">
         <div className="grid__column">
           <Gradient1></Gradient1>
@@ -115,7 +111,6 @@ const Grid = () => {
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
-          <ResponsiveMedia></ResponsiveMedia>
           <Triangle></Triangle>
           <SingleLine></SingleLine>
           <CircleLoading></CircleLoading>
@@ -132,14 +127,11 @@ const Grid = () => {
           <LightDropdown></LightDropdown>
           <PlayerLoading></PlayerLoading>
           <DashedLoading></DashedLoading>
-          <ComplexShadow></ComplexShadow>
           <LikeUnlike></LikeUnlike>
-          <GradientCard></GradientCard>
         </div>
         <div className="grid__column">
           <ButtonWithIcon></ButtonWithIcon>
           <GradientButton></GradientButton>
-          <ResponsiveImage></ResponsiveImage>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CustomRadio></CustomRadio>
@@ -166,13 +158,11 @@ const Grid = () => {
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>
           <Countdown></Countdown>
-          <Pricing></Pricing>
           <SearchForm></SearchForm>
           <CaptainShield></CaptainShield>
           <Notification></Notification>
           <TextGradient></TextGradient>
           <DotsLoading></DotsLoading>
-          <MusicPlayer></MusicPlayer>
           <FlipCard></FlipCard>
           <RecentActivity></RecentActivity>
           <AvatarList></AvatarList>

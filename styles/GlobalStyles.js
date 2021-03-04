@@ -11,7 +11,7 @@ export const GlobalStyle = createGlobalStyle`
 		border-radius: inherit;
 	}
   .sweet-noti {
-		padding: 2rem;
+		padding: 5px;
 		background-color: white;
 		box-shadow: 0px 2px 7px rgba(63, 63, 122, 0.1);
 		border-radius: 8px;
@@ -24,16 +24,6 @@ export const GlobalStyle = createGlobalStyle`
 		transition: 0.2s linear;
 		animation: fadeAlert 2s forwards 1 linear;
     color: ${(props) => props.theme.secondary};
-		&:before {
-			content: "";
-			width: 100%;
-			height: 4px;
-			border-radius: 8px;
-			background-color: currentColor;
-			position: absolute;
-			top: -4px;
-			left: 0;
-		}
 		@media screen and (max-width: 767px) {
 			width: auto;
 			left: 1rem;
@@ -43,25 +33,22 @@ export const GlobalStyle = createGlobalStyle`
 		}
 	}
 	i.sweet-noti__icon {
-		font-size: 4rem;
-		margin-right: 1.5rem;
+		font-size: 20px;
+		width: 40px;
+		height: 40px;
+		border-radius: 8px;
 		flex-shrink: 0;
-
-	}
-	.sweet-noti__content{
-		width: 100%;
-		color: #474747;
-		letter-spacing: 0.015em;
+		background-color: rgba(0, 255, 56, 0.1);
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		color: var(--green);
 	}
 	.sweet-noti__title {
-		margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-	}
-	.sweet-noti__message {
-		font-size: 1.4rem;
-		line-height: 1.4;
-
+    font-weight: 500;
+		font-size: 14px;
+		color: #253B4F;
+		padding: 0 10px;
 	}
 
 	@keyframes fadeAlert {

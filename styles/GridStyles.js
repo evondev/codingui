@@ -20,40 +20,69 @@ export const GridStyles = styled.div`
       }
     }
   }
-
-  .grid__item {
-    margin-bottom: 50px;
-    background-color: white;
-    padding: 10px 20px 20px;
-    border-radius: 2px;
-  }
-
   .grid__column {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
-
-  .grid__name {
-    padding: 1rem 0;
-    font-size: 14px;
-    font-weight: 600;
-    color: #333;
-    display: inline-block;
-    max-width: 22rem;
+  .grid-item {
+    margin-bottom: 50px;
+    background-color: white;
+    padding: 20px 20px;
+    /* box-shadow: 0px 4px 16px rgba(215, 215, 215, 0.25); */
+    border: 1px solid #f7f7f7;
+    border-radius: 8px;
+  }
+  .grid-header {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .grid-idea {
+    font-size: 10px;
+    color: #c4c4c4;
+    font-weight: 300;
     white-space: nowrap;
+  }
+  .grid-author {
+    font-weight: 500;
+    color: #c4c4c4;
+  }
+  .grid-name {
+    color: #191c39;
+    font-size: 16px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
+    max-width: 100%;
   }
-  .grid__author {
-    font-size: 11px;
-    color: #999;
-    font-weight: 300;
-    text-align: center;
-    a {
-      font-weight: 600;
-      color: inherit;
-    }
+  .grid-footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 20px;
+  }
+  .grid-copy {
+    padding: 10px;
+    background-color: #b5b5b5;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.25s ease-in;
+  }
+  .grid-copy--html:hover {
+    background-color: #1c55e8;
+  }
+  .grid-copy--css:hover {
+    background-color: #eb6215;
+  }
+  .grid-result {
+    margin: 0 auto 50px;
   }
   .grid__desc {
     font-size: 1.6rem;
@@ -189,19 +218,8 @@ export const GridStyles = styled.div`
     .grid__column {
       margin-bottom: 0;
     }
-    .grid__item {
+    .grid-item {
       margin-bottom: 2rem;
-    }
-    .grid__header {
-      flex-direction: column-reverse;
-      align-items: flex-start;
-    }
-    .grid__name {
-      max-width: 100%;
-      width: 100%;
-    }
-    .grid__copies {
-      margin-left: -1rem;
     }
   }
   .momo {
