@@ -129,19 +129,20 @@ const Template = ({
       </div>
       {html && <div className="grid-result">{parse(htmlCode)}</div>}
       <div className="grid-footer">
-        <button
-          className="grid-copy grid-copy--html"
-          onClick={() => copyToClipboard(htmlCopy || newHTML)}
-        >
-          Copy HTML
-        </button>
+        <div></div>
         <button
           className="grid-copy grid-copy--css"
           onClick={() => copyToClipboard(cssCopy || newCss)}
         >
           Copy CSS
         </button>
-        <button className="grid-copy">View code</button>
+        <button
+          className="grid-copy grid-copy--html"
+          onClick={() => copyToClipboard(htmlCopy || newHTML)}
+        >
+          Copy HTML
+        </button>
+        {/* <button className="grid-copy">View code</button> */}
       </div>
       {/* <div className="grid__header">
         <div className="grid__name">{title}</div>

@@ -6,7 +6,7 @@ export const GridStyles = styled.div`
   margin: 0 auto;
   min-height: calc(100vh - 300px);
   .grid {
-    padding: 1rem;
+    padding: 10px 15px;
     @media screen and (min-width: 768px) {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -29,8 +29,7 @@ export const GridStyles = styled.div`
     margin-bottom: 50px;
     background-color: white;
     padding: 20px 20px;
-    /* box-shadow: 0px 4px 16px rgba(215, 215, 215, 0.25); */
-    border: 1px solid #f7f7f7;
+    box-shadow: 0px 4px 16px rgba(215, 215, 215, 0.5);
     border-radius: 8px;
   }
   .grid-header {
@@ -74,6 +73,9 @@ export const GridStyles = styled.div`
     font-weight: 500;
     font-size: 13px;
     transition: all 0.25s ease-in;
+    @media screen and (max-width: 767px) {
+      font-size: 11px;
+    }
   }
   .grid-copy--html:hover {
     background-color: #1c55e8;
@@ -219,7 +221,7 @@ export const GridStyles = styled.div`
       margin-bottom: 0;
     }
     .grid-item {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
     }
   }
   .momo {

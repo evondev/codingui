@@ -71,20 +71,22 @@ import {
   AvatarDefault4,
   AvatarDefault5,
 } from "./Avatar";
-import { UpComingUI } from "./UpComing";
-import { DiscountUI } from "./Discount";
+import { CourseItem1, CourseItem2, CourseItem3 } from "./course/CourseItem";
 
 const Grid = () => {
   return (
     <GridStyles>
-      {/* <div className="grid grid--23">
+      <div className="grid">
         <div className="grid__column">
-          <UpComingUI></UpComingUI>
+          <CourseItem1></CourseItem1>
         </div>
         <div className="grid__column">
-          <DiscountUI></DiscountUI>
+          <CourseItem3></CourseItem3>
         </div>
-      </div> */}
+        <div className="grid__column">
+          <CourseItem2></CourseItem2>
+        </div>
+      </div>
       <div className="grid">
         <div className="grid__column">
           <Gradient1></Gradient1>
