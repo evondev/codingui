@@ -83,6 +83,9 @@ export const GridStyles = styled.div`
   .grid-copy--css:hover {
     background-color: #eb6215;
   }
+  .grid-copy--js:hover {
+    background-color: #efd81d;
+  }
   .grid-result {
     margin: 0 auto 50px;
   }
