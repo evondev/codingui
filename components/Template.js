@@ -129,7 +129,14 @@ const Template = ({
       </div>
       {html && <div className="grid-result">{parse(htmlCode)}</div>}
       <div className="grid-footer">
-        <div></div>
+        {js.length > 0 && (
+          <button
+            className="grid-copy grid-copy--js"
+            onClick={() => copyToClipboard(js)}
+          >
+            Copy JS
+          </button>
+        )}
         <button
           className="grid-copy grid-copy--css"
           onClick={() => copyToClipboard(cssCopy || newCss)}
