@@ -169,7 +169,7 @@ const CourseItem2 = () => {
           Khoá học hướng dẫn cắt PSD sang HTML CSS toàn tập với Gulp, Pug, Sass
         </h3>
         <div className="course-meta">
-          <span className="course-price">499.000đ</span>
+          <span className="course-price">599.000đ</span>
           {/* <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">EVONTET</span>
