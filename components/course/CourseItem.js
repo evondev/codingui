@@ -135,7 +135,7 @@ const CourseItem1 = () => {
           bắt đầu
         </h3>
         <div className="course-meta">
-          <span className="course-price">449.000đ</span>
+          <span className="course-price">599.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">EVONTET</span>
@@ -169,11 +169,11 @@ const CourseItem2 = () => {
           Khoá học hướng dẫn cắt PSD sang HTML CSS toàn tập với Gulp, Pug, Sass
         </h3>
         <div className="course-meta">
-          <span className="course-price">599.000đ</span>
-          {/* <p className="course-coupon">
+          <span className="course-price">649.000đ</span>
+          <p className="course-coupon">
             <span className="text">Coupon:</span>
-            <span className="coupon">EVONTET</span>
-          </p> */}
+            <span className="coupon">PSD100</span>
+          </p>
         </div>
         <a
           href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
