@@ -34,14 +34,19 @@ import {
   CircleLoading2,
   PlayerLoading,
 } from "./Loading";
-import { IconOpacity, RatingStar, LikeUnlike } from "./Icon";
+import { IconOpacity, RatingStar, LikeUnlike, GradientIcon } from "./Icon";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { AvatarList, RecentActivity } from "./List2";
 import { LineText } from "./Line";
 import { SimpleTab } from "./Tab";
 import { DropdownMenu } from "./Navigation";
-import { AutocompleteSearch } from "./Search";
+import {
+  AutocompleteSearch,
+  SimpleSearch1,
+  SimpleSearch2,
+  SimpleSearch3,
+} from "./Search";
 import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
 import { SidebarMenu } from "./Sidebar";
@@ -78,13 +83,13 @@ const Grid = () => {
     <GridStyles>
       <div className="grid">
         <div className="grid__column">
-          <CourseItem1></CourseItem1>
+          <SimpleSearch1></SimpleSearch1>
         </div>
         <div className="grid__column">
-          <CourseItem3></CourseItem3>
+          <SimpleSearch2></SimpleSearch2>
         </div>
         <div className="grid__column">
-          <CourseItem2></CourseItem2>
+          <SimpleSearch3></SimpleSearch3>
         </div>
       </div>
       <div className="grid">
@@ -204,6 +209,15 @@ const Grid = () => {
         <div className="grid__column">
           <GridImage></GridImage>
         </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <CourseItem1></CourseItem1>
+        </div>
+        <div className="grid__column">
+          <CourseItem2></CourseItem2>
+        </div>
+        <div className="grid__column"></div>
       </div>
     </GridStyles>
   );

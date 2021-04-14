@@ -77,4 +77,132 @@ const AutocompleteSearch = () => {
   );
 };
 
-export { AutocompleteSearch };
+const SimpleSearch1 = () => {
+  return (
+    <>
+      <Template
+        title="Simple search 1"
+        source="search"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="simple-search">
+          <input type="text" placeholder="Type here and hit Enter"/>
+          <button><i class="fa fa-search"></i></button>
+        </div>
+        `}
+        css={`
+          .simple-search {
+            width: 100%;
+            display: flex;
+          }
+          .simple-search button {
+            padding: 15px;
+            color: white;
+            flex-shrink: 0;
+            border-radius: 8px;
+            background-color: #fc8383;
+            margin-left: 15px;
+          }
+          .simple-search input {
+            width: 100%;
+            padding: 15px;
+            background-color: #fafafa;
+            border-radius: 8px;
+            -webkit-appearance: none;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+const SimpleSearch2 = () => {
+  return (
+    <>
+      <Template
+        title="Simple search 2"
+        source="search"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="simple-search">
+          <input type="email" placeholder="Type your email address"/>
+          <button>Send</button>
+        </div>
+        `}
+        css={`
+          .simple-search {
+            width: 100%;
+            display: flex;
+            padding: 5px;
+            background-color: white;
+            border-radius: 4px;
+            border: 1px solid #eee;
+          }
+          .simple-search button {
+            padding: 10px 20px;
+            color: white;
+            flex-shrink: 0;
+            border-radius: 4px;
+            background-color: #22c58b;
+          }
+          .simple-search input {
+            width: 100%;
+            padding: 10px;
+            background-color: transparent;
+            -webkit-appearance: none;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+const SimpleSearch3 = () => {
+  return (
+    <>
+      <Template
+        title="Simple search 3"
+        source="search"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="simple-search">
+          <input type="text" placeholder="Find your flight"/>
+          <button>Go</button>
+        </div>
+        `}
+        css={`
+          .simple-search {
+            width: 100%;
+            display: flex;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.05);
+          }
+          .simple-search button {
+            padding: 15px 30px;
+            color: white;
+            flex-shrink: 0;
+            background-color: #2cccff;
+          }
+          .simple-search input {
+            width: 100%;
+            padding: 15px;
+            background-color: white;
+            -webkit-appearance: none;
+            font-size: 14px;
+            font-weight: 500;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { AutocompleteSearch, SimpleSearch1, SimpleSearch2, SimpleSearch3 };

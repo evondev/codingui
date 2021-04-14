@@ -47,7 +47,7 @@ const Header = () => {
       ?.database()
       ?.ref("love")
       .on("value", function (snapshot) {
-        setLoveCount(snapshot.val().value + 10);
+        setLoveCount(snapshot.val().value + 1);
       });
   }, [loveCount]);
 
@@ -123,6 +123,9 @@ const Header = () => {
         </span>
         <span className="filter-item" data-source="navigation">
           Menu
+        </span>
+        <span className="filter-item" data-source="search">
+          Search
         </span>
       </FilterStyles>
     </>

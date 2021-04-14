@@ -88,6 +88,8 @@ export const GridStyles = styled.div`
   }
   .grid-result {
     margin: 0 auto 50px;
+    position: relative;
+    z-index: 0;
   }
   .grid__desc {
     font-size: 1.6rem;
