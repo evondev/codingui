@@ -168,6 +168,35 @@ const LoadingButton = () => {
   );
 };
 
+const TiktokButton = () => {
+  return (
+    <>
+      <Template
+        title="TiktokButton"
+        source="button"
+        author=""
+        authorFrom=""
+        html={`
+        <button class="tiktok">Tiktok</button>
+        `}
+        css={`
+          .tiktok {
+            padding: 10px 50px;
+            border-radius: 8px;
+            color: white;
+            background-color: #000;
+            cursor: pointer;
+            outline: none;
+            border: none;
+            box-shadow: 3px 3px 0 0 #fb014e,
+              calc(-1 * 3px) calc(-1 * 3px) 0 0 #69f0f7;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   ButtonWithIcon,
   GradientButton,
@@ -175,4 +204,5 @@ export {
   RoundedButton,
   EffectButton,
   LoadingButton,
+  TiktokButton,
 };

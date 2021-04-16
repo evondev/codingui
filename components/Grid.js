@@ -5,6 +5,7 @@ import {
   GradientButton,
   LoadingButton,
   EffectButton,
+  TiktokButton,
 } from "./Button";
 import {
   InputWithButton,
@@ -34,7 +35,14 @@ import {
   CircleLoading2,
   PlayerLoading,
 } from "./Loading";
-import { IconOpacity, RatingStar, LikeUnlike, GradientIcon } from "./Icon";
+import {
+  IconOpacity,
+  RatingStar,
+  LikeUnlike,
+  GradientIcon,
+  PlayerIcon,
+  AvatarWithCheck,
+} from "./Icon";
 import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { AvatarList, RecentActivity } from "./List2";
@@ -84,12 +92,15 @@ const Grid = () => {
       <div className="grid">
         <div className="grid__column">
           <SimpleSearch1></SimpleSearch1>
+          <PlayerIcon></PlayerIcon>
         </div>
         <div className="grid__column">
           <SimpleSearch2></SimpleSearch2>
+          <AvatarWithCheck></AvatarWithCheck>
         </div>
         <div className="grid__column">
           <SimpleSearch3></SimpleSearch3>
+          <TiktokButton></TiktokButton>
         </div>
       </div>
       <div className="grid">

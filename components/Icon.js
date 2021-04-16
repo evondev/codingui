@@ -169,4 +169,116 @@ const LikeUnlike = () => {
   );
 };
 
-export { IconOpacity, RatingStar, LikeUnlike };
+const PlayerIcon = () => {
+  return (
+    <>
+      <Template
+        title="PlayerIcon"
+        source=""
+        author=""
+        authorFrom=""
+        html={`
+        <div class="player-icon">
+          <svg width="80" height="80">
+            <circle
+              stroke-width="4"
+              fill="transparent"
+              r="32"
+              cx="40"
+              cy="40"
+              stroke-dasharray="400"
+              stroke-dashoffset="250"
+              stroke-linecap="round"
+              stroke="#20E3B2"
+            />
+        </svg>
+          <i class="fa fa-play"></i>
+        </div>
+        `}
+        css={`
+          .player-icon {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .player-icon svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotate(-80deg);
+          }
+          .player-icon i {
+            width: 50px;
+            height: 50px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.25);
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+const AvatarWithCheck = () => {
+  return (
+    <>
+      <Template
+        title="AvatarWithCheck"
+        source="avatar"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="avatar">
+          <img src="/images/rachelizmarvel2021.png" alt="" />
+          <i class="fa fa-check icon"></i>
+        </div>
+        `}
+        css={`
+          .avatar {
+            width: 80px;
+            height: 80px;
+            position: relative;
+            background: linear-gradient(to right, #b993d6, #8ca6db);
+            padding: 3px;
+            border-radius: 100px;
+          }
+          .avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: inherit;
+            border: 3px solid white;
+          }
+          .avatar .icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #8ca6db;
+            font-size: 10px;
+            color: white;
+            box-shadow: 0 0 0 3px white;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(-25%, -25%);
+            z-index: 10;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { IconOpacity, RatingStar, LikeUnlike, PlayerIcon, AvatarWithCheck };

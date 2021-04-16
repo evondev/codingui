@@ -1,0 +1,24 @@
+{
+  "New component": {
+    "prefix": "new-component",
+    "body": [
+      "const $1 = () => {",
+      " ",
+      "  return (",
+      "    <>",
+      "$0",
+      "      <Template",
+      "        title=\"$1\"",
+      "        source=\"$2\"",
+      "        author=\"\"",
+      "        authorFrom=\"\"",
+      "        html={``}",
+      "        css={``}",
+      "      ></Template>",
+      "    </>",
+      "  );",
+      "};"
+    ],
+    "description": "New component"
+  }
+}
