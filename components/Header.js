@@ -97,6 +97,7 @@ const Header = () => {
         <span className="filter-item active" data-source="all">
           All
         </span>
+
         <span className="filter-item" data-source="avatar">
           Avatar
         </span>
@@ -109,6 +110,7 @@ const Header = () => {
         <span className="filter-item" data-source="list">
           List
         </span>
+
         <span className="filter-item" data-source="card">
           Card
         </span>
@@ -127,6 +129,9 @@ const Header = () => {
         <span className="filter-item" data-source="search">
           Search
         </span>
+        <a href="/flexbox" className="filter-item featured">
+          Flexbox
+        </a>
       </FilterStyles>
     </>
   );

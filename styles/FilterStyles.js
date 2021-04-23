@@ -28,6 +28,10 @@ export const FilterStyles = styled.div`
       color: var(--green);
       pointer-events: none;
     }
+    &.featured {
+      color: var(--pink);
+      font-weight: 600;
+    }
   }
   @media screen and (max-width: 767px) {
     margin-bottom: 30px;
