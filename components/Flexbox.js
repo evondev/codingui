@@ -370,6 +370,11 @@ const FlexLastItemOnRight = () => {
           .e-flex-item {
             width: 100px;
           }
+          @media screen and (max-width: 767px) {
+            .e-flex-item {
+              width: 40px;
+            }
+          }
         `}
       ></Template>
     </>
@@ -431,6 +436,11 @@ const FlexLast2ItemOnRight = () => {
           }
           .e-flex-item {
             width: 100px;
+          }
+          @media screen and (max-width: 767px) {
+            .e-flex-item {
+              width: 40px;
+            }
           }
         `}
       ></Template>
@@ -568,6 +578,16 @@ const FlexEqualHeight = () => {
             height: 20px;
             margin-bottom: 0;
             margin-top: auto;
+          }
+          @media screen and (max-width: 767px) {
+            .e-flex {
+              display: block;
+              margin-left: 0;
+            }
+            .e-flex-item {
+              width: 100%;
+              margin-left: 0;
+            }
           }
         `}
         cssCopy={`

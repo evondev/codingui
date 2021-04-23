@@ -144,7 +144,7 @@ const ContactForm = () => {
         authorFrom="https://dribbble.com/Art_John"
         html={`
         <div class="contact">
-          <form action="javascript:void(0)" class="contact-form" autocomplete="off">
+          <form action="#" class="contact-form" autocomplete="off">
             <div class="contact-form-group">
               <label for="name" class="contact-form-label">Your Name</label>
               <input id="name" type="text" class="contact-form-input"/>
@@ -155,7 +155,7 @@ const ContactForm = () => {
             </div>
             <div class="contact-form-group">
               <label for="message" class="contact-form-label">Your Message</label>
-              <textarea name="message" id="message" class="contact-form-area" placeholder="Type something if you want"></textarea>
+              <textarea name="message" id="message" class="contact-form-area" placeholder="Type something if you want" value=""></textarea>
             </div>
             <button type="submit" class="contact-form-submit">Send Message</button>
           </form>
