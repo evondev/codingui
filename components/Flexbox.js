@@ -6,9 +6,7 @@ const FlexEqualSize = () => {
     <>
       <Template
         title="Flexbox equal sizing"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         htmlCopy={`
         <div class="e-flex">
           <div class="e-flex-item"></div>
@@ -65,9 +63,7 @@ const FlexGrid = () => {
     <>
       <Template
         title="Flexbox grid layout"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         html={`
         <div class="e-flex">
           <div class="e-flex-item"></div>
@@ -130,9 +126,7 @@ const FlexDynamicItem = () => {
     <>
       <Template
         title="Flexbox most use"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         html={`
         <div class="e-flex">
           <div class="e-flex-item"></div>
@@ -199,9 +193,7 @@ const FlexSquareLayout = () => {
     <>
       <Template
         title="Flexbox square layout"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         html={`
         <div class="e-flex">
           <div class="e-flex-item">
@@ -318,9 +310,7 @@ const FlexLastItemOnRight = () => {
     <>
       <Template
         title="Flexbox last item on right"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         htmlCopy={`
         <div class="e-flex">
           <div class="e-flex-item"></div>
@@ -385,9 +375,7 @@ const FlexLast2ItemOnRight = () => {
     <>
       <Template
         title="Flexbox last 2 items on right"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         htmlCopy={`
         <div class="e-flex">
           <div class="e-flex-item"></div>
@@ -452,9 +440,7 @@ const FlexEqualHeight = () => {
     <>
       <Template
         title="Flexbox equal height and item"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         html={`
         <div class="e-flex">
           <div class="e-flex-item">
@@ -651,9 +637,7 @@ const FlexHorizontal = () => {
     <>
       <Template
         title="Flexbox horizontal layout"
-        source=""
-        author=""
-        authorFrom=""
+        allowView={true}
         htmlCopy={`
         <div class="e-flex">
           <div class="e-flex-image"></div>

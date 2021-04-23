@@ -60,6 +60,7 @@ export const GridStyles = styled.div`
     width: 100%;
     max-width: 100%;
   }
+
   .grid-footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -85,6 +86,11 @@ export const GridStyles = styled.div`
   }
   .grid-copy--js:hover {
     background-color: #efd81d;
+  }
+  .grid-view {
+    flex-shrink: 0;
+    background-image: linear-gradient(to right bottom, #ff6bcb, #e74c3c);
+    margin-left: 10px;
   }
   .grid-result {
     margin: 0 auto 50px;
@@ -336,5 +342,25 @@ export const GridStyles = styled.div`
         text-align: center;
       }
     }
+  }
+  /* Modal Code */
+  @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap");
+  .modal-code-heading {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6bcb, #e74c3c);
+  }
+  .modal-code + .modal-code {
+    margin-top: 20px;
+  }
+  .modal-code pre {
+    padding: 20px !important;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
   }
 `;

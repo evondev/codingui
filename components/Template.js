@@ -8,6 +8,7 @@ import pretty from "pretty";
 import { useState } from "react";
 import { docco } from "react-syntax-highlighter/dist/cjs/styles/hljs";
 import { useEffect } from "react";
+import Modal from "./Modal";
 
 const TemplateStyles = styled.div`
   ${(props) => props.css}
@@ -25,6 +26,7 @@ const Template = ({
   hideCode = false,
   js = "",
   className = "",
+  allowView = false,
 }) => {
   const [showCode, setShowCode] = useState(false);
   const [editCode, setEditCode] = useState(false);
@@ -113,18 +115,13 @@ const Template = ({
     >
       <div className="grid-header">
         <h2 className="grid-name">{title}</h2>
-        {author && (
-          <h3 className="grid-idea">
-            idead from{" "}
-            <a
-              href={authorFrom}
-              target="_blank"
-              rel="noopener norefferer"
-              className="grid-author"
-            >
-              {author}
-            </a>
-          </h3>
+        {allowView && (
+          <button
+            className="grid-copy grid-view"
+            onClick={() => setShowCode(true)}
+          >
+            View code
+          </button>
         )}
       </div>
       {html && <div className="grid-result">{parse(htmlCode)}</div>}
@@ -149,8 +146,31 @@ const Template = ({
         >
           Copy HTML
         </button>
-        {/* <button className="grid-copy">View code</button> */}
       </div>
+      {showCode && (
+        <Modal
+          showModal={showCode}
+          hideModal={() => setShowCode(false)}
+          padding="25px"
+          maxWidth="500px"
+        >
+          <div className="modal-code">
+            <h3 className="modal-code-heading">HTML</h3>
+            <SyntaxHighlighter language="html" style={docco}>
+              {pretty(htmlCopy || html, { ocd: true })}
+            </SyntaxHighlighter>
+          </div>
+          <div className="modal-code">
+            <h3 className="modal-code-heading">CSS</h3>
+            <SyntaxHighlighter language="css" style={docco}>
+              {cssbeautify(cssCopy || css, {
+                indent: `   `,
+                autosemicolon: true,
+              })}
+            </SyntaxHighlighter>
+          </div>
+        </Modal>
+      )}
       {/* <div className="grid__header">
         <div className="grid__name">{title}</div>
         {!hideCode && (
