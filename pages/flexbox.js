@@ -8,6 +8,7 @@ import {
   FlexLastItemOnRight,
   FlexLast2ItemOnRight,
   FlexEqualHeight,
+  FlexHorizontal,
 } from "../components/Flexbox";
 import { GridStyles } from "../styles/GridStyles";
 import Head from "next/head";
@@ -17,6 +18,17 @@ const Flex = {
     margin: 0 auto;
     max-width: 1000px;
   `,
+  Heading: styled.h1`
+    text-transform: capitalize;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right, #ff6bcb, #e74c3c);
+  `,
 };
 
 const FlexboxPage = () => {
@@ -25,6 +37,7 @@ const FlexboxPage = () => {
       <Head>
         <title>Common CSS Flexbox layout with code</title>
       </Head>
+      <Flex.Heading>Common CSS Flexbox layout</Flex.Heading>
       <GridStyles>
         <div className="grid__column">
           <FlexDynamicItem></FlexDynamicItem>
@@ -43,6 +56,9 @@ const FlexboxPage = () => {
         </div>
         <div className="grid__column">
           <FlexEqualHeight></FlexEqualHeight>
+        </div>
+        <div className="grid__column">
+          <FlexHorizontal></FlexHorizontal>
         </div>
         <div className="grid__column">
           <FlexGrid></FlexGrid>

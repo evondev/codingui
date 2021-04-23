@@ -626,6 +626,133 @@ const FlexEqualHeight = () => {
   );
 };
 
+const FlexHorizontal = () => {
+  return (
+    <>
+      <Template
+        title="Flexbox horizontal layout"
+        source=""
+        author=""
+        authorFrom=""
+        htmlCopy={`
+        <div class="e-flex">
+          <div class="e-flex-image"></div>
+          <div class="e-flex-info">
+          <div class="e-flex-title">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="e-flex-time">
+            <span></span>
+          </div>
+        </div>
+        `}
+        html={`
+        <div class="e-flex">
+          <div class="e-flex-image"></div>
+          <div class="e-flex-info">
+          <div class="e-flex-title">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="e-flex-time">
+            <span></span>
+          </div>
+        </div>
+        `}
+        cssCopy={`
+          .e-flex {
+            display: flex;
+            background-color: #a2cbfa;
+            border: 1px solid #4390e1;
+            box-sizing: border-box;
+            box-shadow: 0 2px 2px rgb(0 90 250 / 5%),
+              0 4px 4px rgb(0 90 250 / 5%), 0 8px 8px rgb(0 90 250 / 5%),
+              0 16px 16px rgb(0 90 250 / 5%);
+            padding: 10px;
+          }
+          .e-flex-image {
+            width: 100px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: white;
+          }
+          .e-flex-info {
+            flex: 1;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .e-flex-title {
+            margin-bottom: 20px;
+          }
+          .e-flex-title span,
+          .e-flex-time {
+            display: block;
+            height: 10px;
+            margin-bottom: 10px;
+            background-color: #eee;
+          }
+          .e-flex-time {
+            width: 50px;
+            height: 20px;
+            margin-bottom: 0;
+            margin-top: auto;
+          }
+        `}
+        css={`
+          .e-flex {
+            display: flex;
+            background-color: #a2cbfa;
+            border: 1px solid #4390e1;
+            box-sizing: border-box;
+            box-shadow: 0 2px 2px rgb(0 90 250 / 5%),
+              0 4px 4px rgb(0 90 250 / 5%), 0 8px 8px rgb(0 90 250 / 5%),
+              0 16px 16px rgb(0 90 250 / 5%);
+            padding: 10px;
+          }
+          .e-flex-image {
+            width: 100px;
+            object-fit: cover;
+            flex-shrink: 0;
+            background-color: white;
+          }
+          .e-flex-info {
+            flex: 1;
+            padding: 10px;
+            margin-left: 10px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+          }
+          .e-flex-title {
+            margin-bottom: 20px;
+          }
+          .e-flex-title span,
+          .e-flex-time {
+            display: block;
+            height: 10px;
+            margin-bottom: 10px;
+            background-color: #eee;
+          }
+          .e-flex-time {
+            width: 50px;
+            height: 20px;
+            margin-bottom: 0;
+            margin-top: auto;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   FlexEqualSize,
   FlexGrid,
@@ -634,4 +761,5 @@ export {
   FlexLastItemOnRight,
   FlexLast2ItemOnRight,
   FlexEqualHeight,
+  FlexHorizontal,
 };
