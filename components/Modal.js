@@ -31,16 +31,6 @@ const ModalStyles = styled.div`
     &::-webkit-scrollbar {
       display: none;
     }
-    ${(props) =>
-      props.bottomOnMobile &&
-      css`
-        @media screen and (max-width: 1023px) {
-          max-height: 80vh !important;
-          align-self: flex-end;
-          top: auto !important;
-          border-radius: 10px 10px 0 0 !important;
-        }
-      `}
   }
   .btn__close-modal {
     position: absolute;

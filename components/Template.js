@@ -147,30 +147,28 @@ const Template = ({
           Copy HTML
         </button>
       </div>
-      {showCode && (
-        <Modal
-          showModal={showCode}
-          hideModal={() => setShowCode(false)}
-          padding="25px"
-          maxWidth="500px"
-        >
-          <div className="modal-code">
-            <h3 className="modal-code-heading">HTML</h3>
-            <SyntaxHighlighter language="html" style={docco}>
-              {pretty(htmlCopy || html, { ocd: true })}
-            </SyntaxHighlighter>
-          </div>
-          <div className="modal-code">
-            <h3 className="modal-code-heading">CSS</h3>
-            <SyntaxHighlighter language="css" style={docco}>
-              {cssbeautify(cssCopy || css, {
-                indent: `   `,
-                autosemicolon: true,
-              })}
-            </SyntaxHighlighter>
-          </div>
-        </Modal>
-      )}
+      <Modal
+        showModal={showCode}
+        hideModal={() => setShowCode(false)}
+        padding="25px"
+        maxWidth="500px"
+      >
+        <div className="modal-code">
+          <h3 className="modal-code-heading">HTML</h3>
+          <SyntaxHighlighter language="html" style={docco}>
+            {pretty(htmlCopy || html, { ocd: true })}
+          </SyntaxHighlighter>
+        </div>
+        <div className="modal-code">
+          <h3 className="modal-code-heading">CSS</h3>
+          <SyntaxHighlighter language="css" style={docco}>
+            {cssbeautify(cssCopy || css, {
+              indent: `   `,
+              autosemicolon: true,
+            })}
+          </SyntaxHighlighter>
+        </div>
+      </Modal>
       {/* <div className="grid__header">
         <div className="grid__name">{title}</div>
         {!hideCode && (
