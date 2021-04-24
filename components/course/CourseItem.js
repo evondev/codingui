@@ -142,7 +142,7 @@ const CourseItem1 = () => {
           </p>
         </div>
         <a
-          href="https://evondev.com/khoa-hoc-html-css"
+          href="https://bit.ly/3gxbF8t"
           target="_blank"
           rel="noopener noreferrer"
           className="course-buy course-buy--primary"
@@ -176,7 +176,7 @@ const CourseItem2 = () => {
           </p>
         </div>
         <a
-          href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
+          href="https://bit.ly/3sRHzPs"
           target="_blank"
           rel="noopener noreferrer"
           className="course-buy course-buy--secondary"
