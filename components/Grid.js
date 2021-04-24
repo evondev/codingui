@@ -91,6 +91,15 @@ const Grid = () => {
     <GridStyles>
       <div className="grid">
         <div className="grid__column">
+          <CourseItem1></CourseItem1>
+        </div>
+        <div className="grid__column">
+          <CourseItem2></CourseItem2>
+        </div>
+        <div className="grid__column"></div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
           <SimpleSearch1></SimpleSearch1>
           <PlayerIcon></PlayerIcon>
         </div>
@@ -220,15 +229,6 @@ const Grid = () => {
         <div className="grid__column">
           <GridImage></GridImage>
         </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
-          <CourseItem1></CourseItem1>
-        </div>
-        <div className="grid__column">
-          <CourseItem2></CourseItem2>
-        </div>
-        <div className="grid__column"></div>
       </div>
     </GridStyles>
   );
