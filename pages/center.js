@@ -33,7 +33,7 @@ const CenterPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Common CSS Center</title>
+        <title>Common CSS Center - CodingUI</title>
       </Head>
       <Link href="/">
         <a className="header-logo">
