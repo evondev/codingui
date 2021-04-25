@@ -19,7 +19,7 @@ const ModalStyles = styled.div`
     width: 100%;
     max-width: ${(props) => props.maxWidth || "1200px"};
     margin: 0 auto;
-    max-height: 90vh;
+    max-height: 80vh;
     overflow-y: auto;
     height: auto;
     -ms-overflow-style: none;

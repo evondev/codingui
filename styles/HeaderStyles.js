@@ -60,10 +60,7 @@ export const HeaderStyles = styled.header`
       transform: scale(0.9) translateY(5px);
     }
   }
-  .logo {
-    max-width: 100px;
-    margin: 0 auto 20px;
-  }
+
   .heading {
     text-transform: uppercase;
     font-weight: bold;

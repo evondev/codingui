@@ -4,6 +4,7 @@ import { FilterStyles } from "../styles/FilterStyles";
 import { useEffect } from "react";
 import { useState } from "react";
 import { firebaseApp } from "../vendors/fire";
+import Link from "next/link";
 
 const Header = () => {
   const [loveCount, setLoveCount] = useState(1);
@@ -75,7 +76,11 @@ const Header = () => {
     <>
       <HeaderStyles>
         <div className="container">
-          <img src="/images/logo.png" alt="codingui" className="logo" />
+          <Link href="/">
+            <a className="header-logo">
+              <img src="/images/logo.png" alt="codingui" className="logo" />
+            </a>
+          </Link>
           <h1 className="heading">
             Coding<strong>UI</strong>
           </h1>
@@ -114,6 +119,9 @@ const Header = () => {
         <span className="filter-item" data-source="card">
           Card
         </span>
+        <a href="/center" className="filter-item featured2">
+          Center CSS
+        </a>
         <span className="filter-item" data-source="progress">
           Progress
         </span>
