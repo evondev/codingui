@@ -23,7 +23,7 @@
     "react-slick": "^0.27.13",
     "react-syntax-highlighter": "^13.5.1",
     "sass": "^1.32.0",
-    "styled-components": "^5.1.1"
+    "styled-components": "^5.2.3"
   },
   "devDependencies": {}
 }
