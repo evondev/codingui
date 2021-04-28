@@ -355,8 +355,8 @@ export const GridStyles = styled.div`
     -webkit-background-clip: text;
     background-image: linear-gradient(to right, #ff6bcb, #e74c3c);
   }
-  .modal-code + .modal-code {
-    margin-top: 20px;
+  .modal-code {
+    margin-top: 50px;
   }
   .modal-code pre {
     padding: 20px !important;

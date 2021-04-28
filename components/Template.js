@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import parse from "react-html-parser";
 import copyToClipboard from "../lib/copyToClipboard";
 import styled from "styled-components";
@@ -118,9 +118,9 @@ const Template = ({
         {allowView && (
           <button
             className="grid-copy grid-view"
-            onClick={() => setShowCode(true)}
+            onClick={() => setShowCode(!showCode)}
           >
-            View code
+            {showCode ? "Hide code" : "View code"}
           </button>
         )}
       </div>
@@ -147,13 +147,8 @@ const Template = ({
           Copy HTML
         </button>
       </div>
-      {allowView && (
-        <Modal
-          showModal={showCode}
-          hideModal={() => setShowCode(false)}
-          padding="25px"
-          maxWidth="500px"
-        >
+      {allowView && showCode && (
+        <Fragment>
           <div className="modal-code">
             <h3 className="modal-code-heading">HTML</h3>
             <SyntaxHighlighter language="html" style={docco}>
@@ -169,7 +164,7 @@ const Template = ({
               })}
             </SyntaxHighlighter>
           </div>
-        </Modal>
+        </Fragment>
       )}
       {/* <div className="grid__header">
         <div className="grid__name">{title}</div>
