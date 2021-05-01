@@ -1,7 +1,6 @@
 import React, { Fragment } from "react";
 import styled from "styled-components";
 import Head from "next/head";
-import Link from "next/link";
 import { GridStyles } from "../styles/GridStyles";
 import {
   CenterAbsoluteX,
@@ -35,11 +34,9 @@ const CenterPage = () => {
       <Head>
         <title>Common CSS Center - CodingUI</title>
       </Head>
-      <Link href="/">
-        <a className="header-logo">
-          <img src="/images/logo.png" alt="codingui" className="logo" />
-        </a>
-      </Link>
+      <a href="/" className="header-logo">
+        <img src="/images/logo.png" alt="codingui" className="logo" />
+      </a>
       <Heading>Common CSS Center</Heading>
       <GridStyles>
         <div className="grid__column">

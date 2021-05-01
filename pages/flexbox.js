@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Link from "next/link";
 import {
   FlexEqualSize,
   FlexGrid,
@@ -38,11 +37,9 @@ const FlexboxPage = () => {
       <Head>
         <title>Common CSS Flexbox layout with code</title>
       </Head>
-      <Link href="/">
-        <a className="header-logo">
-          <img src="/images/logo.png" alt="codingui" className="logo" />
-        </a>
-      </Link>
+      <a href="/" className="header-logo">
+        <img src="/images/logo.png" alt="codingui" className="logo" />
+      </a>
       <Flex.Heading>Common CSS Flexbox layout</Flex.Heading>
       <GridStyles>
         <div className="grid__column">
