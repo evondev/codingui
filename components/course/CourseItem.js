@@ -129,6 +129,7 @@ const CourseItem1 = () => {
           src="/images/html-css-course.jpg"
           alt="html css course"
           className="course-image"
+          loading="lazy"
         />
         <span className="course-label course-label--hot">Hot</span>
       </div>
@@ -164,6 +165,7 @@ const CourseItem2 = () => {
           src="/images/html-css-psd-course.png"
           alt="html css course"
           className="course-image"
+          loading="lazy"
         />
         <span className="course-label course-label--new">New</span>
       </div>
@@ -198,6 +200,7 @@ const CourseItem3 = () => {
           src="/images/js-course.jpg"
           alt="javascript course"
           className="course-image"
+          loading="lazy"
         />
       </div>
       <div className="course-content">

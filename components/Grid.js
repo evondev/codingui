@@ -225,7 +225,7 @@ const Grid = () => {
       <div className="grid">
         <Table></Table>
       </div>
-      <div className="grid grid--23">
+      {/* <div className="grid grid--23">
         <div className="grid__column">
           <SimpleSignup></SimpleSignup>
         </div>
@@ -242,7 +242,7 @@ const Grid = () => {
         <div className="grid__column">
           <GridImage></GridImage>
         </div>
-      </div>
+      </div> */}
     </GridStyles>
   );
 };
