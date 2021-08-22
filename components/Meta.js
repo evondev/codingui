@@ -39,7 +39,7 @@ const Meta = () => {
       <meta
         key="keywords"
         name="keywords"
-        content="html,css,frontend,ui,codingui,evondev,"
+        content="evondev, codingui, codingui.dev, frontend developer, html ui, css ui"
       />
       <meta key="author" name="author" content="evondev" />
       <meta key="url" name="url" content="https://codingui.dev" />
