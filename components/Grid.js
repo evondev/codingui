@@ -47,7 +47,7 @@ import { Calendar } from "./Calendar";
 import { Table } from "./Table";
 import { AvatarList, RecentActivity } from "./List2";
 import { LineText } from "./Line";
-import { SimpleTab } from "./Tab";
+import { SimpleTab, Tabs1, Tabs5, Tabs7 } from "./Tab";
 import { DropdownMenu } from "./Navigation";
 import {
   AutocompleteSearch,
@@ -96,7 +96,20 @@ const Grid = () => {
         <div className="grid__column">
           <CourseItem2></CourseItem2>
         </div>
-        <div className="grid__column"></div>
+        <div className="grid__column">
+          <CourseItem3></CourseItem3>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <Tabs5></Tabs5>
+        </div>
+        <div className="grid__column">
+          <Tabs7></Tabs7>
+        </div>
+        <div className="grid__column">
+          <Tabs1></Tabs1>
+        </div>
       </div>
       <div className="grid">
         <div className="grid__column">
@@ -150,7 +163,7 @@ const Grid = () => {
           <Tooltip></Tooltip>
           <LoginForm></LoginForm>
           <LineText></LineText>
-          <SimpleTab></SimpleTab>
+          {/* <SimpleTab></SimpleTab> */}
           <LightDropdown></LightDropdown>
           <PlayerLoading></PlayerLoading>
           <DashedLoading></DashedLoading>

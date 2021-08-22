@@ -77,6 +77,9 @@ const CourseItemStyles = styled.div`
     &--secondary {
       background: linear-gradient(90.06deg, #2cccff -4.45%, #22dfbf 104.12%);
     }
+    &--third {
+      background: linear-gradient(90.06deg, #6f5cf1 -4.45%, #fc5776 104.12%);
+    }
     &--default {
       background-color: #ccc;
       pointer-events: none;
@@ -135,14 +138,14 @@ const CourseItem1 = () => {
           bắt đầu
         </h3>
         <div className="course-meta">
-          <span className="course-price">599.000đ</span>
+          <span className="course-price">699.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">EVONTET</span>
           </p>
         </div>
         <a
-          href="https://bit.ly/3gxbF8t"
+          href="https://evondev.com/khoa-hoc-html-css-co-ban"
           target="_blank"
           rel="noopener noreferrer"
           className="course-buy course-buy--primary"
@@ -169,14 +172,14 @@ const CourseItem2 = () => {
           Khoá học hướng dẫn cắt PSD sang HTML CSS toàn tập với Gulp, Pug, Sass
         </h3>
         <div className="course-meta">
-          <span className="course-price">649.000đ</span>
+          <span className="course-price">749.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">PSD100</span>
           </p>
         </div>
         <a
-          href="https://bit.ly/3sRHzPs"
+          href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
           target="_blank"
           rel="noopener noreferrer"
           className="course-buy course-buy--secondary"
@@ -191,30 +194,30 @@ const CourseItem3 = () => {
   return (
     <CourseItemStyles data-source="course" className="grid-item">
       <div className="course-media">
-        <div className="placeholder-image"></div>
+        <img
+          src="/images/js-course.jpg"
+          alt="javascript course"
+          className="course-image"
+        />
       </div>
       <div className="course-content">
         <h3 className="course-name">
-          <div className="placeholder-line"></div>
-          <div className="placeholder-line"></div>
-          <div className="placeholder-line"></div>
+          Khoá học Javascript từ cơ bản tới nâng cao dễ dàng dành cho người mới
         </h3>
         <div className="course-meta">
-          <span className="course-price">
-            <div className="placeholder-line placeholder-price"></div>
-          </span>
-          {/* <p className="course-coupon">
+          <span className="course-price">1.399.000đ</span>
+          <p className="course-coupon">
             <span className="text">Coupon:</span>
-            <span className="coupon">EVONTET</span>
-          </p> */}
+            <span className="coupon">EVONJS</span>
+          </p>
         </div>
         <a
-          href="#"
+          href="https://evondev.com/khoa-hoc-js-co-ban"
           target="_blank"
           rel="noopener noreferrer"
-          className="course-buy course-buy--default"
+          className="course-buy course-buy--third"
         >
-          Upcoming Cta
+          Lượm ngay đi
         </a>
       </div>
     </CourseItemStyles>

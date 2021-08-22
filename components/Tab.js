@@ -161,4 +161,135 @@ const SimpleTab = () => {
   );
 };
 
-export { SimpleTab };
+const Tabs5 = () => {
+  return (
+    <>
+      <Template
+        title="Tabs"
+        source="tab"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="tabs5">
+          <div class="tab-item active">Education</div>
+          <div class="tab-item">Fashion</div>
+          <div class="tab-item">Music</div>
+          <div class="tab-item">Podcast</div>
+        </div>
+        `}
+        css={`
+          .tabs5 {
+            display: flex;
+            border: 1px solid #6a5af9;
+          }
+          .tabs5 .tab-item:not(:first-child) {
+            border-left: 1px solid #6a5af9;
+          }
+          .tabs5 .tab-item.active {
+            color: white;
+            background-color: #6a5af9;
+          }
+          .tabs5 .tab-item {
+            white-space: nowrap;
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #6a5af9;
+            font-weight: 500;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+const Tabs7 = () => {
+  return (
+    <>
+      <Template
+        title="Tabs"
+        source="tab"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="tabs7">
+          <div class="tab-item active">Education</div>
+          <div class="tab-item">Fashion</div>
+          <div class="tab-item">Music</div>
+          <div class="tab-item">Podcast</div>
+        </div>
+        `}
+        css={`
+          .tabs7 {
+            display: flex;
+            background-color: #eee;
+            border-radius: 8px;
+            padding: 5px;
+          }
+          .tabs7 .tab-item.active {
+            color: #6a5af9;
+            background-color: white;
+          }
+          .tabs7 .tab-item {
+            white-space: nowrap;
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #999;
+            font-weight: 500;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: inherit;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+const Tabs1 = () => {
+  return (
+    <>
+      <Template
+        title="Tabs"
+        source="tab"
+        author="janm_ux"
+        authorFrom=""
+        html={`
+        <div class="tabs1">
+          <div class="tab-item active">Education</div>
+          <div class="tab-item">Fashion</div>
+          <div class="tab-item">Music</div>
+          <div class="tab-item">Podcast</div>
+        </div>
+        `}
+        css={`
+          .tabs1 {
+            display: flex;
+          }
+          .tabs1 .tab-item.active {
+            color: #6a5af9;
+            border-bottom-color: currentColor;
+          }
+          .tabs1 .tab-item {
+            white-space: nowrap;
+            padding: 10px 15px;
+            cursor: pointer;
+            color: #999;
+            font-weight: 500;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: inherit;
+            border-bottom: 1px solid transparent;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export { SimpleTab, Tabs5, Tabs7, Tabs1 };
