@@ -30,11 +30,11 @@ const Meta = () => {
       />
       <link rel="stylesheet" href="./reset.css" />
       <link rel="stylesheet" href="./util.css" />
-      <title>CodingUI - Just a simple place to share a lot of free UIs</title>
+      <title>CodingUI - Download giao diện miễn phí chỉ với 1 click</title>
       <meta
         key="description"
         name="description"
-        content="CodingUI - Just a simple place to share a lot of free UIs, where you can find and get a lot of ui that you want to use in your project"
+        content="CodingUI là một trang web chia sẻ miễn phí các giao diện, tại đây các bạn có thể xem và copy source code đơn giản chỉ với 1 vài click."
       />
       <meta
         key="keywords"
@@ -46,13 +46,13 @@ const Meta = () => {
       <meta
         key="og-title"
         property="og:title"
-        content="CodingUI - Just a simple place to share a lot of free UIs"
+        content="CodingUI - Download giao diện miễn phí chỉ với 1 click"
       />
       <meta key="url" property="og:url" content="https://codingui.dev" />
       <meta
         key="og-description"
         property="og:description"
-        content="CodingUI - Just a simple place to share a lot of free UIs, where you can find and get a lot of ui that you want to use in your project"
+        content="CodingUI là một trang web chia sẻ miễn phí các giao diện, tại đây các bạn có thể xem và copy source code đơn giản chỉ với 1 vài click."
       />
       <meta key="og-image" property="og:image" content="/images/og-image.jpg" />
       <link rel="shortcut icon" href={`/images/logo.png`} />
