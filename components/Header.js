@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { firebaseApp } from "../vendors/fire";
 import Link from "next/link";
+import Head from "next/head";
 
 const Header = () => {
   const [loveCount, setLoveCount] = useState(1);
@@ -74,6 +75,24 @@ const Header = () => {
 
   return (
     <>
+      <Head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-1JBBGV7FXG"
+        ></script>
+        <script
+          id="tag"
+          dangerouslySetInnerHTML={{
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-1JBBGV7FXG');
+          `,
+          }}
+        />
+      </Head>
       <HeaderStyles>
         <div className="container">
           <Link href="/">

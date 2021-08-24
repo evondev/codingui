@@ -13,6 +13,9 @@ import {
   InputFile,
   InputFocus,
   InputFocusEffect,
+  TextField1,
+  TextField2,
+  TextField3,
 } from "./Input";
 import { Triangle } from "./Image";
 import { Tooltip } from "./Overlay";
@@ -98,6 +101,17 @@ const Grid = () => {
         </div>
         <div className="grid__column">
           <CourseItem3></CourseItem3>
+        </div>
+      </div>
+      <div className="grid">
+        <div className="grid__column">
+          <TextField1></TextField1>
+        </div>
+        <div className="grid__column">
+          <TextField2></TextField2>
+        </div>
+        <div className="grid__column">
+          <TextField3></TextField3>
         </div>
       </div>
       <div className="grid">

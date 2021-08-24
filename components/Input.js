@@ -203,10 +203,133 @@ const InputFocusEffect = () => {
   );
 };
 
+const TextField1 = () => {
+  return (
+    <>
+      <Template
+        title="Text Field"
+        source=""
+        author=""
+        authorFrom=""
+        html={`
+        <div class="text-field">
+          <label for="username1">Username</label>
+          <input autocomplete="off" type="text" id="username1" placeholder="Enter your username" />
+        </div>
+        `}
+        css={`
+          .text-field {
+            padding: 15px;
+            border: 1px solid #6a5af9;
+            border-radius: 6px;
+          }
+          .text-field label {
+            display: inline-block;
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+          .text-field input {
+            display: block;
+            width: 100%;
+            color: #999;
+            font-size: 14px;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+const TextField2 = () => {
+  return (
+    <>
+      <Template
+        title="Text Field"
+        source=""
+        author=""
+        authorFrom=""
+        html={`
+        <div class="text-field">
+          <label for="username2">Username</label>
+          <input autocomplete="off" type="text" id="username2" placeholder="Enter your username" />
+        </div>
+        `}
+        css={`
+          .text-field label {
+            display: inline-block;
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+            margin-bottom: 10px;
+          }
+          .text-field input {
+            padding: 10px 0;
+            display: block;
+            width: 100%;
+            color: #999;
+            font-size: 14px;
+            border-bottom: 1px solid #6a5af9;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+const TextField3 = () => {
+  return (
+    <>
+      <Template
+        title="Text Field"
+        source=""
+        author=""
+        authorFrom=""
+        html={`
+        <div class="text-field">
+          <label for="username3">Username</label>
+          <input autocomplete="off" type="text" id="username3" placeholder="Enter your username" />
+        </div>
+        `}
+        css={`
+          .text-field {
+            position: relative;
+          }
+          .text-field label {
+            display: inline-block;
+            color: #333;
+            font-weight: 600;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 10px;
+            background-color: white;
+            padding: 1px 5px;
+            font-size: 12px;
+            transform: translateY(-50%);
+            color: #6a5af9;
+          }
+          .text-field input {
+            padding: 15px;
+            display: block;
+            width: 100%;
+            color: #999;
+            font-size: 14px;
+            border: 1px solid #6a5af9;
+            border-radius: 4px;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   InputWithIcon,
   InputWithButton,
   InputFile,
   InputFocus,
   InputFocusEffect,
+  TextField1,
+  TextField2,
+  TextField3,
 };
