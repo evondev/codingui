@@ -32,7 +32,21 @@ const Template = ({
   const [editCode, setEditCode] = useState(false);
   const [htmlCode, setHtmlCode] = useState(html);
   const [cssCode, setCssCode] = useState(css);
-  let newCss = `*{box-sizing:border-box;}input,button,textarea{border:0;outline:none;}${cssCode}`;
+  let newCss = `
+  /* You can remove these code below*/
+  :root {
+    --primary: #08aeea;
+    --secondary: #13D2B8;
+    --purple: #bd93f9;
+    --pink: #ff6bcb;
+    --blue: #8be9fd;
+    --gray: #333;
+    --font: "Poppins", sans-serif;
+    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
+    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
+  }*{box-sizing:border-box;}input,button,textarea{border:0;outline:none;}
+  /* Main code */
+  ${cssCode}`;
   let newHTML = `${htmlCode}
   `;
 
