@@ -103,9 +103,6 @@ const Header = () => {
           <h1 className="heading">
             Coding<strong>UI</strong>
           </h1>
-          {/* <p className="slogan">
-            Just a simple place to share a lot of free UIs
-          </p> */}
         </div>
         {loveCount > 1 && (
           <div className={`love ${counter >= 50 ? "point-none" : ""}`}>
@@ -140,9 +137,6 @@ const Header = () => {
         <span className="filter-item" data-source="card">
           Card
         </span>
-        <a href="/center" className="filter-item featured2">
-          Center CSS
-        </a>
         <span className="filter-item" data-source="progress">
           Progress
         </span>
@@ -158,9 +152,6 @@ const Header = () => {
         <span className="filter-item" data-source="search">
           Search
         </span>
-        <a href="/flexbox" className="filter-item featured">
-          Flexbox
-        </a>
       </FilterStyles>
     </>
   );

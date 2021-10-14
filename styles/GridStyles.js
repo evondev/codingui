@@ -11,7 +11,7 @@ export const GridStyles = styled.div`
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       grid-gap: 50px;
-      padding: 20px 50px 0;
+      padding: 0 50px;
       &--2 {
         grid-template-columns: repeat(2, 50%);
       }
@@ -33,7 +33,7 @@ export const GridStyles = styled.div`
     border-radius: 8px;
   }
   .grid-header {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -50,8 +50,8 @@ export const GridStyles = styled.div`
   }
   .grid-name {
     color: #191c39;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: 500;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
@@ -59,6 +59,7 @@ export const GridStyles = styled.div`
     text-overflow: ellipsis;
     width: 100%;
     max-width: 100%;
+    position: relative;
   }
 
   .grid-footer {
@@ -93,7 +94,7 @@ export const GridStyles = styled.div`
     margin-left: 10px;
   }
   .grid-result {
-    margin: 0 auto 50px;
+    margin: 0 auto 30px;
     position: relative;
     z-index: 0;
   }

@@ -141,27 +141,6 @@ const Grid = () => {
       </div>
       <div className="grid">
         <div className="grid__column">
-          <Gradient1></Gradient1>
-          <Gradient10></Gradient10>
-
-          <AvatarDefault3></AvatarDefault3>
-          <AvatarDefault></AvatarDefault>
-        </div>
-        <div className="grid__column">
-          <Gradient9></Gradient9>
-          <Gradient14></Gradient14>
-          <AvatarDefault4></AvatarDefault4>
-          <AvatarDefault1></AvatarDefault1>
-        </div>
-        <div className="grid__column">
-          <Gradient15></Gradient15>
-          <Gradient2></Gradient2>
-          <AvatarDefault5></AvatarDefault5>
-          <AvatarDefault2></AvatarDefault2>
-        </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
           <Dropdown></Dropdown>
           <CustomCheckboxToggle></CustomCheckboxToggle>
           <Pagination></Pagination>
@@ -170,22 +149,16 @@ const Grid = () => {
           <CircleLoading></CircleLoading>
           <LoadingButton></LoadingButton>
           <IconOpacity></IconOpacity>
-          <Gradient13></Gradient13>
-          <Gradient12></Gradient12>
-          <Gradient11></Gradient11>
           <Calendar></Calendar>
           <Tooltip></Tooltip>
           <LoginForm></LoginForm>
           <LineText></LineText>
-          {/* <SimpleTab></SimpleTab> */}
           <LightDropdown></LightDropdown>
           <PlayerLoading></PlayerLoading>
           <DashedLoading></DashedLoading>
           <LikeUnlike></LikeUnlike>
         </div>
         <div className="grid__column">
-          <ButtonWithIcon></ButtonWithIcon>
-          <GradientButton></GradientButton>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CustomRadio></CustomRadio>
@@ -195,9 +168,6 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
-          <Gradient5></Gradient5>
-          <Gradient4></Gradient4>
-          <Gradient3></Gradient3>
           <SimpleCard></SimpleCard>
           <ContactForm></ContactForm>
           <AutocompleteSearch></AutocompleteSearch>
@@ -213,17 +183,12 @@ const Grid = () => {
           <CircleBar></CircleBar>
           <Countdown></Countdown>
           <SearchForm></SearchForm>
-          <CaptainShield></CaptainShield>
           <Notification></Notification>
           <TextGradient></TextGradient>
           <DotsLoading></DotsLoading>
           <FlipCard></FlipCard>
-          <RecentActivity></RecentActivity>
           <AvatarList></AvatarList>
           <NotiBell></NotiBell>
-          <Gradient8></Gradient8>
-          <Gradient7></Gradient7>
-          <Gradient6></Gradient6>
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
           <SidebarMenu></SidebarMenu>
@@ -239,24 +204,6 @@ const Grid = () => {
       <div className="grid">
         <Table></Table>
       </div>
-      {/* <div className="grid grid--23">
-        <div className="grid__column">
-          <SimpleSignup></SimpleSignup>
-        </div>
-        <div className="grid__column">
-          <LargeSignup></LargeSignup>
-        </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
-          <GridImage2></GridImage2>
-        </div>
-      </div>
-      <div className="grid">
-        <div className="grid__column">
-          <GridImage></GridImage>
-        </div>
-      </div> */}
     </GridStyles>
   );
 };

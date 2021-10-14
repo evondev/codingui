@@ -70,26 +70,21 @@ export const HeaderStyles = styled.header`
   }
   .heading strong {
     font-weight: 800;
-    color: var(--green);
-  }
-  .slogan {
-    font-size: 14px;
-    line-height: 1.6;
-    max-width: 40rem;
-    margin: 1rem auto 0;
-    color: #999;
-  }
-  .contact-me {
-    display: inline-block;
-    padding: 1.5rem 3rem;
-    border-radius: 4px;
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-    background-color: #001940;
-    margin-top: 3rem;
-    font-weight: 600;
-    background-image: linear-gradient(to right, #784ba0, #2b86c5);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size: 400% 400%;
+    background-image: linear-gradient(
+      to right,
+      #fc6c8f,
+      #ff2ced,
+      #20e3b2,
+      #2cccff,
+      #ffb86c,
+      #ffb4dc,
+      #6a5af9
+    );
+    animation: gradient 5s ease alternate infinite;
   }
   @media screen and (max-width: 767px) {
     padding-top: 25px;
@@ -100,6 +95,17 @@ export const HeaderStyles = styled.header`
     }
     .heading {
       font-size: 30px;
+    }
+  }
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }
 `;
