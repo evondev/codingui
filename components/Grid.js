@@ -125,20 +125,7 @@ const Grid = () => {
           <Tabs1></Tabs1>
         </div>
       </div>
-      <div className="grid">
-        <div className="grid__column">
-          <SimpleSearch1></SimpleSearch1>
-          <PlayerIcon></PlayerIcon>
-        </div>
-        <div className="grid__column">
-          <SimpleSearch2></SimpleSearch2>
-          <AvatarWithCheck></AvatarWithCheck>
-        </div>
-        <div className="grid__column">
-          <SimpleSearch3></SimpleSearch3>
-          <TiktokButton></TiktokButton>
-        </div>
-      </div>
+
       <div className="grid">
         <div className="grid__column">
           <Dropdown></Dropdown>
@@ -151,14 +138,15 @@ const Grid = () => {
           <IconOpacity></IconOpacity>
           <Calendar></Calendar>
           <Tooltip></Tooltip>
-          <LoginForm></LoginForm>
           <LineText></LineText>
           <LightDropdown></LightDropdown>
-          <PlayerLoading></PlayerLoading>
           <DashedLoading></DashedLoading>
           <LikeUnlike></LikeUnlike>
+          <SimpleSearch1></SimpleSearch1>
+          <PlayerIcon></PlayerIcon>
         </div>
         <div className="grid__column">
+          <SimpleSearch2></SimpleSearch2>
           <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CustomRadio></CustomRadio>
@@ -168,8 +156,6 @@ const Grid = () => {
           <InputFile></InputFile>
           <RatingStar></RatingStar>
           <Tags></Tags>
-          <SimpleCard></SimpleCard>
-          <ContactForm></ContactForm>
           <AutocompleteSearch></AutocompleteSearch>
           <InputFocusEffect></InputFocusEffect>
           <CircleLoading2></CircleLoading2>
@@ -177,6 +163,8 @@ const Grid = () => {
           <SubscribeForm></SubscribeForm>
         </div>
         <div className="grid__column">
+          <SimpleSearch3></SimpleSearch3>
+          <TiktokButton></TiktokButton>
           <InputFocus></InputFocus>
           <InputWithButton></InputWithButton>
           <SocialShare></SocialShare>
@@ -191,18 +179,13 @@ const Grid = () => {
           <NotiBell></NotiBell>
           <FadeLoading></FadeLoading>
           <EffectButton></EffectButton>
-          <SidebarMenu></SidebarMenu>
         </div>
       </div>
       <div className="grid grid--2">
         <div className="grid__column">
           <DropdownMenu></DropdownMenu>
         </div>
-
         <div className="grid__column"></div>
-      </div>
-      <div className="grid">
-        <Table></Table>
       </div>
     </GridStyles>
   );

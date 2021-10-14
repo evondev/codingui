@@ -74,17 +74,7 @@ export const HeaderStyles = styled.header`
     background-clip: text;
     -webkit-background-clip: text;
     background-size: 400% 400%;
-    background-image: linear-gradient(
-      to right,
-      #fc6c8f,
-      #ff2ced,
-      #20e3b2,
-      #2cccff,
-      #ffb86c,
-      #ffb4dc,
-      #6a5af9
-    );
-    animation: gradient 5s ease alternate infinite;
+    background-image: linear-gradient(to right, #ffb4dc, #6a5af9);
   }
   @media screen and (max-width: 767px) {
     padding-top: 25px;
@@ -95,17 +85,6 @@ export const HeaderStyles = styled.header`
     }
     .heading {
       font-size: 30px;
-    }
-  }
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
     }
   }
 `;

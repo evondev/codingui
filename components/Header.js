@@ -118,13 +118,6 @@ const Header = () => {
         <span className="filter-item active" data-source="all">
           All
         </span>
-
-        <span className="filter-item" data-source="avatar">
-          Avatar
-        </span>
-        <span className="filter-item" data-source="gradient">
-          Gradient
-        </span>
         <span className="filter-item" data-source="form">
           Form
         </span>

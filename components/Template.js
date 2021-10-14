@@ -32,7 +32,7 @@ const Template = ({
   const [editCode, setEditCode] = useState(false);
   const [htmlCode, setHtmlCode] = useState(html);
   const [cssCode, setCssCode] = useState(css);
-  let newCss = `${cssCode}`;
+  let newCss = `*{box-sizing:border-box;}input,button,textarea{border:0;outline:none;}${cssCode}`;
   let newHTML = `${htmlCode}
   `;
 
