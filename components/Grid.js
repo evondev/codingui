@@ -1,12 +1,6 @@
 import React from "react";
 import { GridStyles } from "../styles/GridStyles";
-import {
-  ButtonWithIcon,
-  GradientButton,
-  LoadingButton,
-  EffectButton,
-  TiktokButton,
-} from "./Button";
+import { LoadingButton, EffectButton, TiktokButton } from "./Button";
 import {
   InputWithButton,
   InputWithIcon,
@@ -16,6 +10,9 @@ import {
   TextField1,
   TextField2,
   TextField3,
+  QuantityInput,
+  InputPassword,
+  InputSearch,
 } from "./Input";
 import { Triangle } from "./Image";
 import { Tooltip } from "./Overlay";
@@ -24,10 +21,8 @@ import { ProgressBar, CircleBar } from "./Bar";
 import { SocialShare, Pagination, Countdown } from "./List";
 import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
 import { Notification, FlipCard, SimpleCard } from "./Card";
-import { GridImage, GridImage2 } from "./Layout";
 import { Labels, Tags } from "./Tags";
 import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
-import { CaptainShield } from "./SingleDiv";
 import { SingleLine, MultiLine, TextGradient } from "./Text";
 import {
   CircleLoading,
@@ -36,21 +31,12 @@ import {
   FadeLoading,
   DashedLoading,
   CircleLoading2,
-  PlayerLoading,
 } from "./Loading";
-import {
-  IconOpacity,
-  RatingStar,
-  LikeUnlike,
-  GradientIcon,
-  PlayerIcon,
-  AvatarWithCheck,
-} from "./Icon";
+import { IconOpacity, RatingStar, LikeUnlike, PlayerIcon } from "./Icon";
 import { Calendar } from "./Calendar";
-import { Table } from "./Table";
-import { AvatarList, RecentActivity } from "./List2";
+import { AvatarList } from "./List2";
 import { LineText } from "./Line";
-import { SimpleTab, Tabs1, Tabs5, Tabs7 } from "./Tab";
+import { Tabs1, Tabs5, Tabs7 } from "./Tab";
 import { DropdownMenu } from "./Navigation";
 import {
   AutocompleteSearch,
@@ -60,33 +46,6 @@ import {
 } from "./Search";
 import { NotiBell } from "./Notification";
 import { SocialShareButon } from "./Social";
-import { SidebarMenu } from "./Sidebar";
-import { LargeSignup, SimpleSignup } from "./SignUp";
-import {
-  Gradient1,
-  Gradient2,
-  Gradient3,
-  Gradient4,
-  Gradient5,
-  Gradient6,
-  Gradient7,
-  Gradient8,
-  Gradient9,
-  Gradient10,
-  Gradient11,
-  Gradient12,
-  Gradient13,
-  Gradient14,
-  Gradient15,
-} from "./Gradient";
-import {
-  AvatarDefault,
-  AvatarDefault1,
-  AvatarDefault2,
-  AvatarDefault3,
-  AvatarDefault4,
-  AvatarDefault5,
-} from "./Avatar";
 import { CourseItem1, CourseItem2, CourseItem3 } from "./course/CourseItem";
 
 const Grid = () => {
@@ -106,12 +65,15 @@ const Grid = () => {
       <div className="grid">
         <div className="grid__column">
           <TextField1></TextField1>
+          <QuantityInput></QuantityInput>
         </div>
         <div className="grid__column">
           <TextField2></TextField2>
+          <InputPassword></InputPassword>
         </div>
         <div className="grid__column">
           <TextField3></TextField3>
+          <InputSearch></InputSearch>
         </div>
       </div>
       <div className="grid">
@@ -147,7 +109,6 @@ const Grid = () => {
         </div>
         <div className="grid__column">
           <SimpleSearch2></SimpleSearch2>
-          <InputWithIcon></InputWithIcon>
           <ProgressBar></ProgressBar>
           <CustomRadio></CustomRadio>
           <Labels></Labels>
@@ -157,7 +118,6 @@ const Grid = () => {
           <RatingStar></RatingStar>
           <Tags></Tags>
           <AutocompleteSearch></AutocompleteSearch>
-          <InputFocusEffect></InputFocusEffect>
           <CircleLoading2></CircleLoading2>
           <SocialShareButon></SocialShareButon>
           <SubscribeForm></SubscribeForm>
@@ -170,7 +130,6 @@ const Grid = () => {
           <SocialShare></SocialShare>
           <CircleBar></CircleBar>
           <Countdown></Countdown>
-          <SearchForm></SearchForm>
           <Notification></Notification>
           <TextGradient></TextGradient>
           <DotsLoading></DotsLoading>

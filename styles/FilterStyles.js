@@ -17,6 +17,7 @@ export const FilterStyles = styled.div`
     cursor: pointer;
     font-size: 16px;
     white-space: nowrap;
+    text-transform: capitalize;
     &.active {
       color: #333;
       font-weight: 500;

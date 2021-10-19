@@ -115,12 +115,12 @@ const InputFocus = () => {
   return (
     <>
       <Template
-        title="Input focus effect"
-        source="form"
+        title="Input focus"
+        source="input"
         author="whitespace"
         authorFrom="https://dribbble.com/white_space"
         html={`
-        <input type="text" class="input-focus" placeholder="Name"/>
+        <input autocomplete="off" type="text" class="input-focus" placeholder="Name"/>
         `}
         css={`
           .input-focus {
@@ -157,7 +157,7 @@ const InputFocusEffect = () => {
     <>
       <Template
         title="Input focus effect"
-        source="form"
+        source="input"
         html={`
         <div class="input-focus-effect">
           <input type="text"/>
@@ -208,7 +208,7 @@ const TextField1 = () => {
     <>
       <Template
         title="Text Field"
-        source=""
+        source="input"
         author=""
         authorFrom=""
         html={`
@@ -246,7 +246,7 @@ const TextField2 = () => {
     <>
       <Template
         title="Text Field"
-        source=""
+        source="input"
         author=""
         authorFrom=""
         html={`
@@ -281,7 +281,7 @@ const TextField3 = () => {
     <>
       <Template
         title="Text Field"
-        source=""
+        source="input"
         author=""
         authorFrom=""
         html={`
@@ -323,6 +323,137 @@ const TextField3 = () => {
   );
 };
 
+const QuantityInput = () => {
+  return (
+    <>
+      <Template
+        title="Quantity Input"
+        source="input"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="quantity-input">
+          <div class="add">
+            <i class="fa fa-plus"></i>
+          </div>
+          <input type="number" class="number" value="9"/>
+          <div class="minus">
+            <i class="fa fa-minus"></i>
+          </div>
+        </div>
+        `}
+        css={`
+          .quantity-input {
+            display: inline-flex;
+            border-radius: 16px;
+            border: 1px solid #a7a8b0;
+            color: #a7a8b0;
+            font-size: 16px;
+          }
+          .quantity-input > * {
+            padding: 15px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .quantity-input .add,
+          .quantity-input .minus {
+            cursor: pointer;
+          }
+          .quantity-input .number {
+            width: 50px;
+            background-color: #f9faff;
+            line-height: normal;
+            border: 0;
+            outline: none;
+            font-size: inherit;
+          }
+          input[type="number"]::-webkit-inner-spin-button,
+          input[type="number"]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+const InputPassword = () => {
+  return (
+    <>
+      <Template
+        title="Password Input"
+        source="input"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="password-input">
+          <i class="fa fa-lock"></i>
+          <input type="password" name="password" id="password" placeholder="Enter your password here" />
+          <i class="fa fa-eye-slash icon-eye"></i>
+        </div>
+        `}
+        css={`
+          .password-input {
+            border-radius: 8px;
+            border: 1px solid #a7a8b0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            color: #a7a8b0;
+          }
+          .password-input input {
+            padding: 0 15px;
+            outline: none;
+            border: none;
+            line-height: normal;
+            width: 100%;
+          }
+          .password-input .icon-eye {
+            cursor: pointer;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+const InputSearch = () => {
+  return (
+    <>
+      <Template
+        title="Search Input"
+        source="input"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="search-input">
+          <i class="fa fa-search"></i>
+          <input type="text" placeholder="Search for anything" />
+        </div>
+        `}
+        css={`
+          .search-input {
+            border-radius: 8px;
+            border: 1px solid #a7a8b0;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            color: #a7a8b0;
+          }
+          .search-input input {
+            padding: 0 15px;
+            outline: none;
+            border: none;
+            line-height: normal;
+            width: 100%;
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   InputWithIcon,
   InputWithButton,
@@ -332,4 +463,7 @@ export {
   TextField1,
   TextField2,
   TextField3,
+  QuantityInput,
+  InputPassword,
+  InputSearch,
 };

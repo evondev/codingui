@@ -6,7 +6,7 @@ const CustomCheckboxToggle = () => {
     <>
       <Template
         title="On-Off Switch"
-        source="form"
+        source="toggle"
         html={`<input type="checkbox" id="switch" class="switch-input"/>
         <label for="switch" class="switch"></label>`}
         css={`
@@ -54,7 +54,7 @@ const CustomRadio = () => {
     <>
       <Template
         title="Custom Radio"
-        source="form"
+        source="checkbox"
         html={`<input type="radio" id="male" class="radio-input" name="gender"/>
         <label for="male" class="radio-label"></label>
         <input type="radio" id="fmale" class="radio-input" name="gender"/>

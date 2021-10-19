@@ -85,7 +85,7 @@ const EffectButton = () => {
   return (
     <Template
       title="Button hover effect"
-      source="form"
+      source="button"
       html={`<button class="button-effect">Hover me <i class="fal fa-long-arrow-right"></i></button>`}
       css={`
         .button-effect {
@@ -123,7 +123,7 @@ const FloatingButton = () => {
   return (
     <Template
       title="Floating Button"
-      source="form"
+      source="button"
       html={`<button class="floating-button"><i class="fa fa-bolt"></i></button>`}
       css={`
         .floating-button {
@@ -147,7 +147,7 @@ const LoadingButton = () => {
   return (
     <Template
       title="Loading Button"
-      source="form"
+      source="button"
       html={`<button class="loading-button"><i class="fa fa-spinner fa-spin"></i></button>`}
       css={`
         .loading-button {
