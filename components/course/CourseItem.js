@@ -139,7 +139,7 @@ const CourseItem1 = () => {
           bắt đầu
         </h3>
         <div className="course-meta">
-          <span className="course-price">699.000đ</span>
+          <span className="course-price">899.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">EVONTET</span>
@@ -174,7 +174,7 @@ const CourseItem2 = () => {
           Khoá học hướng dẫn cắt PSD sang HTML CSS toàn tập với Gulp, Pug, Sass
         </h3>
         <div className="course-meta">
-          <span className="course-price">749.000đ</span>
+          <span className="course-price">849.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
             <span className="coupon">PSD100</span>
@@ -208,10 +208,10 @@ const CourseItem3 = () => {
           Khoá học Javascript từ cơ bản tới nâng cao dễ dàng dành cho người mới
         </h3>
         <div className="course-meta">
-          <span className="course-price">1.399.000đ</span>
+          <span className="course-price">1.499.000đ</span>
           <p className="course-coupon">
             <span className="text">Coupon:</span>
-            <span className="coupon">EVONJS</span>
+            <span className="coupon">EVONJS15</span>
           </p>
         </div>
         <a

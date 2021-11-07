@@ -31,6 +31,8 @@ import {
   FadeLoading,
   DashedLoading,
   CircleLoading2,
+  SquareLoading,
+  DoubleCircle,
 } from "./Loading";
 import { IconOpacity, RatingStar, LikeUnlike, PlayerIcon } from "./Icon";
 import { Calendar } from "./Calendar";
@@ -66,10 +68,12 @@ const Grid = () => {
         <div className="grid__column">
           <TextField1></TextField1>
           <QuantityInput></QuantityInput>
+          <SquareLoading></SquareLoading>
         </div>
         <div className="grid__column">
           <TextField2></TextField2>
           <InputPassword></InputPassword>
+          <DoubleCircle></DoubleCircle>
         </div>
         <div className="grid__column">
           <TextField3></TextField3>

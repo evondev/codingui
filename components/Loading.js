@@ -324,6 +324,105 @@ const PlayerLoading = () => {
   );
 };
 
+export const SquareLoading = () => {
+  return (
+    <>
+      <Template
+        title="Square loading"
+        source="loading"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="square-loading">
+        </div>
+        `}
+        css={`
+          .square-loading {
+            width: 100px;
+            height: 100px;
+            background-color: #6a5af9;
+            border-radius: 8px;
+            animation: flip 1.2s ease-in-out infinite;
+          }
+          @keyframes flip {
+            0% {
+              transform: perspective(200px) rotateX(0) rotateY(0);
+            }
+            50% {
+              transform: perspective(200px) rotateX(180deg) rotateY(0);
+            }
+            100% {
+              transform: perspective(200px) rotateX(180deg) rotateY(180deg);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
+export const DoubleCircle = () => {
+  return (
+    <>
+      <Template
+        title="Double circle loading"
+        source="loading"
+        author=""
+        authorFrom=""
+        html={`
+        <div class="double-loading">
+          <div class="c1"></div>
+          <div class="c2"></div>
+        </div>
+        `}
+        css={`
+          .double-loading {
+            width: 100px;
+            height: 100px;
+            position: relative;
+          }
+          .double-loading .c1 {
+            width: 100%;
+            height: 100%;
+            border: 5px solid #6a5af9;
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-radius: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: c1 1s infinite linear;
+          }
+          .double-loading .c2 {
+            width: 50%;
+            height: 50%;
+            border: 5px solid #6a5af9;
+            border-right: 5px solid transparent;
+            border-left: 5px solid transparent;
+            border-radius: 100rem;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation: c2 1s infinite linear;
+          }
+          @keyframes c1 {
+            to {
+              transform: translate(-50%, -50%) rotate(360deg);
+            }
+          }
+          @keyframes c2 {
+            to {
+              transform: translate(-50%, -50%) rotate(-360deg);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
+};
+
 export {
   CircleLoading,
   LineLoading,
