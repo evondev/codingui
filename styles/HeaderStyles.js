@@ -2,7 +2,6 @@ import styled from "styled-components";
 export const HeaderStyles = styled.header`
   padding: 5rem 0 2.5rem;
   text-align: center;
-  background-color: white;
   .love {
     position: fixed;
     right: 3rem;

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 export const FilterStyles = styled.div`
-  background-color: white;
   padding: 0 20px;
   display: flex;
   justify-content: center;
@@ -11,17 +10,19 @@ export const FilterStyles = styled.div`
   .filter-item {
     display: inline-block;
     padding: 12px 20px;
-    border-radius: 4px;
+    border-radius: 10px;
     line-height: 1;
     color: #999;
     cursor: pointer;
     font-size: 16px;
     white-space: nowrap;
     text-transform: capitalize;
+    border: 1px solid transparent;
+    font-weight: 500;
     &.active {
       color: #333;
-      font-weight: 500;
-      background-color: #eee;
+      border-color: #6a5af9;
+      color: #6a5af9;
     }
   }
   @media screen and (max-width: 767px) {

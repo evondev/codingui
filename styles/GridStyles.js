@@ -29,7 +29,6 @@ export const GridStyles = styled.div`
     margin-bottom: 50px;
     background-color: white;
     padding: 20px 20px;
-    box-shadow: 0px 4px 16px rgba(215, 215, 215, 0.5);
     border-radius: 8px;
   }
   .grid-header {
@@ -59,7 +58,6 @@ export const GridStyles = styled.div`
     text-overflow: ellipsis;
     width: 100%;
     max-width: 100%;
-    position: relative;
   }
 
   .grid-footer {
@@ -95,8 +93,6 @@ export const GridStyles = styled.div`
   }
   .grid-result {
     margin: 0 auto 30px;
-    position: relative;
-    z-index: 0;
   }
   .grid__desc {
     font-size: 1.6rem;

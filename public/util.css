@@ -25,7 +25,7 @@ html {
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: white;
+  background-color: #f7f7fa;
   font-weight: 300;
   font-size: 14px;
   overflow-anchor: none;
