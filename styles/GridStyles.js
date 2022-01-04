@@ -364,4 +364,29 @@ export const GridStyles = styled.div`
     font-family: "Roboto Mono", monospace;
     font-weight: 500;
   }
+  @media screen and (max-width: 1023.98px) {
+    .grid-course {
+      display: grid;
+      justify-content: flex-start;
+      grid-auto-columns: 320px;
+      grid-auto-flow: column;
+      grid-gap: 30px;
+      overflow: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      scroll-snap-stop: always;
+      -ms-touch-action: manipulation;
+      touch-action: manipulation;
+      -webkit-overflow-scrolling: touch;
+      scroll-padding: 1rem;
+      grid-template-columns: unset;
+    }
+    .grid-course::-webkit-scrollbar {
+      display: none;
+      width: 0;
+    }
+    .grid-course > * {
+      scroll-snap-align: start;
+    }
+  }
 `;

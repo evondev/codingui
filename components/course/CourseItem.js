@@ -8,6 +8,9 @@ const CourseItemStyles = styled.div`
   margin-bottom: 30px !important;
   height: 100%;
   padding: 0 !important;
+  display: flex;
+  flex-direction: column;
+
   @media screen and (max-width: 767px) {
     margin-bottom: 20px;
   }
@@ -26,27 +29,38 @@ const CourseItemStyles = styled.div`
     object-fit: cover;
   }
   .course-content {
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    flex: 1;
   }
   .course-name {
     color: #332a2a;
     font-weight: 600;
-    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 10px;
+    font-size: 16px;
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+    }
   }
   .course-meta {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    margin-top: auto;
+    @media screen and (max-width: 1023.98px) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+      margin-bottom: 15px;
+    }
   }
   .course-price {
     color: var(--green);
-    font-weight: 600;
-    font-size: 25px;
+    font-weight: 500;
+    font-size: 20px;
   }
   .course-coupon .text {
     font-weight: 300;
@@ -55,22 +69,28 @@ const CourseItemStyles = styled.div`
     margin-right: 5px;
   }
   .course-coupon .coupon {
-    font-weight: bold;
+    font-weight: 500;
     color: #fe8b78;
-    font-size: 20px;
+    font-size: 16px;
+    @media screen and (min-width: 1024px) {
+      font-size: 18px;
+    }
   }
   .course-buy {
     width: 100%;
     padding: 0 15px;
     height: 55px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: auto;
+    @media screen and (max-width: 1023.98px) {
+      height: 45px;
+    }
+
     &--primary {
       background: linear-gradient(90.06deg, #f86086 -4.45%, #fe8d77 104.12%);
     }
@@ -136,12 +156,11 @@ const CourseItem1 = () => {
       <div className="course-content">
         <h3 className="course-name">
           Khoá học tự học thiết kế website HTML CSS hiệu quả dành cho người mới
-          bắt đầu
         </h3>
         <div className="course-meta">
           <span className="course-price">899.000đ</span>
           <p className="course-coupon">
-            <span className="text">Coupon:</span>
+            <span className="text">Mã giảm giá:</span>
             <span className="coupon">EVONTET</span>
           </p>
         </div>
@@ -149,9 +168,9 @@ const CourseItem1 = () => {
           href="https://evondev.com/khoa-hoc-html-css-co-ban"
           target="_blank"
           rel="noopener noreferrer"
-          className="course-buy course-buy--primary"
+          className="course-buy course-buy--secondary"
         >
-          Mua ngay bây giờ
+          Mua ngay
         </a>
       </div>
     </CourseItemStyles>
@@ -167,16 +186,15 @@ const CourseItem2 = () => {
           className="course-image"
           loading="lazy"
         />
-        <span className="course-label course-label--new">New</span>
       </div>
       <div className="course-content">
         <h3 className="course-name">
-          Khoá học hướng dẫn cắt PSD sang HTML CSS toàn tập với Gulp, Pug, Sass
+          Khoá học HTML CSS nâng cao với cắt giao diện từ A đến Z
         </h3>
         <div className="course-meta">
-          <span className="course-price">849.000đ</span>
+          <span className="course-price">799.000đ</span>
           <p className="course-coupon">
-            <span className="text">Coupon:</span>
+            <span className="text">Mã giảm giá:</span>
             <span className="coupon">PSD100</span>
           </p>
         </div>
@@ -184,9 +202,9 @@ const CourseItem2 = () => {
           href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
           target="_blank"
           rel="noopener noreferrer"
-          className="course-buy course-buy--secondary"
+          className="course-buy course-buy--third"
         >
-          Đăng ký luôn
+          Nhấn để mua
         </a>
       </div>
     </CourseItemStyles>
@@ -205,12 +223,12 @@ const CourseItem3 = () => {
       </div>
       <div className="course-content">
         <h3 className="course-name">
-          Khoá học Javascript từ cơ bản tới nâng cao dễ dàng dành cho người mới
+          Khoá học Javascript từ cơ bản tới nâng cao dành cho người mới
         </h3>
         <div className="course-meta">
-          <span className="course-price">1.499.000đ</span>
+          <span className="course-price">1.099.000đ</span>
           <p className="course-coupon">
-            <span className="text">Coupon:</span>
+            <span className="text">Mã giảm giá:</span>
             <span className="coupon">EVONJS15</span>
           </p>
         </div>
@@ -218,9 +236,9 @@ const CourseItem3 = () => {
           href="https://evondev.com/khoa-hoc-js-co-ban"
           target="_blank"
           rel="noopener noreferrer"
-          className="course-buy course-buy--third"
+          className="course-buy course-buy--primary"
         >
-          Lượm ngay đi
+          Sở hữu bây giờ
         </a>
       </div>
     </CourseItemStyles>

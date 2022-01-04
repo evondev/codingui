@@ -53,7 +53,7 @@ import { CourseItem1, CourseItem2, CourseItem3 } from "./course/CourseItem";
 const Grid = () => {
   return (
     <GridStyles>
-      <div className="grid">
+      <div className="grid grid-course">
         <div className="grid__column">
           <CourseItem1></CourseItem1>
         </div>
