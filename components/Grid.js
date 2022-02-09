@@ -1,70 +1,113 @@
 import React from "react";
 import { GridStyles } from "../styles/GridStyles";
-import { LoadingButton, EffectButton, TiktokButton } from "./Button";
-import {
-  InputWithButton,
-  InputWithIcon,
-  InputFile,
-  InputFocus,
-  InputFocusEffect,
-  TextField1,
-  TextField2,
-  TextField3,
-  QuantityInput,
-  InputPassword,
-  InputSearch,
-} from "./Input";
-import { Triangle } from "./Image";
-import { Tooltip } from "./Overlay";
-import { Dropdown, LightDropdown } from "./Dropdown";
-import { ProgressBar, CircleBar } from "./Bar";
-import { SocialShare, Pagination, Countdown } from "./List";
-import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
-import { Notification, FlipCard, SimpleCard } from "./Card";
-import { Labels, Tags } from "./Tags";
-import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
-import { SingleLine, MultiLine, TextGradient } from "./Text";
-import {
-  CircleLoading,
-  LineLoading,
-  DotsLoading,
-  FadeLoading,
-  DashedLoading,
-  CircleLoading2,
-  SquareLoading,
-  DoubleCircle,
-} from "./Loading";
-import { IconOpacity, RatingStar, LikeUnlike, PlayerIcon } from "./Icon";
-import { Calendar } from "./Calendar";
-import { AvatarList } from "./List2";
-import { LineText } from "./Line";
-import { Tabs1, Tabs5, Tabs7 } from "./Tab";
-import { DropdownMenu } from "./Navigation";
-import {
-  AutocompleteSearch,
-  SimpleSearch1,
-  SimpleSearch2,
-  SimpleSearch3,
-} from "./Search";
-import { NotiBell } from "./Notification";
-import { SocialShareButon } from "./Social";
-import { CourseItem1, CourseItem2, CourseItem3 } from "./course/CourseItem";
+// import { LoadingButton, EffectButton, TiktokButton } from "./Button";
+// import {
+//   InputWithButton,
+//   InputWithIcon,
+//   InputFile,
+//   InputFocus,
+//   InputFocusEffect,
+//   TextField1,
+//   TextField2,
+//   TextField3,
+//   QuantityInput,
+//   InputPassword,
+//   InputSearch,
+// } from "./Input";
+// import { Triangle } from "./Image";
+// import { Tooltip } from "./Overlay";
+// import { Dropdown, LightDropdown } from "./Dropdown";
+// import { ProgressBar, CircleBar } from "./Bar";
+// import { SocialShare, Pagination, Countdown } from "./List";
+// import { CustomCheckboxToggle, CustomRadio } from "./Checkbox";
+// import { Notification, FlipCard, SimpleCard } from "./Card";
+// import { Labels, Tags } from "./Tags";
+// import { SearchForm, LoginForm, ContactForm, SubscribeForm } from "./Form";
+// import { SingleLine, MultiLine, TextGradient } from "./Text";
+// import {
+//   CircleLoading,
+//   LineLoading,
+//   DotsLoading,
+//   FadeLoading,
+//   DashedLoading,
+//   CircleLoading2,
+//   SquareLoading,
+//   DoubleCircle,
+// } from "./Loading";
+// import { IconOpacity, RatingStar, LikeUnlike, PlayerIcon } from "./Icon";
+// import { Calendar } from "./Calendar";
+// import { AvatarList } from "./List2";
+// import { LineText } from "./Line";
+// import { Tabs1, Tabs5, Tabs7 } from "./Tab";
+// import { DropdownMenu } from "./Navigation";
+// import {
+//   AutocompleteSearch,
+//   SimpleSearch1,
+//   SimpleSearch2,
+//   SimpleSearch3,
+// } from "./Search";
+// import { NotiBell } from "./Notification";
+// import { SocialShareButon } from "./Social";
+// import CourseItem, {
+//   CourseItem1,
+//   CourseItem2,
+//   CourseItem3,
+// } from "./course/CourseItem";
+import { Button } from "./Button";
 
 const Grid = () => {
   return (
     <GridStyles>
-      <div className="grid grid-course">
-        <div className="grid__column">
-          <CourseItem1></CourseItem1>
+      <div className="grid-layout">
+        <div className="grid-column">
+          <Button></Button>
         </div>
-        <div className="grid__column">
-          <CourseItem2></CourseItem2>
-        </div>
-        <div className="grid__column">
-          <CourseItem3></CourseItem3>
-        </div>
+        <div className="grid-column"></div>
+        <div className="grid-column"></div>
       </div>
-      <div className="grid">
+      {/* <div className="grid grid-course">
+        <div className="grid__column">
+          <CourseItem
+            image={"/images/html-css-course.jpg"}
+            title="Khoá học HTML CSS cơ bản dành cho người mới bắt đầu"
+            label="Bán chạy nhất"
+            price="899.000"
+            coupon="EVONTET"
+            link="khoa-hoc-html-css"
+            cta="Mua ngay luôn"
+          ></CourseItem>
+        </div>
+        <div className="grid__column">
+          <CourseItem
+            image={"/images/html-css-psd-course.png"}
+            title="Khoá học HTML CSS nâng cao cắt giao diện với Pug và Sass"
+            price="799.000"
+            coupon="PSD100"
+            link="khoa-hoc-huong-dan-cat-psd"
+            cta="Mua ngay luôn"
+          ></CourseItem>
+        </div>
+        <div className="grid__column">
+          <CourseItem
+            image={"/images/js-course.jpg"}
+            title="Khoá học Javascript từ cơ bản tới nâng cao dành cho người mới"
+            price="999.000"
+            coupon="EVONJS15"
+            link="khoa-hoc-js-co-ban"
+            cta="Mua ngay luôn"
+          ></CourseItem>
+        </div>
+        <div className="grid__column">
+          <CourseItem
+            image={"/images/js-course.jpg"}
+            title="Khoá học ReactJS cơ bản đến nâng cao dành cho người mới"
+            price="949.000"
+            link="khoa-hoc-react-co-ban"
+            cta="Mua liền"
+          ></CourseItem>
+        </div>
+      </div> */}
+      {/* <div className="grid">
         <div className="grid__column">
           <TextField1></TextField1>
           <QuantityInput></QuantityInput>
@@ -149,7 +192,7 @@ const Grid = () => {
           <DropdownMenu></DropdownMenu>
         </div>
         <div className="grid__column"></div>
-      </div>
+      </div> */}
     </GridStyles>
   );
 };

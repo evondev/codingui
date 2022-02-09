@@ -5,29 +5,23 @@ export const GridStyles = styled.div`
   max-width: 1440px;
   margin: 0 auto;
   min-height: calc(100vh - 300px);
-  .grid {
+  .grid-layout {
     padding: 0 20px;
     @media screen and (min-width: 768px) {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      grid-gap: 50px;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+      grid-gap: 30px;
       padding: 0 50px;
-      &--2 {
-        grid-template-columns: repeat(2, 50%);
-      }
-      &--23 {
-        grid-template-columns: 1fr 2fr;
-      }
     }
   }
-  .grid__column {
+  .grid-column {
     display: flex;
     flex-direction: column-reverse;
     justify-content: flex-end;
   }
   .grid-item {
     margin-bottom: 50px;
-    background-color: white;
+    background-color: #323a46;
     padding: 20px 20px;
     border-radius: 8px;
   }
@@ -37,19 +31,9 @@ export const GridStyles = styled.div`
     align-items: center;
     justify-content: space-between;
   }
-  .grid-idea {
-    font-size: 10px;
-    color: #c4c4c4;
-    font-weight: 300;
-    white-space: nowrap;
-  }
-  .grid-author {
-    font-weight: 500;
-    color: #c4c4c4;
-  }
   .grid-name {
-    color: #191c39;
-    font-size: 14px;
+    color: white;
+    font-size: 16px;
     font-weight: 500;
     display: -webkit-box;
     -webkit-line-clamp: 1;
@@ -77,19 +61,17 @@ export const GridStyles = styled.div`
       font-size: 11px;
     }
   }
-  .grid-copy--html:hover {
+  .grid-copy--html {
     background-color: #1c55e8;
   }
-  .grid-copy--css:hover {
+  .grid-copy--css {
     background-color: #eb6215;
   }
-  .grid-copy--js:hover {
+  .grid-copy--js {
     background-color: #efd81d;
   }
   .grid-view {
     flex-shrink: 0;
-    background-image: linear-gradient(to right bottom, #ff6bcb, #e74c3c);
-    margin-left: 10px;
   }
   .grid-result {
     margin: 0 auto 30px;
@@ -347,10 +329,7 @@ export const GridStyles = styled.div`
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 20px;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right, #ff6bcb, #e74c3c);
+    color: white;
   }
   .modal-code {
     margin-top: 50px;

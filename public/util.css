@@ -2,6 +2,7 @@
   --primary: #455af7;
   --secondary: #13d2b8;
   --purple: #bd93f9;
+  --purple-dark: #6a5af9;
   --pink: #ff6bcb;
   --blue: #8be9fd;
   --danger: #e74c3c;
@@ -25,7 +26,7 @@ html {
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: #f7f7fa;
+  background-color: #242731;
   font-weight: 300;
   font-size: 14px;
   overflow-anchor: none;

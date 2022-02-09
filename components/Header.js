@@ -118,10 +118,10 @@ const Header = () => {
         <span className="filter-item active" data-source="all">
           All
         </span>
-        <span className="filter-item" data-source="input">
-          Input
-        </span>
         <span className="filter-item" data-source="button">
+          Button
+        </span>
+        {/* <span className="filter-item" data-source="button">
           button
         </span>
         <span className="filter-item" data-source="checkbox">
@@ -153,7 +153,7 @@ const Header = () => {
         </span>
         <span className="filter-item" data-source="search">
           Search
-        </span>
+        </span> */}
       </FilterStyles>
     </>
   );
