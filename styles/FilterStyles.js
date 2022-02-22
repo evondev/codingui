@@ -21,8 +21,8 @@ export const FilterStyles = styled.div`
     font-weight: 500;
     &.active {
       color: white;
-      background-color: var(--purple-dark);
-      border-color: var(--purple-dark);
+      background-image: linear-gradient(to right top, #6a5af9, #d66efd);
+      border: none;
     }
   }
   @media screen and (max-width: 767px) {

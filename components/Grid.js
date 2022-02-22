@@ -53,7 +53,27 @@ import { GridStyles } from "../styles/GridStyles";
 //   CourseItem2,
 //   CourseItem3,
 // } from "./course/CourseItem";
-import { Button } from "./Button";
+import {
+  Button,
+  Button2,
+  Button3,
+  Button4,
+  Button5,
+  Button6,
+  Button7,
+  Button8,
+} from "./Button";
+import {
+  BallLoading,
+  BallsLoading,
+  CircleLoading,
+  CircleLoading2,
+  DashedLoading,
+  DotsLoading,
+  FadeLoading,
+  LineLoading,
+  SquareLoading,
+} from "./Loading";
 
 const Grid = () => {
   return (
@@ -61,9 +81,27 @@ const Grid = () => {
       <div className="grid-layout">
         <div className="grid-column">
           <Button></Button>
+          <Button2></Button2>
+          <Button7></Button7>
+          <CircleLoading></CircleLoading>
+          <CircleLoading2></CircleLoading2>
+          <BallsLoading></BallsLoading>
         </div>
-        <div className="grid-column"></div>
-        <div className="grid-column"></div>
+        <div className="grid-column">
+          <Button3></Button3>
+          <Button4></Button4>
+          <Button8></Button8>
+          <LineLoading></LineLoading>
+          <DotsLoading></DotsLoading>
+          <BallLoading></BallLoading>
+        </div>
+        <div className="grid-column">
+          <Button5></Button5>
+          <Button6></Button6>
+          <FadeLoading></FadeLoading>
+          <DashedLoading></DashedLoading>
+          <SquareLoading></SquareLoading>
+        </div>
       </div>
       {/* <div className="grid grid-course">
         <div className="grid__column">

@@ -7,8 +7,12 @@ export const GridStyles = styled.div`
   min-height: calc(100vh - 300px);
   .grid-layout {
     padding: 0 20px;
+    display: grid;
     @media screen and (min-width: 768px) {
-      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+
+    @media screen and (min-width: 1280px) {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
       grid-gap: 30px;
       padding: 0 50px;
@@ -20,7 +24,7 @@ export const GridStyles = styled.div`
     justify-content: flex-end;
   }
   .grid-item {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     background-color: #323a46;
     padding: 20px 20px;
     border-radius: 8px;
@@ -61,10 +65,10 @@ export const GridStyles = styled.div`
       font-size: 11px;
     }
   }
-  .grid-copy--html {
+  .grid-copy--html:hover {
     background-color: #1c55e8;
   }
-  .grid-copy--css {
+  .grid-copy--css:hover {
     background-color: #eb6215;
   }
   .grid-copy--js {
@@ -72,6 +76,7 @@ export const GridStyles = styled.div`
   }
   .grid-view {
     flex-shrink: 0;
+    background-image: linear-gradient(to right top, #6a5af9, #d66efd);
   }
   .grid-result {
     margin: 0 auto 30px;

@@ -11,6 +11,7 @@
   --font: "Poppins", sans-serif;
   --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
   --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  --dark: rgb(15 23 42);
 }
 *,
 *:before,
@@ -26,7 +27,7 @@ html {
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: #242731;
+  background-color: var(--dark);
   font-weight: 300;
   font-size: 14px;
   overflow-anchor: none;
