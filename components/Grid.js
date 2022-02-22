@@ -41,7 +41,6 @@ const Grid = () => {
     <GridStyles>
       <div className="grid-layout">
         <div className="grid-column">
-          <Button></Button>
           <Button2></Button2>
           <Button7></Button7>
           <CircleLoading></CircleLoading>
@@ -55,9 +54,8 @@ const Grid = () => {
           <Tabs7></Tabs7>
         </div>
         <div className="grid-column">
-          <Button3></Button3>
-          <Button4></Button4>
-          <Button8></Button8>
+          <Button></Button>
+
           <LineLoading></LineLoading>
           <DotsLoading></DotsLoading>
           <BallLoading></BallLoading>
@@ -70,6 +68,9 @@ const Grid = () => {
           <SocialShareButon></SocialShareButon>
         </div>
         <div className="grid-column">
+          <Button3></Button3>
+          <Button4></Button4>
+          <Button8></Button8>
           <Button5></Button5>
           <Button6></Button6>
           <FadeLoading></FadeLoading>

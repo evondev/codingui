@@ -20,8 +20,7 @@ export const GridStyles = styled.div`
   }
   .grid-column {
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-end;
+    flex-direction: column;
   }
   .grid-item {
     margin-bottom: 30px;
