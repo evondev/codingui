@@ -64,7 +64,7 @@ export const HeaderStyles = styled.header`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 50px;
-    color: #757575;
+    color: white;
     letter-spacing: 1.5px;
   }
   .heading strong {

@@ -2,27 +2,27 @@ import styled from "styled-components";
 export const FilterStyles = styled.div`
   padding: 0 20px;
   display: flex;
-  justify-content: center;
   gap: 20px;
   flex-flow: row wrap;
-  max-width: 1440px;
+  justify-content: center;
+  max-width: 800px;
   margin: 0 auto 50px;
   .filter-item {
     display: inline-block;
-    padding: 12px 20px;
-    border-radius: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
     line-height: 1;
-    color: #999;
+    color: white;
     cursor: pointer;
     font-size: 16px;
     white-space: nowrap;
     text-transform: capitalize;
-    border: 1px solid transparent;
+    border: 1px solid var(--purple-dark);
     font-weight: 500;
     &.active {
-      color: #333;
-      border-color: #6a5af9;
-      color: #6a5af9;
+      color: white;
+      background-image: linear-gradient(to right top, #6a5af9, #d66efd);
+      border: none;
     }
   }
   @media screen and (max-width: 767px) {

@@ -21,32 +21,16 @@ const Template = ({
   css = "",
   cssCopy = "",
   source = "",
-  author = "",
-  authorFrom = "",
   hideCode = false,
   js = "",
   className = "",
-  allowView = false,
+  allowView = true,
 }) => {
   const [showCode, setShowCode] = useState(false);
   const [editCode, setEditCode] = useState(false);
   const [htmlCode, setHtmlCode] = useState(html);
   const [cssCode, setCssCode] = useState(css);
-  let newCss = `
-  /* You can remove these code below*/
-  :root {
-    --primary: #08aeea;
-    --secondary: #13D2B8;
-    --purple: #bd93f9;
-    --pink: #ff6bcb;
-    --blue: #8be9fd;
-    --gray: #333;
-    --font: "Poppins", sans-serif;
-    --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
-    --shadow: 0 0 15px 0 rgba(0,0,0,0.05);
-  }*{box-sizing:border-box;}input,button,textarea{border:0;outline:none;}
-  /* Main code */
-  ${cssCode}`;
+  let newCss = `${cssCode}`;
   let newHTML = `${htmlCode}
   `;
 
@@ -74,6 +58,18 @@ const Template = ({
       </div>
       {html && <div className="grid-result">{parse(htmlCode)}</div>}
       <div className="grid-footer">
+        <button
+          className="grid-copy grid-copy--html"
+          onClick={() => copyToClipboard(htmlCopy || newHTML)}
+        >
+          Copy HTML
+        </button>
+        <button
+          className="grid-copy grid-copy--css"
+          onClick={() => copyToClipboard(cssCopy || newCss)}
+        >
+          Copy CSS
+        </button>
         {js.length > 0 && (
           <button
             className="grid-copy grid-copy--js"
@@ -82,18 +78,6 @@ const Template = ({
             Copy JS
           </button>
         )}
-        <button
-          className="grid-copy grid-copy--css"
-          onClick={() => copyToClipboard(cssCopy || newCss)}
-        >
-          Copy CSS
-        </button>
-        <button
-          className="grid-copy grid-copy--html"
-          onClick={() => copyToClipboard(htmlCopy || newHTML)}
-        >
-          Copy HTML
-        </button>
       </div>
       {allowView && showCode && (
         <Fragment>

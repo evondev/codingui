@@ -141,108 +141,37 @@ const CourseItemStyles = styled.div`
     margin-bottom: 0;
   }
 `;
-const CourseItem1 = () => {
+const CourseItem = ({ image, label, title, price, coupon, cta, link }) => {
   return (
     <CourseItemStyles data-source="course" className="grid-item">
       <div className="course-media">
-        <img
-          src="/images/html-css-course.jpg"
-          alt="html css course"
-          className="course-image"
-          loading="lazy"
-        />
-        <span className="course-label course-label--hot">Hot</span>
+        <img src={image} alt={title} className="course-image" loading="lazy" />
+        {label && (
+          <span className="course-label course-label--hot">{label}</span>
+        )}
       </div>
       <div className="course-content">
-        <h3 className="course-name">
-          Khoá học tự học thiết kế website HTML CSS hiệu quả dành cho người mới
-        </h3>
+        <h3 className="course-name">{title}</h3>
         <div className="course-meta">
-          <span className="course-price">899.000đ</span>
-          <p className="course-coupon">
-            <span className="text">Mã giảm giá:</span>
-            <span className="coupon">EVONTET</span>
-          </p>
+          <span className="course-price">{price}đ</span>
+          {coupon && (
+            <p className="course-coupon">
+              <span className="text">Mã giảm giá:</span>
+              <span className="coupon">{coupon}</span>
+            </p>
+          )}
         </div>
         <a
-          href="https://evondev.com/khoa-hoc-html-css-co-ban"
+          href={`https://evondev.com/${link}`}
           target="_blank"
           rel="noopener noreferrer"
           className="course-buy course-buy--secondary"
         >
-          Mua ngay
-        </a>
-      </div>
-    </CourseItemStyles>
-  );
-};
-const CourseItem2 = () => {
-  return (
-    <CourseItemStyles data-source="course" className="grid-item">
-      <div className="course-media">
-        <img
-          src="/images/html-css-psd-course.png"
-          alt="html css course"
-          className="course-image"
-          loading="lazy"
-        />
-      </div>
-      <div className="course-content">
-        <h3 className="course-name">
-          Khoá học HTML CSS nâng cao với cắt giao diện từ A đến Z
-        </h3>
-        <div className="course-meta">
-          <span className="course-price">799.000đ</span>
-          <p className="course-coupon">
-            <span className="text">Mã giảm giá:</span>
-            <span className="coupon">PSD100</span>
-          </p>
-        </div>
-        <a
-          href="https://evondev.com/khoa-hoc-huong-dan-cat-psd"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="course-buy course-buy--third"
-        >
-          Nhấn để mua
-        </a>
-      </div>
-    </CourseItemStyles>
-  );
-};
-const CourseItem3 = () => {
-  return (
-    <CourseItemStyles data-source="course" className="grid-item">
-      <div className="course-media">
-        <img
-          src="/images/js-course.jpg"
-          alt="javascript course"
-          className="course-image"
-          loading="lazy"
-        />
-      </div>
-      <div className="course-content">
-        <h3 className="course-name">
-          Khoá học Javascript từ cơ bản tới nâng cao dành cho người mới
-        </h3>
-        <div className="course-meta">
-          <span className="course-price">1.099.000đ</span>
-          <p className="course-coupon">
-            <span className="text">Mã giảm giá:</span>
-            <span className="coupon">EVONJS15</span>
-          </p>
-        </div>
-        <a
-          href="https://evondev.com/khoa-hoc-js-co-ban"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="course-buy course-buy--primary"
-        >
-          Sở hữu bây giờ
+          {cta}
         </a>
       </div>
     </CourseItemStyles>
   );
 };
 
-export { CourseItem1, CourseItem2, CourseItem3 };
+export default CourseItem;

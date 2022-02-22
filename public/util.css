@@ -2,6 +2,7 @@
   --primary: #455af7;
   --secondary: #13d2b8;
   --purple: #bd93f9;
+  --purple-dark: #6a5af9;
   --pink: #ff6bcb;
   --blue: #8be9fd;
   --danger: #e74c3c;
@@ -10,6 +11,7 @@
   --font: "Poppins", sans-serif;
   --gradient: linear-gradient(40deg, #ff6ec4, #7873f5);
   --shadow: 0 0 15px 0 rgba(0, 0, 0, 0.05);
+  --dark: rgb(15 23 42);
 }
 *,
 *:before,
@@ -25,7 +27,7 @@ html {
 body {
   font-family: var(--font);
   overflow-x: hidden;
-  background-color: #f7f7fa;
+  background-color: var(--dark);
   font-weight: 300;
   font-size: 14px;
   overflow-anchor: none;

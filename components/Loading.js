@@ -1,7 +1,7 @@
 import React from "react";
 import Template from "./Template";
 
-const CircleLoading = () => {
+export const CircleLoading = () => {
   return (
     <>
       <Template
@@ -15,6 +15,7 @@ const CircleLoading = () => {
             border-radius: 15rem;
             position: relative;
             margin: 0 auto;
+            --color: #6a5af9;
           }
           .circle-loading:before {
             content: "";
@@ -24,9 +25,9 @@ const CircleLoading = () => {
             width: 100%;
             height: 100%;
             border-radius: inherit;
-            border: 1rem solid white;
-            border-right-color: var(--secondary);
-            border-bottom-color: var(--secondary);
+            border: 1rem solid transparent;
+            border-right-color: var(--color);
+            border-bottom-color: var(--color);
             animation: circleLoading 1s forwards infinite linear;
           }
           @keyframes circleLoading {
@@ -39,7 +40,7 @@ const CircleLoading = () => {
     </>
   );
 };
-const LineLoading = () => {
+export const LineLoading = () => {
   return (
     <>
       <Template
@@ -81,7 +82,7 @@ const LineLoading = () => {
     </>
   );
 };
-const DotsLoading = () => {
+export const DotsLoading = () => {
   return (
     <>
       <Template
@@ -128,7 +129,7 @@ const DotsLoading = () => {
   );
 };
 
-const FadeLoading = () => {
+export const FadeLoading = () => {
   return (
     <>
       <Template
@@ -169,7 +170,7 @@ const FadeLoading = () => {
   );
 };
 
-const DashedLoading = () => {
+export const DashedLoading = () => {
   return (
     <>
       <Template
@@ -222,7 +223,7 @@ const DashedLoading = () => {
   );
 };
 
-const CircleLoading2 = () => {
+export const CircleLoading2 = () => {
   return (
     <>
       <Template
@@ -254,68 +255,6 @@ const CircleLoading2 = () => {
             }
             100% {
               transform: rotate(180deg);
-            }
-          }
-        `}
-      ></Template>
-    </>
-  );
-};
-
-const PlayerLoading = () => {
-  return (
-    <>
-      <Template
-        title="Play loading"
-        source="loading"
-        author=""
-        authorFrom=""
-        html={`
-        <div class="player-loading">
-          <div class="player-play">
-            <i class="fa fa-play"></i>
-          </div>
-        </div>
-        `}
-        css={`
-          .player-loading {
-            width: 100%;
-            height: 200px;
-            background-image: var(--gradient);
-            position: relative;
-          }
-          .player-play {
-            width: 40px;
-            height: 40px;
-            border-radius: 40px;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--pink);
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            cursor: pointer;
-          }
-          .player-play:before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: 5;
-            background-color: white;
-            border-radius: inherit;
-            animation: fade 1s infinite;
-            z-index: -1;
-          }
-          @keyframes fade {
-            to {
-              transform: scale(3);
-              opacity: 0;
             }
           }
         `}
@@ -361,60 +300,26 @@ export const SquareLoading = () => {
   );
 };
 
-export const DoubleCircle = () => {
+export const BallLoading = () => {
   return (
     <>
       <Template
-        title="Double circle loading"
         source="loading"
-        author=""
-        authorFrom=""
-        html={`
-        <div class="double-loading">
-          <div class="c1"></div>
-          <div class="c2"></div>
-        </div>
-        `}
+        title="Ball loading"
+        html={`<div class="loading"></div>`}
         css={`
-          .double-loading {
-            width: 100px;
-            height: 100px;
-            position: relative;
-          }
-          .double-loading .c1 {
-            width: 100%;
-            height: 100%;
-            border: 5px solid #6a5af9;
-            border-top: 5px solid transparent;
-            border-bottom: 5px solid transparent;
+          .loading {
+            --color: #f62682;
+            width: 20px;
+            height: 20px;
             border-radius: 100rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: c1 1s infinite linear;
+            background: var(--color);
+            animation: ball 1s cubic-bezier(0.075, 0.82, 0.165, 1) infinite
+              alternate;
           }
-          .double-loading .c2 {
-            width: 50%;
-            height: 50%;
-            border: 5px solid #6a5af9;
-            border-right: 5px solid transparent;
-            border-left: 5px solid transparent;
-            border-radius: 100rem;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: c2 1s infinite linear;
-          }
-          @keyframes c1 {
-            to {
-              transform: translate(-50%, -50%) rotate(360deg);
-            }
-          }
-          @keyframes c2 {
-            to {
-              transform: translate(-50%, -50%) rotate(-360deg);
+          @keyframes ball {
+            100% {
+              transform: translateY(-20px);
             }
           }
         `}
@@ -423,12 +328,56 @@ export const DoubleCircle = () => {
   );
 };
 
-export {
-  CircleLoading,
-  LineLoading,
-  DotsLoading,
-  FadeLoading,
-  DashedLoading,
-  CircleLoading2,
-  PlayerLoading,
+export const BallsLoading = () => {
+  return (
+    <>
+      <Template
+        title="Balls loading"
+        source="loading"
+        html={`<div class="loading">
+        <div style="---value: 1"></div>
+        <div style="---value: 2"></div>
+        <div style="---value: 3"></div>
+        <div style="---value: 4"></div>
+        <div style="---value: 5"></div>
+      </div>`}
+        css={`
+          .loading {
+            --count: 5;
+            --circle: 360deg;
+            --deg: calc(var(--circle) / var(--count));
+            --duration: 1s;
+            --delay: calc(var(--duration) / var(--count));
+            width: 50px;
+            height: 50px;
+            position: relative;
+          }
+          .loading div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: rotate(calc(var(--value) * var(--deg)));
+          }
+          .loading div:before {
+            content: "";
+            width: 15px;
+            height: 15px;
+            border-radius: 100rem;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: #2cccff;
+            filter: hue-rotate(calc(var(--value) * 45deg));
+            animation: balls var(--duration) infinite;
+            animation-delay: calc(var(--value) * var(--delay));
+          }
+          @keyframes balls {
+            100% {
+              transform: scale(0.25);
+            }
+          }
+        `}
+      ></Template>
+    </>
+  );
 };

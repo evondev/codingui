@@ -118,41 +118,20 @@ const Header = () => {
         <span className="filter-item active" data-source="all">
           All
         </span>
-        <span className="filter-item" data-source="input">
-          Input
-        </span>
         <span className="filter-item" data-source="button">
-          button
-        </span>
-        <span className="filter-item" data-source="checkbox">
-          checkbox
-        </span>
-        <span className="filter-item" data-source="form">
-          Form
-        </span>
-        <span className="filter-item" data-source="list">
-          List
-        </span>
-        <span className="filter-item" data-source="tab">
-          Tabs
-        </span>
-        <span className="filter-item" data-source="card">
-          Card
-        </span>
-        <span className="filter-item" data-source="progress">
-          Progress
+          Button
         </span>
         <span className="filter-item" data-source="loading">
           Loading
         </span>
-        <span className="filter-item" data-source="dropdown">
-          Dropdown
+        <span className="filter-item" data-source="tab">
+          tab
         </span>
-        <span className="filter-item" data-source="navigation">
-          Menu
+        <span className="filter-item" data-source="input">
+          input
         </span>
-        <span className="filter-item" data-source="search">
-          Search
+        <span className="filter-item" data-source="list">
+          list
         </span>
       </FilterStyles>
     </>
