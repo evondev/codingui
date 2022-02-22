@@ -58,6 +58,18 @@ const Template = ({
       </div>
       {html && <div className="grid-result">{parse(htmlCode)}</div>}
       <div className="grid-footer">
+        <button
+          className="grid-copy grid-copy--html"
+          onClick={() => copyToClipboard(htmlCopy || newHTML)}
+        >
+          Copy HTML
+        </button>
+        <button
+          className="grid-copy grid-copy--css"
+          onClick={() => copyToClipboard(cssCopy || newCss)}
+        >
+          Copy CSS
+        </button>
         {js.length > 0 && (
           <button
             className="grid-copy grid-copy--js"
@@ -66,18 +78,6 @@ const Template = ({
             Copy JS
           </button>
         )}
-        <button
-          className="grid-copy grid-copy--css"
-          onClick={() => copyToClipboard(cssCopy || newCss)}
-        >
-          Copy CSS
-        </button>
-        <button
-          className="grid-copy grid-copy--html"
-          onClick={() => copyToClipboard(htmlCopy || newHTML)}
-        >
-          Copy HTML
-        </button>
       </div>
       {allowView && showCode && (
         <Fragment>

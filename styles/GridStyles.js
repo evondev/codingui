@@ -8,13 +8,13 @@ export const GridStyles = styled.div`
   .grid-layout {
     padding: 0 20px;
     display: grid;
+    grid-gap: 30px;
     @media screen and (min-width: 768px) {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
 
     @media screen and (min-width: 1280px) {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
-      grid-gap: 30px;
       padding: 0 50px;
     }
   }
@@ -71,8 +71,8 @@ export const GridStyles = styled.div`
   .grid-copy--css:hover {
     background-color: #eb6215;
   }
-  .grid-copy--js {
-    background-color: #efd81d;
+  .grid-copy--js:hover {
+    background-color: #ffb86c;
   }
   .grid-view {
     flex-shrink: 0;

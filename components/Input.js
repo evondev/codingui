@@ -132,7 +132,7 @@ const InputFocus = () => {
             color: #0d1f36;
             font-size: 1.6rem;
             outline: none;
-            background-color: white;
+            background-color: transparent;
             transition: all 0.2s ease;
             margin-bottom: 10px;
           }
@@ -160,7 +160,7 @@ const InputFocusEffect = () => {
         source="input"
         html={`
         <div class="input-focus-effect">
-          <input type="text"/>
+          <input type="text" placeholder=" "/>
           <label>Name</label>
         </div>
         `}
@@ -179,12 +179,15 @@ const InputFocusEffect = () => {
             transition: border 0.25s linear;
             background-color: transparent;
             outline: none;
+            color: white;
+            font-size: 12px;
           }
           .input-focus-effect input:focus {
-            border-color: var(--primary);
+            border-color: #2979ff;
           }
-          .input-focus-effect input:focus + label {
-            transform: translateY(0);
+          .input-focus-effect input:focus + label,
+          .input-focus-effect input:not(:placeholder-shown) + label {
+            transform: translateY(-5px);
             top: 1rem;
           }
           .input-focus-effect label {
@@ -193,7 +196,7 @@ const InputFocusEffect = () => {
             left: 1rem;
             transform: translateY(-50%);
             pointer-events: none;
-            color: #999;
+            color: #2979ff;
             transition: 0.25s linear;
             font-size: 1.2rem;
           }
@@ -225,16 +228,18 @@ const TextField1 = () => {
           }
           .text-field label {
             display: inline-block;
-            color: #333;
             font-weight: 600;
             cursor: pointer;
             margin-bottom: 10px;
+            color: white;
           }
           .text-field input {
             display: block;
             width: 100%;
             color: #999;
             font-size: 14px;
+            background-color: transparent;
+            color: white;
           }
         `}
       ></Template>
@@ -262,6 +267,7 @@ const TextField2 = () => {
             font-weight: 600;
             cursor: pointer;
             margin-bottom: 10px;
+            color: white;
           }
           .text-field input {
             padding: 10px 0;
@@ -270,6 +276,8 @@ const TextField2 = () => {
             color: #999;
             font-size: 14px;
             border-bottom: 1px solid #6a5af9;
+            background-color: transparent;
+            color: #6a5af9;
           }
         `}
       ></Template>
@@ -296,13 +304,12 @@ const TextField3 = () => {
           }
           .text-field label {
             display: inline-block;
-            color: #333;
             font-weight: 600;
             cursor: pointer;
             position: absolute;
             top: 0;
             left: 10px;
-            background-color: white;
+            background-color: #323a46;
             padding: 1px 5px;
             font-size: 12px;
             transform: translateY(-50%);
@@ -312,10 +319,11 @@ const TextField3 = () => {
             padding: 15px;
             display: block;
             width: 100%;
-            color: #999;
             font-size: 14px;
             border: 1px solid #6a5af9;
             border-radius: 4px;
+            background-color: transparent;
+            color: white;
           }
         `}
       ></Template>

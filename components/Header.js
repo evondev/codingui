@@ -124,6 +124,15 @@ const Header = () => {
         <span className="filter-item" data-source="loading">
           Loading
         </span>
+        <span className="filter-item" data-source="tab">
+          tab
+        </span>
+        <span className="filter-item" data-source="input">
+          input
+        </span>
+        <span className="filter-item" data-source="list">
+          list
+        </span>
       </FilterStyles>
     </>
   );
