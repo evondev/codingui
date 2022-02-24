@@ -9,6 +9,7 @@ export const GridStyles = styled.div`
     padding: 0 20px;
     display: grid;
     grid-gap: 30px;
+    grid-template-columns: minmax(0, 1fr);
     @media screen and (min-width: 768px) {
       grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     }
@@ -344,6 +345,16 @@ export const GridStyles = styled.div`
     font-weight: 500;
   }
   @media screen and (max-width: 1023.98px) {
+    .modal-code {
+      margin-top: 20px;
+    }
+    .modal-code-heading {
+      margin-bottom: 10px;
+    }
+    .modal-code pre {
+      padding: 15px !important;
+      font-size: 12px;
+    }
     .grid-course {
       display: grid;
       justify-content: flex-start;
