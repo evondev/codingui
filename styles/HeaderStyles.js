@@ -81,6 +81,8 @@ export const HeaderStyles = styled.header`
     .logo {
       max-width: 50px;
       margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
     }
     .heading {
       font-size: 30px;
